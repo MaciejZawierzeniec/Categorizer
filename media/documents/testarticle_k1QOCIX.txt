@@ -1,0 +1,42 @@
+Each month, with great fanfare, investors await the release of the Consumer Price Index, the headline metric that politicians and pundits cite as they opine about inflation.
+
+May’s CPI report, released June 10, gave those pundits plenty to discuss. It showed prices on the rise, up 5% in a year, marking the sharpest increase since 2008.
+
+But I always tell clients to take the CPI with a grain of salt. It’s the headline number, and it might get the story right directionally, but there are too many components within the index that don’t reflect the experiences of typical consumers.
+
+Read: Don’t be fooled — inflation is a big risk for stock market investors. Here’s how to prepare
+
+That makes it a less-useful measure of inflation than you might believe. At the same time, there’s another indicator investors and consumers should be scrutinizing. That picture is even more disturbing.
+
+What to watch
+Of course, some CPI metrics do tell the real story. For example, prices for used cars and trucks climbed almost 30%, while prices for new vehicles rose just 3.3%. This is significant. When used vehicle prices soar, they have an outsized impact on some consumers’ economic health.
+
+Interestingly, markets, as a whole, seemed unfazed by the report. This may suggest that concerns about inflation are subsiding or are already baked into investors’ expectations. There was no kneejerk stock sell-off as there was in April. The response from the bond markets was curious as the 10-year TMUBMUSD10Y, 1.452% yield closed 3 basis points lower after already falling 13 basis points over the last week.
+
+Does this really mean that the inflation scare is over? A close look at the Producer Price Index suggests otherwise.
+
+This less-heralded government indicator may be the better metric for determining if we’re heading into an inflationary environment. Unfortunately for consumers and investors alike, the PPI is flashing even more warning signs than its CPI brethren.
+
+The PPI tracks the domestic production of goods and services, capturing the pricing pressure that producers are seeing from their suppliers that, in turn, are passed on to consumers.
+
+In April’s PPI report, final demand — prices received by producers upon last sale — rose 6.2%, the highest jump since the Bureau of Labor Statistics began calculating and reporting annual data in November 2010.
+
+Even more alarming
+Look further up the supply chain and the latest PPI appears even more alarming. Consider the component of the index that measures the prices of processed goods for intermediate demand. This category includes materials for food production, construction, and durable and nondurable manufacturing.
+
+The April PPI report shows this component jumped 18.4% over the same period in 2021. That was the largest annual increase since February 1980. So while CPI increases are reaching levels not seen since the Great Recession, this crucial component of the PPI is increasing at rates that haven’t been touched in more than 40 years.
+
+Prices of goods in the supply chain, as shown in this report, have been on the rise for five months. In each successive period, the increases have grown steeper. In March, prices for processed goods for intermediate demand vaulted 12.5%, following monthly increases of 6.6% in February, 3.1% in January and 1.5% in December 2020.
+
+By contrast, in every other month in 2020, from November back to January, prices for processed goods for intermediate demand had been declining.
+
+The great Fed debate
+It’s a popular debate as to whether we are heading into an inflationary period, or whether we are already in one. If the answer to either of those questions is yes, how long will it last?
+
+The line from the Federal Reserve continues to be that any inflation will be transitory. There is widespread concern in the business community that that may not be the case. If you have listened to executives on recent corporate earnings calls, over and over, they have sounded the alarm about inflation. They say they have managed to keep prices down over the past year by hedging their commodity costs, but adding that they may need to raise prices. With the PPI showing commodity prices soaring, how long will it be before those costs get passed on to the consumer?
+
+Looking at the PPI data, it’s hard to escape the conclusion that inflation may already be upon us, and that final costs could begin rising further in response to the dramatic spike in intermediate costs.
+
+How long will it last? Any number of factors could answer that, including how much stimulus continues to come from the government, and whether supplies of everything from chips to workers will catch up with demand from consumers and businesses.
+
+I don’t believe in fighting the Fed. And I don’t want to get out of the markets. But I do feel like any risk-balanced approach to investing in the current environment has to account for the possibility that inflation is already upon us, and may be embedded in the economy more deeply than the CPI would suggest.

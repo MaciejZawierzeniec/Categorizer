@@ -1,0 +1,1124 @@
+Examining the Examiners:
+Students’ Privacy and Security Perceptions of Online Proctoring Services∗
+David G. Balash‡
+, Dongkun Kim‡
+, Darika Shaibekova‡
+Rahel A. Fainchtein§
+, Micah Sherr§
+, and Adam J. Aviv‡
+‡ The George Washington University, § Georgetown University
+Abstract
+In response to the Covid-19 pandemic, educational institutions quickly transitioned to remote learning. The problem of
+how to perform student assessment in an online environment
+has become increasingly relevant, leading many institutions
+and educators to turn to online proctoring services to administer remote exams. These services employ various student
+monitoring methods to curb cheating, including restricted
+(“lockdown”) browser modes, video/screen monitoring, local network traffic analysis, and eye tracking. In this paper,
+we explore the security and privacy perceptions of the student test-takers being proctored. We analyze user reviews
+of proctoring services’ browser extensions and subsequently
+perform an online survey (n = 102). Our findings indicate
+that participants are concerned about both the amount and
+the personal nature of the information shared with the exam
+proctoring companies. However, many participants also recognize a trade-off between pandemic safety concerns and the
+arguably invasive means by which proctoring services ensure
+exam integrity. Our findings also suggest that institutional
+power dynamics and students’ trust in their institutions may
+dissuade students’ opposition to remote proctoring.
+1 Introduction
+In the past decade colleges and universities have steadily expanded online course offerings [19]. The Covid-19 pandemic
+has significantly accelerated that pace, as in-person classes
+were quickly replaced with virtual instruction [2]. With the
+increase in online education, academic integrity issues surrounding how students complete online exams led many educators to utilize remote proctoring services [7].1 A 2020
+EDUCAUSE poll found that more than half of higher educa-
+∗This is an extended version of a paper that appears at the 17th Symposium
+on Usable Privacy and Security (SOUP’21).
+1Remote proctoring services are sometimes called online proctoring services, or more simply, online proctoring. We use these terms interchangeably
+in this paper.
+tion institutions use remote proctoring services and another
+23% are either planning for or considering their use [9].
+Remote proctoring services are offered by a number of companies, including popular vendors such as Respondus [29],
+Proctorio [25], and ProctorU [26]. Many remote proctoring
+services require students to install a browser extension that
+“locks down” their browser, preventing navigation to other
+sites during exam time. However, more invasive monitoring
+may also include webcams, screen sharing, the use of a live
+(human) proctor, and even automated monitoring techniques
+such as eye tracking and network traffic analysis.
+There is evidence of higher rates of academic integrity violations for online exams [18, 22], and some argue that online
+proctoring is an effective tool to curb cheating [14]. However, this can come at the expense of increased test anxiety
+and diminished student performance [6]. Importantly, the
+privacy policies and practices of these services, and of online
+education, generally, significantly impact students and their
+privacy rights [4]. While concerns over the privacy and the
+ethics of online exam proctoring have led several institutions
+(cf. [1, 17]) to discontinue their contracts with online proctoring services, there is little research on the privacy perceptions
+and understandings of the student test-takers who undergo
+remote proctoring. In this paper we endeavor to answer the
+following research questions about privacy in the setting of
+online proctoring services:
+RQ1 What are students’ perceptions and understandings of
+online proctoring services?
+RQ2 What are students’ privacy concerns regarding the use
+of online proctoring software?
+RQ3 What are students’ security concerns regarding the use
+of online proctoring software?
+We first reviewed eight online proctoring services’ Chrome
+browser extensions. Based on the number of user reviews,
+we observed explosive growth of online proctoring since the
+start of the Covid-19 pandemic (720 %). Qualitative analysis
+of the user reviews revealed a number of privacy concerns,
+including providing personal identifiable information to verify
+students’ identities, live-proctors viewing webcams, local
+network monitoring, and screen sharing.
+We subsequently developed an online survey to further
+explore privacy issues with n = 102 student participants who
+took an online proctored exam. Only 39 % of participants
+agreed or strongly agreed that they prefer an online proctored
+exam, and participants expressed many of the same privacy
+concerns as found in user reviews, particularly around the
+process of identity verification. They also expressed concern
+for installing proctoring software. A little more than half were
+at least somewhat, moderately or extremely concerned about
+installing proctoring software on their personal computers,
+and 52 % agreed or strongly agreed that exam proctoring was
+too privacy invasive. Participants were more comfortable
+with lockdown browsers, keyboard restrictions and even a
+live proctor while being monitored but expressed discomfort
+with screen, webcam or microphone recording. They were
+least comfortable with browser history monitoring.
+Despite concerns, many participants noted a privacy-benefit
+trade-off in their qualitative responses, recognizing that taking exams online was more convenient and safe during the
+Covid-19 pandemic. At the same time, many participants also
+indicated that they did not believe online proctoring prevents
+academic dishonesty: 61 % noted that they agreed or strongly
+agreed that they could still cheat (if they wanted to).
+We also found that power dynamics shaped students’ perceptions of online proctoring. Students reported that for 97 %
+of remotely proctored exams, the proctoring was required by
+their instructor or institution. The obligatory monitoring and
+its backing by academic institutions may explain why many
+participants are able to contextualize their privacy exposure.
+Some participants noted that their trust in the proctoring services was due in part to their belief that their institution would
+not harm their security or privacy.
+Given our findings, we present a number of recommendations for educators. These include acknowledging students’
+concerns regarding remote proctoring services, better communicating the privacy and security implications of using
+these services, presenting a clear rationale for using the selected proctoring system, providing some form of consent
+and notice to students before online proctored exams, and
+providing clear instructions and/or assistance in removing
+invasive monitoring software following an exam.
+2 Background and Related Work
+Online exam proctoring services enable students to complete
+an exam (or other coursework) online while being proctored
+remotely. When taking an online exam, students may be
+required to install software to assist in confirming their identity, monitoring their behavior, and preventing their access
+to unauthorized resources. Monitoring may include the use
+of the webcam and microphone, sharing computer screens,
+monitoring the network, eye tracking, or other behavioral
+tracking. Some services use a live (human) proctor to observe
+the student. While there are other mechanisms for remote examination, such as taking an exam using video conferencing
+(e.g., Zoom), this study is focused on remote online proctoring services that provide a more comprehensive observation
+using browser plugins and/or standalone software, as well as
+student identify verification. Herein, when we refer to “online exam proctoring” or an “online proctored exam” we are
+specifically referring to services as described above.
+Despite considerable media attention [11, 13, 23, 31], student perceptions of online proctoring services have been understudied. We identified one recent study by Kharbat and
+Abu Daabes which finds high levels of privacy concerns in
+the UAE when using online proctoring systems [16]; we find
+similar results. However, unlike Kharbat and Abu Daabes,
+we focus on participants’ security and privacy concerns, and
+how they compare with the risks we identified through our
+own analysis of these tools. A recent manuscript by Cohney
+et al. explores privacy risks of online proctoring services [4]
+but instead focuses on perceptions of university administrators
+and faculty; we focus on the student perspective.
+Cheating during online exams has been investigated, with
+sometimes contradictory findings. Watson and Sottile found
+that students indicated they would be 4x more likely to
+cheat in online classes, but more readily during in-person
+exams [32]. Lanier compared rates of academic dishonesty at
+a university that offered both online and in-person learning,
+finding more cheating in the online courses [18]. However,
+Grijalva et al. found that the rate of cheating in online classes
+resembles that of traditionally proctored exams [10].
+Hylton et al. examined whether webcam-based monitoring had a deterrent effect [14]. They found no statistically
+significant difference in exam scores between students who
+were and were not monitored, but report that non-proctored
+students took longer to complete exams and perceived they
+had more opportunity to cheat. Similarly, Rios and Liu also
+found little difference in exam performance on low-stakes exams, suggesting that rates of cheating are also similar between
+low-stakes proctored and non-proctored exams [30].
+In contrast, Daffin and Jones found that student performance was generally 10-20% higher on online psychology
+exams that did not use online proctoring services [6]. Goedl
+and Malla also found that student performance was significantly greater without online proctoring. However, like Hylton et al., they found students consistently took less time to
+complete their exams when proctored [8]. In these studies,
+it is unclear whether the differences in completion time and
+performance were due to (1) the online proctoring acting as
+a deterrent to curb cheating that would otherwise result in
+higher test scores or (2) a psychological effect of the presence
+of the remote monitoring. Woldeab and Brothen addressed
+this more specifically and found that for students with trait
+test anxiety, exam-time stress was more closely correlated
+with poorer performance in online proctored exams [33].
+Star Rating
+0
+0.8
+1.6
+2.4
+3.2
+4
+Cumulative Number of Reviews
+0
+300
+600
+900
+1200
+1500
+1800
+2100
+2400
+2700
+3000
+Month
+Feb 18
+Apr 18
+Jun 18
+Aug 18
+Oct 18
+Dec 18
+Feb 19
+Apr 19
+Jun 19
+Aug 19
+Oct 19
+Dec 19
+Feb 20
+Apr 20
+Jun 20
+Aug 20
+Oct 20
+Dec 20
+Cumulative Number of Reviews
+Average Star Rating Overall
+Average Star Rating per Month
+Figure 1: Number of Chrome Web Store reviews and star
+ratings for exam proctoring browser extensions (n = 8).
+In two recent opinion articles, Coghlan et al. highlight ethical considerations when integrating machine learning and
+artificial intelligence techniques into online proctoring services [3], and Swauger opines that the algorithms that underpin online monitoring have been shown to “[reinforce]
+white supremacy, sexism, ableism, and transphobia” and that
+proctoring services inherit these traits [31]. These types of
+concerns, particularly those of online proctors’ inadequate
+accessibility and protection of student privacy, have led to
+the cancellation or discontinuation of contracts with online
+proctoring vendors at the University of Illinois [17] and the
+University of California, Berkeley [1].
+3 Browser Extension and Privacy Policies
+As an initial investigation into online proctoring services, we
+conducted a study of Chrome Web Store reviews of online
+proctoring services’ browser extensions. These extensions are
+often required to be installed as a prerequisite to taking online
+proctored exams. We analyzed user reviews from the Chrome
+Web Store posted between October 2015 and December 2020
+for eight browser extensions. We also analyzed the privacy
+policies of 25 proctoring services, as reported on their websites with respect to the kinds of information collection and
+monitoring practices. This analysis informs the development
+of the online survey discussed in Section 4.
+Growth in Online Proctoring We first analyzed the number of reviews over time, dating back to January 2018. (See
+Figure 1.) While there is a steady rise in the number of reviews, starting in January 2020 (the beginning of the Covid-19
+pandemic) the growth in reviews greatly increased. By the
+end of 2020, exam proctoring browser extensions experienced
+an 8.2x (720 %) increase in the number of reviews, totaling
+2,348 reviews. In the prior two years (2018, 2019), only
+292 reviews appeared on the web store, strongly suggesting
+Table 1: The number of results found for each URL match
+pattern in the Honorlock browser extension manifest file.
+To obtain this data we used the Google site operator (e.g.,
+site:http://*/courses/*/quizzes/*) in February 2021.
+Pattern Matching URLs
+http://*/courses/*/quizzes/* 8
+https://*/courses/*/quizzes/* 99,300
+http://*/courses/*/quizzes/*/take?user_id=* 8
+https://*/courses/*/quizzes/*/take?user_id=* 8
+https://*/courses/*/quizzes* 9
+*://*/d2l/lms/quizzing/* 8
+*://*/webapps/assessment/* 316,000
+*://*/ultra/courses/* 9
+http://*/courses/*/quizzes 183,000
+https://*/courses/*/quizzes 240,000
+http://*/courses/*/quizzes/*/take 9
+http://*/courses/*/quizzes/*/take/questions/* 8
+https://*/courses/*/quizzes/*/take 231,000
+https://*/courses/*/quizzes/*/take/questions/* 8
+*://*/webapps/assessment/* 316,000
+*://*/d2l/lms/quizzing/* 8
+Total Matches 1,385,383
+Table 2: Permission access of browser extensions.
+ConductExam
+Honorlock
+IRIS
+Mercer Mettl
+ProctorExam
+Proctorio
+ProctorU
+PSI Online
+Active Tab # # # # # # #
+All Urls # # # # #
+Browsing Data # # # # # #
+Clipbrd. Read # # # # # # #
+Clipbrd Write # # # # # #
+Content Settings # # # # # # #
+Context Menus # # # # # #
+Cookies # # # # # #
+Desktop Capture # #
+Downloads # # # # # # #
+Geolocation # # # # # # #
+History # # # # # # # #
+Management # # # # # #
+Native Messaging # # # # # # #
+Notifications # # # # # #
+Power # # # # # # #
+Privacy # # # # # #
+Proxy # # # # # # #
+Storage # # # # #
+System CPU # # # # # #
+System Display # # #
+System Mem. # # # # # #
+System Storage # # # # # #
+Tab Capture # # # # # # #
+Tabs # #
+Text-to-Speech # # # # # # #
+Unlmted. Storage # # # # # #
+Web Nav. # # # # # #
+Web Req. # # # # # #
+Web Req. Blocking # # # # # # #
+that the Covid-19 pandemic has led to a large expansion of
+students who are taking remotely proctored exams. This confirms a recent poll by Grajek that found that more than half of
+colleges and universities make use of online proctoring [9].
+Interestingly, as shown in Figure 1, there is a noticeable
+decline in the average star rating that coincides with the start
+of the pandemic (and the growth in popularity of online proctoring services). Remarkably, by the end of 2020, the average
+rating fell to just 1.02 (the lowest possible rating is 1).
+Analysis of Reviews We analyzed a total of 613 reviews
+that were written between August 2015 and October 2020 for
+the browser extensions offered by ConductExam [5], Honorlock [12], IRIS [15], Mercer Mettl [21], ProctorExam [24],
+Proctorio [25], ProctorU [26] and PSI Online [27]. A primary
+coder crafted a codebook by coding a random sample of (up
+to) 100 reviews per extension. (Some extensions had fewer
+than 100 reviews.) Using the codebook, a secondary coder
+coded all reviews over several rounds, providing feedback
+on the codebook and iterating with the primary coder until
+inter-coder agreement was reached (Cohen’s κ > 0.7).
+We find that 83 % (n = 510) of users shared negative reviews. For instance, a user stated, “Just an absolute nightmare
+to use,” and, “It is a small wonder how they convinced all
+these companies to use it for their online exams.” The most
+prevalent concern was the 55 % (n = 335) who mentioned
+concerns about their privacy. For example, “I’m not letting
+some random person have control over facial recognition of
+me and scan the inside of my home.” A number of reviews
+noted positive experiences (n = 73; 12 %), e.g., “It has gotten the job done, and I have never had any problems with
+it.” A few reviews (n = 60; 10 %) mentioned that the use of
+proctoring services was required by their institution.
+Monitoring Techniques and Scope We also extracted
+manifest files from each extension, which describe the permissions (or access level) for the extension and on which web
+pages the extension is active. Pages on which the extension
+is active are indicated by a list of URL match patterns, with
+* indicating a wild card. We found that the extensions’ URL
+matching can be quite broad. For example, in Table 1, we report the number of Google search results that match each URL
+pattern specified by Honorlock’s browser extension. These
+URL patterns match a wide variety of URLs, most likely
+associated with online course content hosted through Blackboard2 or Canvas.3 However, generic URL patterns can match
+other URLs (e.g., any URL that has /courses/ followed by
+/quizzes/), activating the browser extension regardless of
+whether the student is taking an exam.
+This can be problematic for student privacy, beyond the
+duration of the exam, as these browser extensions request
+many browser permissions in order to conduct monitoring. Table 2 reports the permission requests for the eight proctoring
+browser extensions. All but two extensions request multiple
+permissions. ProctorU and Proctorio request the most, with
+Proctorio requesting 22 different permissions, which could
+be active when visiting any page matching a URL pattern.
+Privacy Policies In addition to viewing permissions in the
+manifest file, we also reviewed the privacy policies of 25
+exam proctoring services. See Question Q6 for a full list;
+not all had browser extensions in the web store. Figure 2
+presents the number of exam proctoring services (x-axis)
+that disclose certain data collection practices (y-axis). All 25
+discuss setting cookies, collecting IP addresses, and accessing
+the webcam, and all but one note access to a photo ID to verify
+identity. Many policies also mention that the software will
+request access to the microphone, screen recordings, or collect
+other kinds of biometric information. Notably, 18 state that
+they share information with third parties.
+2https://www.blackboard.com
+3https://www.instructure.com/canvas
+Cookies
+IP Address
+WebCam Access
+Photo ID / Driver's License
+Web Browser Type
+Microphone Access
+Biometric Info
+Screen Recording
+Share Data w/ Third Party
+Phone Number
+Operating System
+Residential Address
+Internet Service Provider
+0 5 10 15 20 25
+5
+11
+13
+15
+18
+19
+20
+21
+21
+24
+25
+25
+25
+Figure 2: Data collection disclosed by exam proctoring services in their privacy policies (n = 25).
+4 Survey Methodology
+We conducted an online survey to evaluate the security and
+privacy concerns of student test-takers who are remotely proctored. The design of our study is informed by our preliminary
+analysis of the browser extensions and the privacy policies
+(see Section 3), and in what follows, we describe the survey’s procedures, recruitment, limitations, and ethics. Survey
+results are presented in Section 5.
+4.1 Study Procedure
+To ensure that participants had taken at least one online proctored exam, we used a two-part structure with an initial screening survey in which qualified participants were then asked to
+participate in the main study. The full text of the screening
+survey and main study can be respectively found in Appendices A.1 and A.2.
+Screening Survey We used the following two inclusion
+criteria to screen participants for the main study: (1) the
+participant is familiar with online exam proctoring and (2) the
+participant has taken an online proctored exam.
+In the screening survey we also asked participants to describe their overall experience taking online proctored exams
+and to provide demographic information such as age, identified gender, education, and technical background. Participants
+also answered the Internet Users’ Information Privacy Concerns (IUIPC) questionnaire [20] to provide insights into their
+privacy concerns.
+Main Study The main study consisted of the following:
+1. Informed Consent: Participants were asked to consent to
+the study. The consent included that participants would
+answer questions about their awareness and concerns
+about online exam proctoring services.
+2. Awareness and Exposure: Participants were asked to
+report their experiences with online exam proctoring,
+including the number of exams taken, the nature of
+the exams, the proctoring service(s) used, and if they
+were required to take the exam. Participants were also
+asked if the online proctoring service provided any necessary accommodations or other modifications based on
+their needs as a test taker, and if they experienced any
+technical difficulties during the exam. These questions
+were informed by the browser extension reviews. Questions: Q1-Q17.
+3. Proctoring Methods: Next, participants were asked about
+their level of comfort with specific monitoring methods used by proctoring services, such as eye movement
+tracking, video monitoring, and internet activity monitoring, and if these monitoring methods were necessary.
+The list of these methods were informed by the analysis
+of the browser extensions and privacy policies. Questions: Q17-Q28.
+4. Proctoring Effectiveness: To determine the perceived
+effectiveness of online exam proctoring we asked if participants were less likely to cheat and if they believed
+it is still possible to cheat on an exam even with the
+monitoring methods employed by online exam proctoring services. Additionally, participants were asked
+if they had been accused of cheating by exam proctoring software and, if so, which specific methods such as
+eye movement tracking, screen recording, or internet
+activity monitoring was used to detect cheating. Participants could choose to not answer these questions.
+Questions: Q29-Q33.
+5. Privacy Concerns: Participants were asked to evaluate
+their concern regarding sharing information with online
+exam proctoring companies, whether the proctoring service was a reasonable trade-off between personal privacy
+and the integrity of the exam, and whether online exam
+proctoring was a good solution for monitoring remote
+examinations. Questions: Q34-Q39.
+6. Proctoring Software: Finally, participants were asked
+about the installation of exam proctoring software, what
+the software did, and their level of concern about the
+software. Questions: Q40-Q50.
+4.2 Recruitment and Demographics
+We initially recruited 27 participants by posting an advertisement on Reddit via the subreddit SampleSize4 between
+November 14, 2020 and December 2, 2020. Note that participants recruited via Reddit did not take the screening survey,
+but rather the pre-survey questions were included in the main
+study. We excluded responses that did not meet the screening
+criteria.
+We were not able to find a sufficiently large sample on
+Reddit, and so we recruited additional participants on Prolific5
+between December 18, 2020 and December 28, 2020. As a
+4https://www.reddit.com/r/SampleSize
+5https://www.prolific.co
+Table 3: Demographic and IUIPC data collected at the end
+of the screening survey.
+Screening Main Study
+(n = 178) (n = 102)
+Gender
+n % n %
+Woman 85 48 47 46
+Man 85 48 52 51
+Non-binary 7 4 2 2
+No answer 1 1 1 1
+Age
+18–24 124 70 73 72
+25–34 39 22 22 22
+35–44 9 5 5 5
+45–54 4 2 2 2
+55+ 2 1 0 0
+IUIPC
+Avg. SD Avg. SD
+Control 5.9 0.8 6.0 0.8
+Awareness 6.5 0.6 6.5 0.6
+Collection 5.7 1.0 5.7 1.1
+IUIPC Combined 6.0 0.6 6.0 0.7
+part of the screening survey we recruited 150 participants.
+Using their ProlificIDs, we re-recruited 75 of the participants
+who met the criteria for participation in the main study.
+Participants who completed the Reddit survey were given
+the opportunity to enter a drawing for a $50 USD Amazon
+gift card with a 1 in 27 chance of winning. On average, it
+took 27.2 minutes (SD=24.5) to complete the Reddit survey.
+Participants who completed the screening survey received
+$0.50 USD. On average, it took 4.2 minutes (SD=2.7) to
+complete the screening survey and 15 minutes (SD=7.1) to
+complete the main study. Participants who completed the
+main study received $3.50 USD.
+Seventy-two percent of main study participants were between 18–24 years old, 22 % were between 25–34 years old,
+and 7 % were 35 years or older. The identified gender distribution for the main study was 51 % men, 46 % women, and
+3 % non-binary or did not disclose gender. Participant characteristics are presented in Table 3, and additional demographic
+information can be found in Appendix B. In total, n = 102
+participants were recruited for the main study.
+4.3 Ethical Considerations and Limitations
+The study protocol was approved by our Institutional Review
+Board (IRB) with approval number REDACTED, and all collected data is associated with random identifiers. Throughout
+this process we considered that many participants may not
+want to share their perceptions of whether proctoring services
+are effective at preventing academic dishonesty, and so we
+made those questions optional.
+Our study is limited in its recruitment, particularly to Prolific and Reddit users residing in the U.S. We cannot claim
+full generalizability of the results. Despite this limitation,
+prior work [28] suggests that online studies about privacy and
+Prefer online proct.. Q12
+Less likely to cheat. Q29
+Could still cheat. Q30
+Sharing info concern. Q34
+Proctoring privacy inv. Q36
+Privacy tradeoff. Q37
+Collected info concern. Q38
+Good audit tool. Q39
+0% 25% 50% 75% 100%
+Strongly disagree Disagree
+Neither agree nor disagree Agree
+Strongly agree Prefer not to answer
+Figure 3: Impressions of online proctoring services.
+security behavior can approximate behaviors of populations.
+We are also limited by the fact that this study relies on
+self-reported behavior. We cannot verify that the participants
+actually experienced an online proctored exam, which is why
+we used a screening survey. Finally, responses can suffer from
+social desirability and response bias, leading participants to
+over describe their awareness of online exam proctoring as
+they may believe that this is the expectation of the researchers.
+Such biases may be most present when participants indicate
+concerns and indicate they are less likely to cheat on an exam.
+5 Results
+We organize our results according to our research questions.
+We first present our findings concerning participants’ perceptions and understanding of online exam proctoring (RQ1),
+and then describe participants’ privacy concerns regarding
+online exam proctoring (RQ2). Finally, we discuss participants’ understanding of exam proctoring software and their
+concerns about such software (RQ3).
+For all qualitative findings, we used a pair of primary coders
+from the research team, each of whom crafted a codebook
+and identified descriptive themes by coding each question.
+A secondary coder coded a 20 % sub-sample from each of
+the free-response questions over several rounds, providing
+feedback on the codebook and iterating with the primary coder
+until inter-coder agreement was reached (Cohen’s κ > 0.7).
+5.1 RQ1: Perceptions and Understanding
+As part of RQ1, we seek to measure (1) student perceptions of
+online proctoring and (2) their understanding of the methods
+used by online proctoring services to monitor exams.
+Experience with Exam Proctoring Nearly half (n = 49;
+48 %) of respondents had taken five or more online proctored
+Prefer online proct.. Q12
+Less likely to cheat. Q29
+Could still cheat. Q30
+Sharing info concern. Q34
+Proctoring privacy inv. Q36
+Privacy tradeoff. Q37
+Collected info concern. Q38
+Good audit tool. Q39
+0% 25% 50% 75% 100%
+Strongly disagree Disagree
+Neither agree nor disagree Agree
+Strongly agree Prefer not to answer
+Figure 4: Encountered exam requirements.
+exams, 38 % (n = 39) had taken between two to four (inclusive), and a mere 14 % (n = 14) of participants had only taken
+a single online-proctored test (Q1). The online proctoring service Respondus was the most used (n = 20; 20 %), followed
+by Proctorio (n = 13; 13 %), and ProctorU (n = 10; 10 %)
+(Q6) (see Figure 10 in Appendix B). This generally conforms to the survey conducted by EDUCAUSE [9]. The most
+common exam proctoring methods used to monitor study
+participants included: lockdown browser (n = 71; 70 %), webcam recording (n = 65; 64 %), screen recording (n = 61;
+60 %), live proctor (n = 60; 60 %), and microphone recording
+(n = 51; 50 %) (Q23). (See Figure 5.)
+While most participants (n = 94; 92 %) reported that at
+least one of their online proctored exams was a course exam
+(e. g., test, midterm exam, final exam), many (n = 47; 46 %)
+had also used online exam proctoring for lower stakes course
+assessments such as quizzes (Q2). The most common subjects that were proctored included science (n = 24; 24 %),
+business (n = 17; 17 %), mathematics (n = 16; 16 %), computer science (n = 11; 11 %), and medicine (n = 9; 9 %).
+Many of the participants (n = 83; 81 %) took their most
+recent online proctored exam in the year 2020 during Covid19, and most were in the last half of 2020: December (n = 39;
+47 %), November, (n = 16; 19 %), and October (n = 8; 10 %)
+(Q4). This matches the explosive growth in browser reviews
+described in Section 3.
+Requirement to Use Online Proctoring Nearly all participants were required to use an online proctoring service: 97 %
+of subjects (n = 99) noted they had been required to take an
+exam using online proctoring services (Q7) by an authority
+at their university. When asked who had required them to
+take an online proctored exam (Q8), 70 % (n = 68) of respondents indicated their class instructor, followed by 23 %
+(n = 22) who reported that online proctoring was required by
+their university. Only 7 % (n = 7) of participants indicated
+their requirement to use online proctoring had stemmed from
+Lockdown Browser
+Webcam Rec.
+Screen Rec.
+Live Proctor
+Microphone Rec.
+Internet Monitoring
+Eye Tracking
+Face Detection
+Mouse Tracking
+Keyboard Restr
+Browser Hist.
+0 20 40 60 80
+27
+28
+33
+37
+38
+39
+51
+60
+61
+65
+71
+Figure 5: Prevalence of monitoring types (Q23).
+having taken a standardized test.
+Preference for/against Online Proctoring A majority of
+participants (n = 58; 56 %) prefer traditional exam formats,
+but others (n = 30; 30 %) preferred online proctored exams
+(Q12; Figure 3). Still, half (n = 51; 50 %) stated that they
+agree (n = 36; 35 %) or strongly agree (n = 15; 15 %) that
+online exam proctoring is a good solution for monitoring
+remote exams (Q39). We asked participants to qualitatively
+explain some of the benefits of using online exam proctoring
+(Q10): 42 % (n = 43) highlighted that they prevent cheating,
+e.g., “It effectively prevents cheating so students abilities
+can be graded accurately” (P51); and 29 % (n = 30) liked
+taking exams remotely, e.g., “You don’t have to leave your
+house to take the exam” (P102). Some participants (n = 5;
+5 %) specifically mentioned the social distancing during the
+Covid-19 pandemic, e.g., “It was a good way to still be able
+to take exams securely while distance learning because of
+COVID-19” (P35). Other participants (n = 12; 12 %) liked
+the flexibility, e.g., “It is a bit nicer to be able to take the exam
+at a different time that works best for me” (P3).
+To explore the factors that may drive a preference for or
+against taking an online proctored exam, we performed an
+ordinal logistic regression. For the outcome variable, we
+used the Likert response to Q12, preference for online exam
+proctoring over traditional exam formats. The factors we
+considered were participant responses to questions about the
+number of exams taken, awareness of monitoring methods,
+concern about the amount of information collected, general
+privacy perceptions, privacy trade-off, online exams as a good
+solution, discomfort with monitoring methods, and concern
+about sharing information. Each of the considered factors
+was converted to a binary variable, using the appropriate
+Likert values as bins. Table 6 in Appendix B presents the full
+regression table.
+We find that those that agree or strongly agree that online
+proctoring is a good solution for remote examination were
+3.66x more likely to have a higher preference for online exams
+(b = 1.30,OR = 3.66, p = 0.01). A lack of privacy concerns
+also played a role: those that either disagree or strongly disagree that online proctored exams are privacy invasive were
+at a significantly increased likelihood of preferring online
+proctored exams (b = 2.21,OR = 9.10, p < 0.001). Surprisingly, if participants disagree or strongly disagree that they
+are concerned about the amount of information being collected, they are 5.8x less likely to prefer online exams (b =
+−1.76,OR = 0.17, p = 0.03). At the same time, participants
+who noted that they are uncomfortable or very uncomfortable
+with observation methods during exams were 2.6x less likely
+to prefer online exams (b = −0.95,OR = 0.39.p = 0.05).
+The above suggests that while privacy concerns play a role
+in students’ preference for online proctoring, concerns about
+data collection may not resonate as a privacy concern. Instead, concern about monitoring methods, as we discuss in
+Section 5.2, appear to be of higher consequence for participants.
+Preventing Cheating Online exam proctoring is perceived
+as a deterrent to cheating. When asked if online exam proctoring makes it less likely for them to cheat, 63 % (n = 65)
+of participants agreed or strongly agreed, while only 26 %
+(n = 26) disagreed or strongly disagreed (Q29). However,
+60 % (n = 61) agreed or strongly agreed that it would still be
+possible for them to cheat during an online proctored exam,
+with only 29 % (n = 29) who disagreed or strongly disagreed
+(Q30).
+When asked to qualitatively explain their belief about the
+ability to cheat, 21 % (n = 21) responded that a second device such as a smartphone could be used, and 13 % (n = 13)
+reported that notes, cheat sheets, or other materials could be
+used to cheat. Others (n = 17; 17 %) explained that it was
+difficult to cheat. For example, P93 said, “I think that with
+so many sources being monitored on the student’s end, this
+would make it extremely difficult for them to cheat.” Only
+2 % of participants (n = 2) reported being accused of cheating
+by the exam proctoring software (Q32).
+Experiences with Monitoring When asked to described
+their overall experience being monitored during their exam
+(Q25), some participants (n = 26; 25 %) reported that being
+monitored was a negative experience. For example, P62 responded, “I felt uncomfortable because I do not like being
+watched,” and P64 stated,
+. . . it felt much more stressful than . . . taking an exam in
+a typical proctored environment. I feared that any little
+movement or sound may trigger the system and flag me
+for cheating. . .
+For a minority of participants (n = 18; 18 %), being monitored
+was a positive experience. For instance, P50 stated, “It was
+pretty good, I stayed focused on the test.”
+Table 1
+Very
+comfortable Comfortable
+Neither
+comfortable
+nor
+uncomfortabl
+e
+Uncomfortabl
+e
+Very
+uncomfortabl
+e
+Comfort with
+methods used
+to proctor
+online
+exam(s) (Q21) 16.67% 28.43% 17.65% 27.45% 9.80%
+0% 25% 50% 75% 100%
+Very comfortable Comfortable
+Neither comfortable nor uncomfortable Uncomfortable
+Very uncomfortable
+1
+Figure 6: General comfort with proctoring methods (Q22).
+However, other participants (n = 15; 15 %) had privacy
+concerns about being monitored, including P27 who shared,
+“It does feel uncomfortable to have my person and screen
+recorded via video, knowing that the recordings are saved for
+at least some period of time,” and P55 who noted, “Its [sic]
+terribly intrusive and not worth the possibility that students
+will cheat.”
+For some participants (n = 12; 12 %), being monitored was
+a distraction or caused increased stress that was detrimental
+to their exam performance. For example, P66 indicated, “It
+creates a very stressful environment that prevents me from
+working to the best of my abilities,” and P22 described it as
+“icky and uncomfortable” and that they felt like they “had to
+perform in a certain way because I didn’t know if someone
+was watching.”
+RQ1 Key Findings Many students took an onlineproctored exam in the wake of the Covid-19 pandemic, which
+corresponds to our analysis of browser extension reviews
+(Section 3). Participants predominantly did not take online
+proctored exams by choice but were rather required to do so
+by their instructors. By and large, participants have taken
+multiple exams with a remote proctor. At the same time,
+most respondents would prefer a traditional exam even while
+acknowledging that online exam proctoring is a good solution
+for remote exams. Those who think online proctoring is
+a good solution for remote examination as well as those
+who do not think proctored exams are privacy invasive are
+more likely to prefer online exam proctoring. We found
+that concern about data collection matters less than concern
+about monitoring methods when it comes to privacy and
+exam preference. Participants also largely believed that exam
+proctoring deters cheating, but most felt that it was still
+possible to cheat, particularly using a second device.
+5.2 RQ2: Privacy Concerns
+We next investigate students’ privacy concerns regarding online exam proctoring (RQ2).
+Comfort with Monitoring Methods When asked about
+their general comfort level with the methods used to proctor
+their exam (Q22), participants were slightly more comfortable
+overall (see Figure 6): 45 % (n = 46) were either comfortable
+or very comfortable with monitoring, while 37 % (n = 38)
+were either uncomfortable or very uncomfortable. (The remaining participants (n = 18; 18 %) were neither comfortable
+nor uncomfortable.)
+We also asked participants about their comfort with specific monitoring methods (Q28). Aggregated results are presented in Figure 7. To compare the comfort across monitoring methods, we additionally performed a Kruskal-Wallace
+H-test (H = 94.6, p < 0.001) which showed significant difference, and a post-hoc, pair-wise Mann-Whitney U test (with
+Holm-Sidek correction) indicated that those differences are
+dominant when comparing monitoring via lockdown browser
+(participants’ most comfortable monitoring method) and all
+other methods, except for live proctoring and keyboard restrictions. (See Table 7 in Appendix B.) In particular, there are
+significant differences with some of the most common monitoring methods: webcam recording, screen recordings, and
+microphone recordings. This suggests that some of the methods deemed most invasive are among those that are used most
+often, and this in turn may drive students’ privacy concerns.
+To explore the factors affecting monitoring comfort further,
+we performed an ordinal logistic regression with an outcome
+variable of the Likert response to Q22 (overall comfort with
+exam privacy) to reported comfort with individual proctoring
+methods, binning comfortable and very comfortable. The full
+regression table (Table 5) appears in Appendix B. We find that
+comfort with live proctoring (b = 1.20,OR = 3.31, p < 0.001)
+and webcam recordings (b = 1.96,OR = 7.08, p < 0.001) significantly increased the likelihood of being more comfortable
+with exam proctoring generally, suggesting that discomfort
+with these forms of observation is problematic for many students; both were commonly experienced, cf. Figure 5.
+Participants were also asked how necessary a given monitoring method is for online proctoring (see Figure 8). Again
+there is a significant difference (Kruskal-Wallace: H =
+92.9, p < 0.001), and a post-hoc analysis (see Table 8 in
+Appendix B) revealed that there are significant differences
+between lockdown browser (deemed most necessary) and
+live proctoring, microphone recording, browser history monitoring, keyboard restrictions, eye tracking and mouse tracking. There were no differences between the trio of lockdown
+browser, webcam and screen recording with respect to how
+necessary they are perceived to be for online proctoring. Webcam and screen recording were not (pair-wise) significantly
+different than live proctoring.
+Sharing Information Part of the process of taking an online proctored exam is to verify the identity of the exam taker.
+This process may involve proof of identification via physical documentation such as IDs and other forms of identity
+checks that may require students to provide sensitive information to online proctoring services. Students may also be
+required to create accounts on these services to facilitate
+that process, and we find that 44 % (n = 45) of study par-
+Table 1
+For each exam
+monitoring type
+please select how
+comfortable you
+feel about them.
+Q27
+Very comfortable Comfortable Neither
+comfortable nor
+uncomfortable
+Uncomfortable Very
+uncomfortable
+Lockdown
+Browser
+25% 29% 25% 15% 6%
+Keyboard Restr. 18% 28% 22% 20% 13%
+Live Proctor 21% 24% 13% 28% 15%
+Mouse Tracking 10% 27% 28% 16% 19%
+Screen Rec. 16% 18% 17% 25% 25%
+Webcam Rec. 10% 18% 16% 24% 33%
+Mic. Rec. 13% 13% 15% 25% 34%
+Browser Hist. 7% 17% 12% 27% 37%
+Eye Tracking 5% 13% 12% 30% 40%
+Lockdown Browser
+Keyboard Restr.
+Live Proctor
+Mouse Tracking
+Screen Rec.
+Webcam Rec.
+Mic. Rec.
+Browser Hist.
+Eye Tracking
+0% 25% 50% 75% 100%
+Very comfortable Comfortable
+Neither comfortable nor uncomfortable Uncomfortable
+Very uncomfortable
+1
+Figure 7: Comfort with monitoring types (Q28).
+Lockdown Browser
+Webcam Rec.
+Screen Rec.
+Live Proctor
+Microphone Rec.
+Browser Hist.
+Keyboard Rest.
+Eye Tracking
+Mouse Tracking
+0% 25% 50% 75% 100%
+Almost Always Often Sometimes
+Seldom Never
+Figure 8: Necessity of monitoring types (Q27).
+ticipants were required to do just that (Q18). Participants
+also reported that many forms of personal information were
+required during account creation and before taking an exam,
+such as full name (n = 56; 55 %), student ID number (n = 52;
+51 %), email address (n = 51; 50 %), educational institution
+(n = 39; 38 %), birth date (n = 29; 28 %), phone number
+(n = 19; 19 %), residential address (n = 16; 16 %), driver’s
+licence number (n = 10; 10 %), and social security number
+(n = 7; 7 %) (Q19; see Figure 11 in Appendix B). For some
+participants, physical documentation was required; these included student IDs (n = 56; 55 %), driver’s licenses (n = 32;
+31 %), and passports (n = 7; 7 %) (Q20; see Figure 12 in
+Appendix B). When asked if they were concerned about
+sharing this kind of information with online exam proctoring
+companies, most participants (n = 62; 61 %) agreed (n = 38;
+37 %) or strongly agreed (n = 24; 24 %) (Q34). Of those who
+responded with concerns (Q35), being uncomfortable sharing personal information was the most common explanation
+(n = 28; 27 %). For instance, P91 shared, “I feel uneasy that
+in order to take an exam, I have to share personal information,”
+and P45 said, “I understand that if I opt to take a test online it
+needs to be fairly taken, but that doesn’t mean I should open
+up these proctoring companies up to my home. . . ”
+Data collection was also a concern for some participants
+(n = 17; 17 %). For example P101 responded, “I am not sure
+what they will do with my information and how long they will
+store/keep my information,” and P58 shared, “For things like
+recording my computer, or accessing my browser history, I
+feel like that could invite abuse that go beyond simply making
+sure I’m honestly taking an exam. . . ” Other participants (n =
+28; 27 %) had no concerns about sharing information with
+exam proctoring services, such as P53, who said, “I’m not
+anymore [sic] worried about it than I am sharing my info with
+the school,” and P48, who said, “I feel since it was required
+by my school it is a safe place to share information.”
+Privacy Trade-off When asked if they thought online exam
+proctoring was too privacy invasive, 52 % (n = 53) of study
+participants agreed (n = 25; 25 %) or strongly agreed (n = 28;
+27 %) that it was too privacy invasive (Q36). There was a
+split between those who agreed that online exam proctoring
+offered a reasonable trade-off between personal privacy and
+exam integrity and those who disagreed (Q37). Forty-one
+percent (n = 42) of participants agreed (n = 30; 29 %) or
+strongly agreed (n = 21; 21 %) while 39 % (n = 39) of participants disagreed (n = 24; 24 %) or strongly disagreed (n = 15;
+15 %). We also find evidence of split opinions regarding online proctoring in the qualitative results. In response to Q11,
+n = 11 (11 %) of participants reported that there was a tradeoff between privacy and academic integrity. For example,
+P41 noted, “I think it is a valid reason to use online exam
+proctoring . . . during this time pandemic. . . . I can understand
+giving up some privacy to ensure integrity of exam results.”
+Participants also reported being concerned about the
+amount of information that online proctoring services collect during the exam (Q38). Fifty-seven percent (n = 58) of
+participants agreed (n = 33; 32 %) or strongly agreed (n = 25;
+25 %), while 26 % (n = 26) of participants disagreed (n = 21;
+21 %) or strongly disagreed (n = 5; 5 %). We again see similar results in qualitative responses in Q11: 59 % (n = 60)
+reported a privacy concern, with concerns about webcam access being the most common (n = 27; 26 %). For example,
+P65 reported, “I believe that online exams can be invasive,
+as at least mine required both a webcam and microphone, so
+they could see me and my room and hear my surroundings,”
+and P36 responded:
+. . . Unlike in-class proctoring, students must be filmed in
+their homes . . . The view is also on the student 100 % of
+the time so the student cannot relax and has their entire
+body language and quirks on display. It is a breach of
+privacy without enough benefit to justify it.
+Some participants (n = 6; 6 %) had concerns about relinquishing control of their computing devices to the exam proc-
+toring services, e.g., “It is a little scary about how much they
+can access and control your device” (P101). Sharing of personal information was a concern for participants (n = 6; 6 %),
+such as P39, who noted, “It does make me a little uncomfortable that there is a 3rd party company that may have my
+personal identification and see into my room.” Still other participants (n = 19; 19 %) reported that they had no privacy
+concerns, such as P69, who said, “I don’t see any huge issues
+with privacy in online exam proctoring,” and P51 who stated:
+I don’t mind that they can see my room and control my
+screen. They aren’t doing anything sinister, and I can
+revoke all permissions at the end of the exam.
+RQ2 Key Findings A majority of students found online
+exam proctoring to be privacy invasive, most citing concerns
+with the webcam and microphone recordings, which provides
+the means to view, listen, and record inside a student’s room.
+However, some students felt a trade-off between loss of personal privacy and exam integrity was reasonable.
+When considering privacy in the context of preventing academic dishonesty, participants had mixed reactions to the
+proctoring methods used. Lockdown browsers, webcams, and
+screen recordings were viewed as necessary for online exam
+proctoring compared to other methods, and these were also
+the most commonly used methods to observe students during
+an exam. However, only about a quarter of the respondents
+were comfortable with webcam or screen recording, while
+half were comfortable with lockdown browsers. Regression
+analysis indicated that comfort with live proctoring and webcam recordings drive comfort overall with monitoring. This
+suggests that there is a gap between the proctoring methods
+commonly used and the comfort level of students with those
+observation techniques.
+Students also create accounts and share significant information with online proctoring services to verify their identities.
+Services often require personal information, such as a student
+ID number, email address, phone number, and residential address, as well as images of physical documentation such as
+student IDs and driver’s licenses. Participants expressed concern about sharing this and other personal information with
+exam proctoring companies. They were also concerned about
+the overall quantity of information collected, what would be
+done with the information, and how long it would be stored.
+5.3 RQ3: Security Concerns
+Along with privacy concerns, the installation of specialized
+software to enable proctoring could lead to security issues,
+and as part of addressing RQ3, we surveyed participants about
+their experiences and concerns with proctoring software.
+Browser Extensions One way in which exam proctoring
+companies provide monitoring during an exam is by requiring students to install web browser extensions, as noted in
+0% 25% 50% 75% 100%
+Not at all concerned Slightly concerned
+Somewhat concerned Moderately concerned
+Extremely concerned
+Figure 9: Concern over installing proctoring software (Q49).
+Section 3. Most study participants (n = 65; 64 %) were required to install a web browser extension to take their exam
+(Q40). When we asked participants who installed a browser
+extension what they thought the extension did (Q41), they responded that the extension locked down their browser (n = 27;
+42 %), collected data (n = 8; 12 %), monitored network activity (n = 8; 12 %), initiated screen recording (n = 7; 11 %),
+disabled functionality on their device (n = 6; 9 %), and enabled their webcam (n = 6; 9 %) and microphone (n = 4;
+6 %).
+Proctorio (n = 13; 13 %) was the most common web
+browser extension installed by study participants, followed
+by ProctorU (n = 13; 13 %), and Honorlock (n = 13; 13 %)
+(Q42; Figure 13 in Appendix B). Significantly, only 45 %
+(n = 31) of participants who installed a web browser extension
+reported removing or disabling the extension after completing their exam (Q43). Given that many of these browser
+extensions have pervasive monitoring permissions that can
+be activated on a broad set of URLs (see Section 3), it is
+important that students remove these extensions; the failure
+of 45 % (n = 30) to do so suggests that installing this custom
+software may put students at risk beyond the exam.
+Standalone Software Another way in which exam proctoring companies provide monitoring during the examination is
+by requiring students to install standalone software, which we
+define as software that is installed as an application on their
+computer and is not a browser extension. Thirty-five percent
+(n = 36) of participants reported they were required to install
+exam proctoring software (not including a browser extension)
+(Q44). When we asked participants who installed exam proctoring software what they thought the software did (Q45),
+they responded that the proctoring software locked down their
+browser (n = 11; 31 %), disabled functionality on their device (n = 8; 22 %), monitored their activity (n = 7; 19 %),
+initiated screen recording (n = 3; 8 %), and enabled their webcam (n = 3; 8 %). Of the participants who installed exam
+software, most (n = 32; 89 %) said that they did uninstall the
+exam proctoring software after the exam was complete (Q44).
+Only one participant reported having issues uninstalling the
+exam proctoring software (Q44). Most participants (n = 88;
+86 %) said they had installed the exam software on their personal computer (Q44). When asked to report their concern
+for installing proctoring software (Figure 9), 52 % of participants (n = 52) specified that they were at least somewhat
+concerned (n = 20; 20 %), moderately concerned (n = 21;
+21 %), or even extremely concerned (n = 11; 11 %). In contrast, 48 % (n = 50) of participants were slightly concerned
+(n = 25; 24 %) or not at all concerned (n = 25; 24 %) (Q49).
+We asked participants to explain their concern, or lack of
+concern, regarding the installation of online exam software
+(Q49). Many participants (n = 49; 48 %) explained that they
+had privacy concerns. Some (n = 11; 11 %) replied that the
+software’s potential access to sensitive personal information
+was a concern; for instance, P32 said, “I am worried it will be
+able to access sensitive information,” and P38 reported, “It is
+my own computer which stores all of my information so that
+is a bit iffy.” A few participants (n = 6; 6 %) had concerns
+about data collection from their computer after the exam was
+completed, such as P52, who said, “I wonder if they continued
+collecting information after the exam,” and P102, who noted,
+“I don’t trust software that is designed to gather information
+about my activities to confine itself to being used only for
+exams.” Others (n = 11; 11 %) were unsure what information
+could be collected by the software; e.g., P69 and P34, who
+respectively stated “It’s unclear what all data it’s collecting
+and when it’s running,” and “I don’t know what information it
+was collecting or how it would be used.” Still others (n = 28;
+27 %) had no concerns about the software. A few (n = 5;
+5 %) stated they had no concerns because the exam privacy
+software was supported by their university. For instance, P40
+noted, “I believe the university would not use the proctoring
+service if their software was dangerous,” and P87 stated, “I
+know that my school and professors wouldn’t have me install
+anything that could harm my computer or invade my privacy.”
+RQ3 Key Findings The browser extension is the most common way in which exam proctoring tools access students
+computing devices. Students understand that these extensions
+are used both to surveil them and their devices during the
+exam and to disable functionality that would otherwise allow
+them to access unauthorized resources. Despite this knowledge, only a small number of students actually removed or
+disabled the extension after completing their exam, leaving
+permission-hungry software residing on their computers.
+Standalone software is also used for exam proctoring, and
+most students install this software on their own personal computers. Students are concerned about this software and say
+they worry that it may access personal information stored
+on their computers. Most students did uninstall this standalone software, an action that highlights and confirms their
+concerns.
+6 Recommendations and Conclusions
+Privacy Trade-offs During a Pandemic Given the necessary rapid transition to remote learning, many institutions and
+educators did not have sufficient time to restructure courses
+around alternative forms of learning and skills assessment.
+Content and exams that had originally been envisioned as inperson suddenly had to be delivered and proctored remotely,
+forcing institutions to seek solutions to a perceived exam integrity problem. Our results suggest that students understand
+that their educational institutions were struggling to maintain
+mandated safety protocols while continuing to provide academic rigor, as evidenced by the fact that a large number of
+study respondents (41 %) reported that online exam proctoring was a reasonable trade-off between personal privacy and
+exam integrity. A recurring theme in the qualitative responses
+was that giving up some personal privacy during the Covid-19
+pandemic to maintain safety protocols was a valid reason to
+accept the use of online proctoring services. This suggests
+that student acceptance of online exam monitoring is higher
+than it might otherwise be in a post-pandemic situation.
+At the same time, we find that a large percentage of students have significant concerns—e.g., sharing personal information with proctoring companies, the amount of information
+collected by these companies, and installing online exam
+proctoring software on their computers. When we consider
+these facts, it is clear that many students found their proctored
+exams to be privacy invasive and would prefer alternatives
+to online proctored exams. However, it is unclear if a postpandemic context will lead to increased student opposition
+to invasive monitoring or if students will have become accustomed to these proctoring tools and resigned to their use.
+Recommendation: Based on this study, we recommend that
+institutions and instructors both expand student choice by
+developing alternative forms of student assessment that can
+account for privacy concerns whenever practicable and plan
+to reduce future reliance on exam proctoring services after
+the Covid-19 pandemic.
+Necessary Type of Monitoring Many participants agreed
+that the ability to deter cheating during an exam is important,
+up to a point, after which they felt that monitoring goes from
+necessary to unnecessary and invasive. In fact, we find that
+the types of monitoring that students perceive as the most
+unnecessary are among those that they report are the most
+uncomfortable and invasive. For instance, a majority of students reported that they do not think it is necessary to monitor
+mouse movement, eye movement, or web browser history;
+correspondingly, a majority also reported being uncomfortable with the monitoring of their eye movement, web browser
+history, microphone, and webcam. These very monitoring
+types are those that students refer to most when they discuss how they feel that the online proctored exam can create
+a stressful environment, how they feel “watched,” and how
+they worry that any small sound or tiny movement—such as
+looking away from the screen briefly—could flag them for
+cheating. Students report that these additional stressors and
+anxieties distract them, reduce their focus, and prevent them
+from performing to the best of their abilities. This level of
+monitoring assumes cheating and pre-penalizes all students
+with additional stress and anxiety whether they were planning
+to be honest or dishonest.
+Our work suggests that even though technologically advanced invigilation techniques are available, such as 360-
+degree room scans and eye movement tracking, it does not
+mean that they are either necessary to curb cheating or sensitive to students’ personal privacy and device security. Continuing to use monitoring techniques that students find unnecessary for exam integrity, while at the same time requiring
+students to sacrifice their personal privacy, displays a lack of
+trust for students and undermines students’ trust in educators
+and institutions.
+Recommendation: We recommend that institutions and educators follow a principle of least monitoring by using the
+minimum number of monitoring types necessary, given the
+class size and knowledge of expected student behavior. Institutions should perform due diligence when selecting online
+exam proctoring companies with whom to contract, and they
+should take into account student privacy, student discomfort
+for certain monitoring types, and software installation requirements. Moreover, instructors should use caution when
+selecting monitoring types while setting up exams and should
+provide students with clear reasoning for having selected the
+individual methods that will be used to monitor their exams.
+Invasion of Personal Computers As we have seen, exam
+proctoring browser extensions and standalone software contain invasive monitoring tools. These tools often include
+permissions to access the webcam, microphone, and web
+browser history. However, 43 % of students did not remove
+or disable the required browser extensions once they had completed their assessments. As is the case with any custom
+software, there is risk of vulnerabilities in these extensions.
+The fact that students often neglect to remove them therefore
+creates increased potential for harm from loss of privacy or
+security intrusions. Institutions should therefore be sensitive
+to which proctoring software they require students to install
+on their personal devices.
+Recommendation: We recommend that institutions thoroughly review common vulnerabilities and exposures of the
+online exam proctoring software they plan to license for installation on students’ personal computers. We would also recommend that institutions limit the installation of standalone
+exam proctoring software to devices issued to students by the
+institution.
+Implied Trust via Institutional Support Exam proctoring
+tools are often integrated with existing learning management
+software, such as Blackboard and Canvas, giving the appearance that they are a part of the standard educational software
+stack and imparting a sense of safety and normalcy. At the
+same time, institutions have spent large amounts of money
+to obtain site license agreements for exam proctoring software. This gives the appearance of a certain amount of due
+diligence being applied to the purchase, while potentially increasing the barriers to student resistance towards these forms
+of examination.
+Throughout our qualitative findings are statements from
+students of a transfer of trust between institutions who licence
+and faculty who support the exam proctoring software and the
+software itself. These students say that they believe their university would not use the software to proctor exams if it was
+dangerous. Moreover, they believe that their school would
+not have them install anything that could harm their computer
+or invade their privacy. Institutional support for third-party
+proctoring software, which conveys credibility, makes the
+exam proctoring software appear safer and less potentially
+problematic because students assume that institutions have
+done proper vetting of both the software and the methods
+employed by the proctoring services.
+Recommendation: We recommend that the students, along
+with faculty and administrators, take part in the assessment
+and selection of exam proctoring software. Students should be
+involved in every step of the process, from deciding whether
+to use exam proctoring software to determining which, if any,
+software should be used and which methods should be made
+available for exam monitoring.
+Power Imbalances Finally, when students’ options are limited to taking an online proctored exam or failing the course,
+it is a clear indication of an institutional power dynamic; 97 %
+of students indicated they were required to take an online proctored exam. Offering students more choices for assessment
+and being upfront with students about institutional privacy
+norms is a crucial step to alleviate this power imbalance.
+Recommendation: We recommend implementing notice and
+choice for courses employing online exam proctoring and
+allowing students to consent to any monitoring that will take
+place during course quizzes and exams. We also recommend
+that syllabi include a readable privacy policy to better communicate expectations.

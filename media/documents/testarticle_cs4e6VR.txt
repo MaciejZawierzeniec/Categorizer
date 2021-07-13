@@ -1,0 +1,27 @@
+Experiments that create tiny brainlike structures from human stem cells or transplant human cells into an animal’s brain have made some scientists, ethicists, and religious leaders uneasy in recent years. And the National Institutes of Health (NIH) has restricted some of this research. Now, a U.S. scientific panel has weighed in with advice about how to oversee this controversial and fast-moving area of neuroscience.
+
+The panel finds little evidence that brain “organoids” or animals given human cells experience humanlike consciousness or pain, and concludes current rules are adequate for overseeing this work. But they caution that could change, particularly as experiments move into nonhuman primates. “The rationale for the report is to get out ahead of the curve,” says Harvard University neuroscientist Joshua Sanes, co-chair of the National Academies of Sciences, Engineering, and Medicine committee that released its report today.
+
+The report was requested by NIH, together with the Dana Foundation, which funds neuroscience research. It arrives as NIH ponders whether to lift a moratorium on funding chimera experiments—studies that create animals carrying human tissues or cells—that has been in place since 2015, even after NIH announced it would be lifted. The moratorium on chimera research suspended not only brain studies, but also projects that aim to grow organs for transplantation in pigs and sheep.
+
+“We hope [NIH] will use the report to think through the issues,” says co-chair Bernard Lo, an ethicist and emeritus professor at the University of California, San Francisco (UCSF).
+
+The committee examined three types of experiments: those that create neural organoids, tiny clusters of human brain cells in a dish sometimes called minibrains; those involving neural transplants, which add human cells to the brains of animals; and those that create chimeras, a type of transplant in which stem cells from one species are injected into the early developing embryo of another. Such experiments have raised concerns that the animals or organoids may have primitive forms of consciousness or feelings.
+
+These experimental systems are “powerful models” for studying the human brain and identifying disease treatments, and there are ”strong moral arguments in favor of” this research, the report finds.
+
+But the committee concluded organoids aren’t capable of consciousness because they lack the many cell types and connected structures of a brain. Even recent organoid experiments that claimed to detect brain waves similar to those in a fetus found “relatively nonspecific” signals, Sanes says—the panel didn’t find this work ethically troublesome. “It is extremely unlikely that in the foreseeable future” organoids will be conscious or feel pain, the report concludes. They “have no more moral standing” than other cultured neural tissues and require no new oversight.
+
+The 11-member panel, which included ethics and legal experts, came to a similar conclusion about neural transplants because in current studies the human brain cells are far outnumbered by those of the animal into which they are transplanted. Consequently, they have limited influence on brain circuitry, Sanes says. The NIH moratorium bars work on chimera embryos containing human brain cells, which might not be possible in rodents anyway because of species differences. However, such chimeras may be more feasible using monkeys, the report says.
+
+Current oversight for transplant studies, which includes NIH policies and local animal care committees, is adequate for now, the report says. But the animal care committees may need more expertise later if altered animals develop “enhanced capacities.” Oversight bodies such as NIH could consider using a three-tier system similar to that used for germline editing, or altering the DNA of human embryos: allowed experiments, those requiring extra supervision, and those that are forbidden.
+
+The report also discusses current policies that don’t require people who donate cells or tissue for research to agree to specific studies. Some donors may not want their cells used in the neural experiments, the panel notes, and ethics experts are discussing whether researchers should consider whether to recontact donors or obtain new tissue.
+
+One factor contributing to public concerns is that scientists and communications staff at their institutions often use terms like minibrains that exaggerate the capabilities of their models, the report found. “The world would be a substantially better place if the scientists and press offices were a little more careful wording in interviews and press releases,” Sanes says.
+
+UCSF neuroscientist Arnold Kriegstein, who has worked on neural organoids, is pleased with the report. “It makes a clear statement that current models don’t pose an ethical dilemma, but in the future that may change,” Kriegstein says. “It’s very important to the field that the public and funding agencies are reassured that nobody is tromping on any ethical boundaries or lines at the moment.”
+
+The International Society for Stem Cell Research (ISSCR) also welcomed the committee’s “thoughtful analysis and guidance.” Next month, the society expects to release updated stem cell research guidelines that will cover chimera and organoid research.
+
+In a statement, NIH said the report “has given us many points to consider,” and added that the agency will also look to the ISSCR guidelines “to ensure our position reflects the input from the community.”

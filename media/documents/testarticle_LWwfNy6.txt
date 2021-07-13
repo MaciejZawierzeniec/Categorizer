@@ -1,0 +1,464 @@
+Virtual Compton scattering at low energies with a positron
+beam
+Barbara Pasquinia,1,2, Marc Vanderhaeghenb,3
+1Dipartimento di Fisica, Universit`a degli Studi di Pavia, 27100 Pavia, Italy
+2Istituto Nazionale di Fisica Nucleare, Sezione di Pavia, 27100 Pavia, Italy
+3Institut f¨ur Kernphysik and PRISMA+ Cluster of Excellence, Johannes Gutenberg Universit¨at, D-55099 Mainz, Germany
+Received: date / Accepted: date
+Abstract The Virtual Compton scattering (VCS) process at low energies explores the electromagnetic structure of the proton in terms of generalized polarizabilities (GPs). In the one-photon exchange approximation,
+VCS can be accessed with exclusive photon production reactions with electron or positron beams. The
+extraction of the GPs from VCS with electron beam
+has seen substantial progress over the past two decades.
+Nonetheless, a consistent picture of the GPs from low
+to higher scales demands further investigations. Complementary measurements with positron beams offer an
+unique possibility, and we present an impact study of
+such experimental program.
+Keywords Compton scattering · Polarizabilities ·
+Dispersion relations
+PACS 11.55.Fv · 13.40.-f · 13.60.Fz
+1 Introduction
+Virtual Compton scattering (VCS) off the proton refers
+to the process γ
+∗p → γp, where a virtual photon interacts with a proton target and a real photon is emitted
+in the final state. At low energy of the outgoing real
+photon, the VCS can be parametrized in terms of generalized polarizabilities (GPs) [1, 2, 3], which are a generalization of the static polarizabilities of real Compton scattering (RCS). As the GPs depend on the photon virtuality Q2
+, they parametrize the local polarizability response of the nucleon to a quasi-static external electromagnetic field, describing the spatial deformation induced in the charge, magnetization and
+spin densities [4]. They also enter generalizations of the
+ae-mail: barbara.pasquini@unipv.it
+be-mail: vandma00@uni-mainz.de
+Gerasimov-Drell-Hearn sum rule [5, 6] to finite photon
+virtuality, which link the GPs in model independent
+ways to RCS polarizabilities, moments of inclusive nucleon structure functions, and the nucleon anomalous
+magnetic moments and Pauli radii [7, 8]. Furthermore,
+at low virtuality, the GPs are low-energy parameters
+which enter the hadronic two-photon exchange corrections, which are required in the precision extraction of
+the proton charge radius from muonic Hydrogen spectroscopy experiments [9, 10, 11, 12].
+The VCS process is accessed experimentally in the
+lepto-production of real photons, i.e., lp → lpγ. This reaction has been investigated with an electron beam at
+energies below the pion production threshold and in the
+resonance region at MAMI [13, 14, 15, 16, 17], JLab [18,
+19] and MIT-Bates [20, 21]. A review of these experimental results has recently been presented in Ref. [22].
+The potential of using positron beams for this reaction
+has not been explored so far and in this document we
+present a first impact study for the extraction of GPs
+with the proposed positron facility at JLab.
+2 Formalism and notation
+In the l(k) + p(p) → l(k
+0
+) + p(p
+0
+) + γ(q
+0
+) reaction,
+the final photon can be emitted either from the lepton, which corresponds to the Bethe-Heitler (BH) process, or from the proton, which is referred to as the full
+virtual Compton scattering (FVCS) process. The last
+one, can in turn be decomposed into a Born (B) and
+non-Born (NB) part. In the Born process, the virtual
+photon is absorbed on the proton and the intermediate
+state remains a proton, whereas the non-Born process
+contains all proton excitations and meson-loop contributions. The amplitudes of these three processes add
+arXiv:2106.05683v1 [hep-ph] 10 Jun 2021
+2
+up coherently to form the total lp → lpγ amplitude,
+i.e.
+T
+lp→lpγ = T
+BH + T
+FVCS
+, with T
+FVCS = T
+B + T
+NB.
+(1)
+The BH and B terms can be calculated exactly using as input only the electromagnetic form factors of
+the nucleon. The NB contribution contains the protonstructure information and can be expressed with a multipole expansion in the center of mass (c.m.) frame of
+the γ
+∗p system. In the limit of vanishing emitted photon
+energy, q
+0
+cm → 0, at fixed value of the three-momentum
+qcm of the virtual photon (γ
+∗
+), the multipoles which
+enter the low-energy expansion (LEX) of the NB part
+are expressed in terms of GPs. The leading contribution is described by six GPs [1, 23, 24]: two scalar GPs,
+i.e., the electric αE1(Q2
+) and magnetic βM1(Q2
+) GPs,
+and four spin-dependent GPs, which are functions of
+the photon virtuality Q2 ≡ −(k − k
+0
+)
+2
+. The LEX formalism provides a method to analyze VCS experiments
+below pion production threshold in terms of structure
+functions which depend linearly on the GPs [1, 2]. This
+formalism is however poorly convergent when going to
+higher energies. On the other hand, the dispersion relation (DR) formalism has proved a very appropriate and
+efficient tool to analyze VCS experiments both below
+and above the pion production threshold [3, 25, 26, 27,
+22]. The main advantage in this case is the possibility
+to extend the energy region of investigation, which allows for a larger sensitivity of the VCS observables to
+the GPs. For a review of the DR formalism, we refer
+to the original works [25, 26, 3] and recent reviews [27,
+22], while here we only highlight its essential ingredients. In the DR approach, the VCS amplitude is decomposed in terms of 12 Lorentz invariant functions, which
+can be described through unsubtracted dispersion integrals relating their real and imaginary part, at fixed
+values of Q2 and of the four-momentum transferred
+t = (p
+0 − p)
+2
+, and as functions of the c.m. energy. The
+high-energy behaviour of these functions guarantees the
+convergence of ten out of the twelve dispersion integrals.
+As long as we are interested in the energy region up
+to the ∆(1232) resonance, the convergent integrals can
+be saturated by πN intermediate states. In practice,
+the calculation uses the MAID pion photo- and electroproduction multipoles [28, 29], which include both resonant and non-resonant production mechanisms. The
+remaining two non-converging DRs are treated as finiteenergy sum rule, by cutting the dispersion integrals up
+to a maximum energy value and absorbing all contributions from higher energies in asymptotic terms, which
+are replaced by a finite number of energy independent
+poles in the t-channel. Furthermore, in the DR model
+of Refs. [25, 26], the dispersion integrals that show a
+slow convergence are supplemented by an asymptotic
+contribution which parametrize the residual contribution that is not accounted for by the πN intermediate
+states. In conclusion, besides the well known π
+0 pole
+contribution, the asymptotic contributions can be described in terms of two phenomenological functions that
+are related to the scalar GPs. In order to provide predictions for VCS observables, it is convenient to adopt the
+following parametrizations for theses phenomenological
+functions:
+αE1(Q
+2
+) − α
+πN
+E1 (Q
+2
+) = (α
+exp
+E1 − α
+πN
+E1 )fα(Q
+2
+), (2)
+βM1(Q
+2
+) − β
+πN
+M1 (Q
+2
+) = (β
+exp
+M1 − β
+πN
+M1 )fβ(Q
+2
+), (3)
+where αE1 and βM1 are the RCS polarizabilities, with
+superscripts exp and πN indicating, respectively, the
+experimental value [30] and the πN contribution evaluated from unsubtracted DRs. In Eqs. (2) and (3),
+fα(Q2
+) and fβ(Q2
+) are fit functions, with the constraints
+fα(0) = fβ(0) = 1. Their functional form is unknown
+and should be adjusted by a fit to the experimental
+cross sections. However, in order to provide predictions
+for VCS observables, it is convenient to adopt the following dipole parametrizations
+fα(Q
+2
+) = 1
+(1 + Q2/Λ2
+α)
+2
+, fβ(Q
+2
+) = 1
+(1 + Q2/Λ2
+β
+)
+2
+, (4)
+where the Λα and Λβ are free parameters, not necessarily constant with Q2
+, which can be adjusted by a fit
+to the experimental cross sections.
+In Fig. 1, we show the world data for the GP extractions in comparison with the DR calculation for different values of the dipole mass parameters in Eq. (4).
+The experimental extractions from VCS measurements
+below pion production threshold have been obtained
+by applying both the LEX formalism and the DR approach. In all these analyses, the two methods give consistent results, except for the MIT-Bates measurement
+in the in-plane kinematics where the LEX at leading
+order was shown not to be applicable. The experimental extractions are performed separately at each Q2
+value, without making any assumption on the global
+Q2 dependence. Yet, the dipole Ansatz in Eq. (4) with
+Λα = Λβ = 0.7 GeV reproduces well the smooth fall-off
+in Q2 of the data. The only exception are the MAMI-I
+and MAMI-IV data points at Q2 = 0.33 GeV2
+, mainly
+for the electric GP. New data from the JLab VCS experiment E12-15-001 are currently exploring the intermediate Q2
+range of 0.3 − 0.77 GeV2 and are expected to
+help in the understanding of this puzzling behavior [31].
+Further insights could be gained by exploiting VCS
+measurements with positron beams in the same kinematics. As a matter of fact, the combination of data
+3
+Fig. 1 World data for the electric and magnetic GPs of the proton as a function of Q2, including the RCS point [30]. Inner
+(outer) error bars are statistical (total). Some points are slightly shifted for visibility. The results are from the DR calculation
+for three different values of the dipole mass parameters: Λα = Λβ 0.5 GeV (red dotted curves); Λα = Λβ 0.7 GeV (black solid
+curves) and Λα = Λβ 0.9 GeV (blue dashed curves).
+with positron and electron beams gives access to various asymmetries that would allow us to better constrain
+the scalar GPs, as discussed in detail in Sect. 3.
+3 VCS asymmetries using electron and
+positron beams
+The kinematics of the lp → lpγ reaction are defined
+by five independent variables. We will adopt the set
+of variables (Elab, Q2
+, W, θ, φ), with Elab the incoming
+electron energy in the lab frame, W the c.m. energy of
+the γ
+∗p → γp subprocess, θ the polar angle (in the γ
+∗p
+c.m. frame) between the initial and final photon, and φ
+the azimuthal angle between the leptonic and hadronic
+planes. The reference plane (φ = 0o
+) corresponds to the
+plane spanned by both lepton directions.
+The lepton beam charge (e) and polarization (λ)
+dependence of the lp → lpγ differential cross section is
+given by
+dσe
+λ = dσBH + dσVCS + λ dσ˜VCS + e (dσINT + λ dσ˜INT),
+(5)
+where dσ (dσ˜) are the polarization independent (dependent) contributions which are even (odd) functions of
+the azimuthal angle φ. dσINT involves the real part of
+the VCS amplitude that contains the GP effects, while
+dσ˜INT is proportional to the imaginary part of the VCS
+amplitude which does not depend on the GPs. Combining lepton beams of opposite charge and different
+polarization provides a complete separation of the four
+unknown INT and VCS contributions. In the following, we will discuss the kinematical conditions that have
+been explored in the recent VCS measurements at JLab
+using an electron beam, to assess the impact of using
+complementary measurements with a positron beam.
+Using unpolarized electron and positron beams, we
+can construct the unpolarized beam-charge asymmetry
+(BCA) AC
+UU as
+A
+C
+UU =
+(dσ+
++ + dσ+
+−) − (dσ−
++ + dσ−
+−)
+dσ+
++ + dσ+
+− + dσ−
++ + dσ−
+−
+=
+dσINT
+dσBH + dσVCS
+. (6)
+With polarized lepton beams, we can construct the
+lepton beam-spin asymmetry (BSA)
+A
+e
+LU =
+dσe
++ − dσe
+−
+dσe
++ + dσe
+−
+=
+dσ˜VCS + edσ˜INT
+dσBH + dσVCS + e dσINT
+. (7)
+One can combine the observable asymmetries AC
+UU ,
+A
++
+LU , and A
+−
+LU to separate the contribution from the
+dσ˜VCS and dσ˜INT terms as:
+A˜VCS ≡ A
++
+LU
+1 + A
+C
+UU 
++ A
+−
+LU
+1 − A
+C
+UU 
+=
+2dσ˜VCS
+dσBH + dσVCS
+, (
+4
+and
+A˜
+INT ≡ A
++
+LU
+1 + A
+C
+UU 
+− A
+−
+LU
+1 − A
+C
+UU 
+=
+2dσ˜INT
+dσBH + dσVCS
+. (9)
+The asymmetry combination A˜VCS of Eq. (8) is proportional to the imaginary part of the interference between the VCS amplitudes with either transverse or longitudinal virtual photon polarization. In the ∆(1232)
+resonance region, where the imaginary part of the transverse amplitude dominates by far over the imaginary
+part of the longitudinal amplitude, this combination
+then basically originates from the interference product
+of the imaginary part of the transverse VCS amplitude
+due to ∆(1232) excitation, and the real part of the longitudinal VCS amplitude. The latter amplitude has the
+sensitivity to the GP αE1(Q2
+). On the other hand, the
+asymmetry combination A˜
+INT of Eq. (9) is proportional
+to the interference between the real BH amplitude and
+the imaginary VCS amplitude. As the latter does not
+depend on the GPs, it provides a cross-check of the
+unitarity input in the dispersive formalism.
+4 Results and discussion
+In this section, we explore for a positron beam the same
+kinematical range which has been measured by the E12-
+15-001 experiment at JLab [31] using an electron beam.
+The experiment utilized the SHMS and HMS spectrometers [32, 33] in Hall C to detect, respectively, electrons
+and protons in coincidence, while the reconstructed missing mass has been used for the identification of the photon. An electron beam of energy Elab = 4.55 GeV and
+a 10 cm liquid hydrogen target were employed for the
+measurements.
+4.1 Beam-charge asymmetry
+In Fig. 2, we show the results for the charge asymmetry for in-plane kinematics as function of the photon
+scattering angle (the negative and positive values correspond to φ = 180o and φ = 0o
+, respectively) at two different values of the four-momentum transfer Q2
+for the
+center of mass energy of W = 1.17 GeV and W = 1.232
+GeV. The calculations correspond to a variation of the
+mass-scale parameters in the range Λα = Λβ = 0.7±0.2
+GeV, which is the same range as shown along with the
+GP world data on Fig. 1. One notices from Fig. 2 that
+the sensitivity to the GPs is mainly at lower energies in
+the forward region −60o ≤ θ ≤ 40o and it slightly increases at higher values of Q2
+. In the region where the
+BH process is very large, which corresponds roughly
+with the angular range 70o ≤ θ ≤ 100o
+in Fig. 2, one
+notices that the beam-charge asymmetry becomes very
+small as the cross section for the BH process by itself is
+identical between electron and positron beams. In the
+direction of the BH peaks the asymmetry has zeros.
+The same kinematics is explored in Fig. 3 for Q2 =
+0.43 GeV2 and in Fig. 4 for Q2 = 0.65 GeV2
+, but for
+out-of-plane angles φ. In these cases, the sensitivity to
+the scalar polarizabilities is enhanced, especially at the
+lower center of mass energy and higher values of momentum transfer. The largest effects are for φ = 90o at
+scattering angles θ ≤ 100o
+, where we observe a relative
+effect on the asymmetry of up to ±30% by scaling the
+mass parameters by ±0.2 units.
+4.2 Beam-spin asymmetry
+We study the beam-spin asymmetries for electron and
+positron beams in the same out-of-plane kinematics as
+in Figs. 3 and 4, for φ = 45o and φ = 90o
+, both for
+Q2 = 0.43 GeV2
+in Fig. 5, and for Q2 = 0.65 GeV2
+in
+Fig. 6. One notices that these asymmetries have a large
+sensitivity to the GP, which is maximal for φ = 90o and
+for kinematics corresponding with the excitation of the
+∆(1232) resonance. To better understand this sensitivities, we consider the observables A˜VCS and A˜
+INT defined in Eqs. (8) and (9) respectively, which involve the
+beam-charge asymmetry and the beam-spin asymmetries for both electron and positron beams. They allow
+to separate the contributions from the dσ˜VCS and dσ˜INT
+cross section contributions. We show these observables
+in Fig. 7 for φ = 90o and Q2 = 0.65 GeV2
+, for both
+W = 1.17 GeV and W = 1.232 GeV.
+We notice from Fig. 7 that the combination A˜VCS,
+which mainly stems from the interference product between the imaginary part of the transverse VCS amplitude due to ∆(1232) excitation and the real part of
+the longitudinal VCS amplitude, shows a large sensitivity to the GPs. This sensitivity mainly comes from the
+GP αE1(Q2
+). The asymmetry combination A˜VCS thus
+provides an independent way to experimentally access
+the electric dipole GP. Comparing the A˜VCS results for
+W = 1.17 GeV and W = 1.232 GeV, we see that the
+observable reaches the largest values at W = 1.232 GeV
+as the imaginary part of the VCS amplitude is maximized on the ∆(1232) resonance position.
+On the other hand, we also notice from Fig. 7 that
+the combination A˜
+INT is much less sensitive to the GPs,
+especially on the ∆(1232) resonance position. This can
+be understood as dσ˜INT measures the interference product between the BH amplitude and the imaginary part
+of the VCS amplitude, which does not depend on the
+GPs at all. The remaining GP sensitivity which one se
+5
+-0.3
+-0.2
+-0.1
+-0
+0.1
+-180 -60 60 180
+A (a)
+C
+UU
+θ (deg)
+0
+0.2
+0.4
+-180 -60 60 180
+A (b)
+C
+UU
+θ (deg)
+-0.2
+0
+0.2
+-180 -60 60 180
+A (c)
+C
+UU
+θ (deg)
+0
+0.2
+0.4
+-180 -60 60 180
+A (d)
+C
+UU
+θ (deg)
+Fig. 2 The beam-charge asymmetry AC
+UU as function of the photon scattering angle for in-plane kinematics, for c.m. energy
+W = 1.17 GeV (panels (a) and (c)) and W = 1.232 GeV (panels (b) and (d)) at different values of the four-momentum
+transfer: Q2 = 0.43 GeV2 (panels (a) and (b)) and Q2 = 0.65 GeV2 (panels (c) and (d)). The results are for Λα = Λβ = 0.5
+GeV (red dotted curves), Λα = Λβ = 0.7 (black solid curves) and Λα = Λβ = 0.9 GeV (blue dashed curves).
+on Fig. 7 for A˜
+INT results from the denominator contribution dσVCS in Eq. (9). The observable A˜
+INT provides
+however a test for the unitary input in the dispersive
+formalism.
+5 Conclusions
+In this work we have presented an impact study for
+an experimental program to measure the VCS process
+lp → lpγ with positron beams at Jefferson Lab. Using
+a dispersive formalism to extract the generalized polarizabilities (GPs) from the VCS observables, we have
+shown that the beam-charge asymmetry has a sizeable
+sensitivity to the GPs in the ∆(1232) resonance region,
+when going to out-of-plane kinematics. Furthermore,
+by measuring the beam-spin asymmetry for a positron
+beam and combining it with the corresponding measurement with an electron beam allows to define observables which separate the cross section terms resulting
+from the real part of the longitudinal VCS amplitude,
+which has a strong sensitivity to the electric dipole GP
+αE1(Q2
+), and the term proportional to the imaginary
+part of the VCS amplitude, which provides a crosscheck on the unitary input in the dispersive formalism

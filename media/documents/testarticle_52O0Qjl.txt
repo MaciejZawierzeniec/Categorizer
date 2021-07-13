@@ -1,0 +1,1862 @@
+Much like birds fly in flocks and fish swim in swarms, cells
+in our body move in groups. Collective cell migration enables
+embryonic development, wound healing and cancer cell invasion. These phenomena involve complex biochemical regulation, but their dynamics can ultimately be predicted by emerging physical principles of living matter.
+When and where do cells migrate in groups?
+When seen at the microscale, our body is a busy maze filled
+with actively moving cells. Cellular movements are slow,
+rarely exceeding 10 µm/min, but crucial to embryonic development, the immune response, tissue self-renewal and wound
+healing. Through the same mechanisms that sustain these
+physiological functions, cell movements drive devastating diseases such as acute inflammation and cancer. These can in
+fact be considered diseases of cell movement because arresting cells in a controlled manner would be sufficient to prevent
+their spread. Take cancer as an example; whereas its origin
+is well-known to be genetic, if we could selectively stop the
+movement of tumor cells, we would prevent them from escaping primary tumors and reach distant organs to metastasize.
+Understanding cell migration is therefore crucial to improve
+current strategies to fight disease.
+Cell migration comes in different flavors. Some cell types
+move as isolated self-propelled particles. For example, to
+chase and destroy pathogens, immune cells move individually
+through tissue pores. Similarly, in some types of cancer, single
+cells dissociate from tumors and travel solo through the surrounding tissue, eventually reaching blood vessels and metastasizing at distant organs. By contrast, in other physiological
+functions and pathological conditions, cells move as collectives. Collective cell movements are dominant in embryo development, where they enable the precise positioning of tissues and organ progenitors. The later coordination of growth
+and motion shapes organs well into postnatal life. Collective
+cell migration also drives wound healing in tissues such as the
+skin. Here, a continuous sheet of tightly adhered cells moves
+cohesively over the damaged area to restore a functional tissue. Cancer invasion also involves the migration of cell sheets,
+strands and clusters (Fig. 1a). Within these groups, cells with
+different function can self-organize in spatial compartments
+to behave like an aberrant organ. This added functionality
+is thought to provide malignant tumors with distinct invasive
+strategies that improve their chances of spreading and metastasizing. Finally, collective cell migration is also involved in
+maintaining the inner surface of the gut, which is the fastest
+self-renewing tissue in mammals. It renews entirely every 3-
+5 days, which implies a daily loss of tens of grams of cells.
+Self-renewal proceeds thanks to the division of stem cells that
+reside at the bottom of tissue invaginations called crypts. The
+progeny of these stem cells then migrates collectively from the
+crypt to the top of finger-like protrusions called villi, where
+they are shed into the intestinal lumen and discarded (Fig. 1b).
+Collective cell migration is regulated by a myriad of molecular processes, from genetic programs to sensing and signaling pathways. Yet, these molecular processes act upon a limited number of physical quantities to determine cell movement. Therefore, coarse-grained physical approaches may
+provide crucial insight into biological questions. Furthermore,
+collective cell behaviors also inspire new physical theories of
+living systems. In this article, we highlight progress in this
+direction.
+Cell assemblies as living matter
+What physical principles underlie collective cell motion? In
+traditional condensed matter, interactions between electrons
+and between atomic nuclei give rise to fascinating collective
+phenomena such as magnetism and superconductivity. Analogously, cell-cell interactions lead to emergent collective phenomena in migrating cell groups. However, when treating cell
+colonies as materials, we must take into account some key features of living matter, as we illustrate throughout the article.
+First, the primary constituents of living tissues are cells and
+extracellular networks of protein fibers such as collagen. The
+interactions between these mesoscale constituents are orders
+of magnitude weaker than interatomic interactions in conventional solids. So, with notable exceptions like bone, most biological tissues are soft materials, which can easily deform and
+flow.
+Second, cells are machines with internal engines. Specialized proteins known as molecular motors harness the energy
+of chemical reactions to generate forces and produce mechanical work. These energy-transducing molecular processes ultimately power cell migration, allowing cells to move autonomously, without externally applied forces. This continuous supply of energy drives living tissues out of thermodynamic equilibrium. Importantly, the driving is local; it occurs
+at the level of individual constituents, i.e. single cells. In
+arXiv:2106.02752v1 [physics.bio-ph] 4 Jun 2021
+2
+50 μm
+a b 50 μm
+Figure 1 Collective cell migration in the human body. (a) Breast cancer cells from a patient sample of invasive ductal carcinoma migrate
+collectively into the surrounding extracellular matrix. Colors label cell nuclei (green), the cell-cell adhesion protein E-cadherin (red), and
+collagen fibers (white). From O. Ilina et al. Dis. Model. Mech. 11, dmm034330, 2018. (b) Intestine cells migrate as indicated by the white
+arrows to enable fast renewal of the inner surface of the gut. Colors label cell nuclei (blue), goblet cells (pink), the cell-cell adhesion protein
+p120 (green), and lysosomes (white). The image was kindly shared by Kristen A. Engevik. See also D. Krndija et al. Science 365, 705 (2019).
+other words, cells are active constituents, and living tissues
+are a paradigmatic example of active matter — an exploding
+new field in nonequilibrium statistical physics.
+But cells are not only mechanically active: they also sense
+their environment, process information, and respond by adapting their behavior. For example, stem cells plated on substrates of different stiffness differentiate into distinct cell
+types, from brain to bone cells. So living tissues are adaptive: they respond in programmed ways to environmental cues
+such as external forces, the mechanical properties of the extracellular matrix, and concentrations of nutrients and signaling
+molecules. Consequently, cell-cell and cell-environment interactions are often very complex. Unlike atoms and electrons
+in conventional condensed matter, cellular interactions cannot
+in general be fully described via an interaction potential with a
+fixed functional form. Thus, a key challenge in this field is to
+find effective ways to capture complex cell behaviors in terms
+of simple, physically-motivated interactions1
+.
+To flow or not to flow
+One way to think about interactions between deformable
+epithelial cells comes from the physics of foams. In foams,
+gas bubbles arrange in polygonal packings, with the liquid
+phase filling the interstitial spaces and providing surface tension to bubble interfaces (Fig. 2a). Similarly, cells in epithelial monolayers also acquire polygonal shapes, with roughly
+straight edges subject to active tension generated inside cells
+(Fig. 2b). This description of tissues as polygonal cell packings traces back to work by Hisao Honda and collaborators
+in 1980, and it was later popularized by work in the group
+of Frank Julicher and collaborators ¨
+3
+. Because cells are deformable, edge lengths vary dynamically. These variations
+change the energy of the cellular network, which we can write
+in terms of areas Ai and perimeters Pi of cells i = 1, . . . , N
+as
+H =
+X
+N
+i=1
+
+κ
+2
+(Ai − A0)
+2 +
+Γ
+2
+(Pi − P0)
+2
+
+. (1)
+This energy assumes that cells resist changes in their area and
+perimeter around the preferred values A0 and P0 with elastic
+moduli κ and Γ, respectively. The preferred perimeter P0 depends on cell-cell interactions and cellular activity, with cellcell adhesion promoting longer edges and cellular tension favoring shorter edges. The preferred perimeter and area define a dimensionless parameter p0 = P0/
+√
+A0 which informs
+about the preferred cell shape. Higher p0 corresponds to more
+elongated cells, and smaller p0 corresponds to more isotropic
+shapes, with less perimeter for the same area.
+For a given p0, edge lengths vary until the system reaches
+its ground state, minimizing the energy in Eq. (1). In this process, an edge can shrink until it eventually disappears, leading
+to the formation of a new cell-cell interface (Fig. 2c). These
+events, known as T1 transitions, allow cells to change neighbors, driving topological rearrangements of the cellular network. The ability to reorganize its constituents determines
+whether a material is solid or fluid. So, if cell rearrangements
+are difficult, the cellular network resists shear deformations;
+the tissue is solid. In contrast, if cells can rearrange easily, the
+network yields upon shear; the tissue is fluid. At small p0, i.e.
+for roundish cells, Eq. (1) reveals that there is an energy barrier preventing T1 rearrangements (Fig. 2c). However, as we
+increase p0 and cells become more elongated, the energy barrier decreases (Fig. 2c). At a critical value of p0 = p
+∗
+0 ≈ 3.81,
+the barrier vanishes (Fig. 2d); cells can rearrange freely2
+.
+This simple model thus predicts a solid-fluid transition
+in tissues driven by changes in cell shape, encoded in p0
+3
+REVIEW ARTICLE | INSIGHT NATURE PHYSICS
+a shear component5
+. The normal component indicates the extent to
+which a material is tensed or compressed at a given point, whereas the
+shear component indicates forces parallel to the surface.
+Besides the ability to generate active stresses, a key feature that
+differentiates tissues from passive soft materials is the self-propulsive ability of each individual cell. Cells achieve self-propulsion by
+extending distinct types of protrusion and adhering them to their
+surroundings. The two main types of protrusion are thin actin-rich
+extensions called filopodia or lamellipodia, and spherical membrane
+blisters called blebs. Cells migrate using lamellipodia, filopodia or
+blebs, depending on a diversity of intrinsic and extrinsic variables,
+including expression of adhesion proteins, density and composition
+of the ECM, confinement, topology and cortical contractility60,61. To
+migrate, cells adhere their protrusions to the surrounding matrix
+either specifically through membrane receptors such as integrins,
+or unspecifically using frictional interactions.
+Box 2 | Mechanobiology as a multiscale problem
+One the great challenges of mechanobiology is the existence of
+multiple length scales at which relevant mechanisms are at play.
+!is problem has led to the development of diverse types of modelling approach describing biological tissues at di"erent scales.
+Examples of mechanical models of cells and tissues include the
+following.
+1. Clutch models describe the dynamics of cell–matrix adhesion at the molecular level (a,e in #gure below). !ey take into
+account the rigidity of the matrix, the binding/unbinding (kon,
+ko") rates of adhesion proteins and the force that myosin motors
+exert on these proteins through the actin cytoskeleton. Clutch
+models have been successful at predicting traction forces and
+dynamics of the leading edge of a protruding cell, sensing of
+rigidity and matrix ligand spacing, and durotaxis4,56,57.
+2. Polymer network models are based on the polymeric nature
+of the cytoskeleton (b,f in #gure below). !ey take into account the properties of single #laments, their spacing (df
+ in
+panel f below), the deformability and binding rates of polymer crosslinking proteins (kon, ko" in panel f), and the activity
+of molecular motors that pull on the #laments (F in panel f).
+!ese models capture fundamental rheological properties
+of cells such as strain-sti"ening, scale-free elastic modulus,
+$uidization and ageing130,131.
+3. Vertex models treat cell monolayers as 2D or 3D polygonal
+objects that share common vertices (see also Box 3) (c,g
+in #gure below). In three dimensions, these models are
+governed by tissue geometry and by surface tensions of
+the apico-basal (γab) and lateral surfaces (γl
+). Vertex models
+have predicted dynamic aspects of monolayers, such as their
+ability to deform through intercalation, to jam at constant
+density and to $ock as solids and liquids82,83,86,87,132.
+4. Continuum models describe tissues as active materials in
+which the cellular structure is coarse-grained (d,f in #gure
+below). !ese models are formulated in terms of continuum
+vectorial and tensorial #elds such as velocity, v, polarity p
+and stress σ. !ese variables are linked through viscosity
+η, elasticity k and friction ζ. In three dimensions, they also
+incorporate luminal pressure ∆P. Continuum models have
+successfully described complex features of cell monolayers
+such as wave propagation in the absence of inertia76,133.
+Myosin II Actin
+Integrins
+Substrate
+Fn
+v
+kon/koff
+kon/k Adaptor off s
+Myosin II F
+Actin
+Crosslinks
+df
+γl
+γab
+a b c d
+e f g h
+v
+p
+ΔP
+σ
+η
+ζ
+1 µm 10 µm 30 µm 100 µm
+Mechanical structures and models of cells and tissues at different length scales. a, A focal adhesion of an unroofed HeLa cell stained with fluorescent
+phalloidin (cyan) and imaged with total internal reflection fluorescence microscopy/platinum-replica transmission electron microscopy (grey)
+correlative light–electron microscopy134. b, An osteosarcoma cell (U2OS) plated on fibronectin. Actin (red) was imaged using stimulated emission
+depletion microscopy and a focal adhesion marker (paxillin, green) was imaged using confocal microscopy. c, A monolayer of epithelial cells labelled
+using a membrane-targeted green fluorescent protein (green). d, An immunofluorescent image of a small intestinal organoid showing markers of
+proliferation (EdU, red), differentiation (Krt20, green) and nuclei (blue). e, Clutch model of F-actin linkage to fibronectin (Fn) via integrins. f, Polymer
+network model. g, 3D vertex model. h, Continuum model. Credit: courtesy of J. Taraska and K. Schack (a) and G. Jacquemet and J. Ivaska (b); and
+adapted from ref. 135, Bio-protocol (d).
+REVIEW ARTICLE | INSIGHT REVIEW A https://doi.org/10.1038/s41567-018-0194-9 RTICLE | INSIGHT NATURE PHYSICS
+NATURE PHYSICS | www.nature.com/naturephysics
+NATURE PHYSICS DOI: 10.1038/NPHYS3471 ARTICLES
+p0
+a b
+r = 10
+r = 2
+r = 1
+r = 0.5
+r = 0.1
+01 23456
+1.5
+1.0
+0.5
+0.0
+3.0 3.2 3.4 3.6 3.8 4.0
+100
+10−1
+10−2
+10−3
+∆
+(
+∆
+/
+∆
+) ε εε ρ
+x = ∆ε/∆ε
+∆
+ε
+Figure 1 | Energy barriers for local cellular rearrangements. a, Illustration
+of a T1 transition in a confluent tissue and the normalized distribution ⇢ of
+normalized energy barrier heights 1"/1" for a large range of parameters
+(r=0.5, 1, 2 and p0 =3.2–3.7). They have a universal shape that is fitted well
+by a k-gamma distribution (solid line), indicating that 1" completely
+specifies the distribution and describes the mechanical response. b, 1" as
+function of the target shape index p0 for various values of the inverse
+perimeter modulus r.
+and p0 =P0/
+pA0 is the target shape index or a preferred perimeterto-area ratio. For simplicity, we focus on p0 >0. For p0 <0 there are
+two regimes: a static regime with results identical to those presented
+here for 0<p0 <ppent, and a coarsening regime that is not consistent
+with most observations of biological tissues. Geometrically,
+a regular hexagon corresponds to phex
+0 =2
+p2
+p4 3⇡3.72 and a
+regular pentagon to p
+pent
+0 =2
+p5(52
+p5)
+1/4
+⇡3.81.
+In non-biological materials, bulk quantities such as shear/bulk
+modulus, shear viscosity and yield stress are often used to describe
+the mechanical response to external perturbations. However,
+cells are self-propelled and, even in the absence of external
+forces, cells in confluent tissues regularly intercalate, or exchange
+neighbours26,27. In an isotropic confluent tissue monolayer where
+mitosis (cell division) or apoptosis (cell death) are rare, cell
+neighbour exchange must happen through intercalation processes
+known as T1 transitions28,29, where an edge between two cells shrinks
+to a point and a new edge arises between two neighbouring cells,
+as illustrated in Fig. 1a. The mechanical response of the tissue is
+governed by the rate of cell rearrangements, and, within the vertex
+model, the rate of T1 rearrangements is related to the amount of
+mechanical energy required to execute a T1 transition29. Therefore,
+we first study how these energy barriers change with single-cell
+properties encoded in the model parameters r and p0.
+To explore the statistics of energy barriers, we test all possible
+T1 transition paths (see Methods) in ten randomly generated
+disordered samples each consisting of M = 64 cells. For each
+value of p0 and r tested, we obtained the distribution of energy
+barrier heights ⇢(1"). The functional form of the distribution
+becomes universal (Fig. 1a) when scaled by the mean energy
+barrier height 1"(r,p0). The rescaled distribution is fitted well by a
+k-gamma distribution (kk
+xk1 exp(kx)/(k1)!)with x =1"/1"
+and k=2.2±0.2. The k-gamma distribution has been observed
+in many non-biological disordered systems30–32, and generically
+results from maximizing the entropy subject to constraints31,32. This
+confirms that the distribution of energy barriers depends on the
+single-cell properties p0 and r only through its average 1".
+Figure 1b shows the dependence of 1" on p0 for various values
+of r.At p0 .3.8, the energy barriers are always finite—that is, cells
+must put in some amount of work to deform and rearrange. Here
+the tissue behaves like a solid; it is a rigid material with a finite
+yield stress. As p0 is increased, the energy barriers decrease and
+become vanishingly small in the vicinity of p0 ⇡ 3.8, so that cell
+rearrangements cost almost no energy. This suggests that the vertex
+model may undergo a critical rigidity transition near p0 ⇡3.8.
+To test this hypothesis, we searched for a scaling collapse
+based on theories for continuous phase transitions near a critical
+point, such as the Ising model for ferromagnetism. Figure 1b
+demonstrates that r sets the overall scale of 1" as well as the
+‘sharpness’ of the transition, whereas p0 controls the distance to the
+transition. This suggests that the trio (r1",r, p0 p⇤
+0 ) is analogous
+to (m, h, T Tc) in the Ising model. Therefore, our scaling ansatz
+is that the order parameter r1"(r, p0) vanishes at the critical
+point p0 = p⇤
+0 , with fluctuations controlled by r. In that case, near
+the critical point the order parameter should obey the universal
+scaling form33:
+r1"=|p0 p⇤
+0 |
+ f±
+✓ r
+|p0 p⇤
+0 |
+
+◆
+(3)
+Here z = r/|p0  p⇤
+0 |
+ is the crossover scaling variable,  is the
+crossover scaling critical exponent, and f,f+ are the two branches of
+the crossover scaling functions for p0 <p⇤
+0 and p0 >p⇤
+0 , respectively.
+After re-plotting the data in Fig. 1b using equation (3),
+we find an excellent scaling collapse onto two branches with
+=4.0±0.4,  =1.0±0.2 and a precise location of the critical point
+p⇤
+0 =3.813±0.005, as shown in Fig. 2.
+For the mechanically rigid branch in the limit z ! 0, the
+energy barrier can be rewritten in dimensional units and scales as
+1E =KAA2
+01"/A0⇠
+
+p⇤
+0 p0
+
+. This indicates that these barriers
+are completely governed by the perimeter elasticity ⇠ . At the
+critical point, the two branches of the scaling function merge and
+f+ =f =z /. In this case the dimensional energy barrier scales as
+a b
+p0 < p0
+∗
+p0 > p0
+∗
+102
+101
+100
+10−1
+10−2
+10−3
+10−3
+100 103 106 109 1012
+p0
+∗ = 3.813 ± 0.005
+∆ = 4.0 ± 0.4
+β = 1.0 ± 0.2
+0.5
+Cell−cell adhesion
+p0
+p0
+hex p0
+∗
+Solid Fluid
+Cortical tension
+3.72 3.81
+r∆ /|
+p0
+−
+p
+∗
+0|
+β
+ε
+β/∆
+z = r/|p0 − p0
+∗|∆
+Figure 2 | A rigidity transition in confluent tissues. a, Critical scaling collapse of the average energy barrier height 1", normalized by multiplying
+r/|p0 p⇤
+0|
+ , as a function of z=r/|p0 p⇤
+0|
+ for the data shown in Fig. 1b, confirming the scaling ansatz of equation (3). b, The rigidity transition is
+demonstrated in a simple phase diagram as a function of p0, snapshots are taken from a typical rigid tissue (p0 =3.7) and fluid-like tissue (p0 =3.96).
+A rigidity transition occurs at p0 =p⇤
+0 ⇡3.813 for disordered metastable tissue configurations. The line corresponding to the order-to-disorder transition
+reported by Staple et al.16 is shown for comparison. Below phex
+0 , the ground state is a hexagonal lattice, and above phex
+0 , the ground state is disordered.
+NATURE PHYSICS | VOL 11 | DECEMBER 2015 | www.nature.com/naturephysics 1075
+© 2015 Macmillan Publishers Limited. All rights reserved
+NATURE PHYSICS DOI: 10.1038/NPHYS3471 ARTICLES
+Slope = 1
+103
+102
+Gxy
+rGxy
+101
+100
+100
+100
+10−3
+10−3
+10−2
+10−2
+10−2
+10−1
+10−1
+10−1
+100
+p0
+∗ − p α 0
+p0 − p0
+∗
+α
+Figure 4 | Shear modulus as a function of p⇤
+0↵ p0, which is the
+system-specific distance to the rigidity transition. The value of p⇤
+0↵ is
+determined from the location at which floppy modes appear for the specific
+configuration. Here the tissue contains M=100 cells and the colours
+correspond to (top to bottom): r=0.005 (blue), r=0.001 (green) and
+r=0.02 (red). Inset: the shear modulus can be rescaled by
+Gxy =(p⇤
+0↵ p0)/r. Data for ten tissues with random initial configurations
+are shown.
+the cells are pentagons, whereas the other two remain hexagonal.
+Therefore if p0 < p
+pent
+0 = (7+2
+p7)/(p2⇥33/4
+) ⇡ 3.812, pentagons
+cost finite energy and therefore the transition necessarily requires
+finite energy. In contrast, for p0 p
+pent
+0 , pentagons (and n-gons with
+n>5) cost no energy and the cells are able to remain in the ground
+state throughout the transition, requiring zero energy. The estimate
+p⇤
+0 = p
+pent
+0 , indicated by a red dashed line in Fig. 5c, does identify
+the critical target shape index in our mean-field model, and is
+consistent with the critical point p⇤
+0 = 3.813 ± 0.005 identified by
+the scaling collapse of energy barriers in the full vertex model.
+Is there an even simpler explanation for p⇤
+0 ⇠ p
+pent
+0 ? As in other
+rigidity transitions6,35,36,40, we expect that the critical shape index
+should also be related to isostaticity. In the vertex model with
+periodic boundary conditions, cells tile the flat two-dimensional
+plane, and therefore the total number of vertices V, cells M
+and edges E are related through Euler’s formula: 0=V E +M.
+As each edge is shared by two cells, E is also related to the
+average coordination number z of cells or E =Mz/2, which yields
+V =M(z/21). The degrees of freedom are simply the motions of
+each vertex in two dimensions: ndof =2V. Assuming force balance
+(in both directions) and torque balance on each cell generates three
+constraints per cell: nc =3M. At isostaticity, the number of degrees
+of freedom equals the number of constraints: ndof = nc, resulting
+in ziso =5 and suggesting a mean-field transition at a shape index
+of p⇤
+0 ' 3.812. Although it gives a correct prediction, this isostatic
+argument makes a strong assumption: that constraints are applied to
+each cell instead of to each vertex. Therefore, an interesting direction
+for future research is to understand under what circumstances the
+energy functional (equation (2)) eectively groups vertices into
+functional units that are cells.
+Discussion
+Although the vertex model has been used extensively to model
+tissues over the past 15 years, there has never been a clear way to
+connect the model parameters to tissue mechanical properties. Here
+we show that the vertex model has a new and previously unreported
+critical rigidity transition that occurs at a critical value of the target
+shape index p⇤
+0 ⇠3.81. This criticality is evident in energy barriers
+to local T1 rearrangements, the vibrational spectrum of the linear
+response, and the shear modulus of the tissue. Unlike SPP models,
+where the liquid-to-solid transition is governed by density, our
+−0.6 −0.3 0.0
+l
+0.3 0.6 0.0
+0.5
+1.0
+1.5
+Increasing p0
+a
+3.0 3.5 4.0
+10−6
+10−4
+10−2
+100
+b
+c
+p0
+∆ε
+− (l = l
+0) ε
+ε
+Figure 5 | A simple four-cell model. a, A four-cell aggregate undergoing a
+T1 topological swap. The thick (green) edge represents the cell–cell
+interface that is contracted to a point and then resolved in the
+perpendicular direction. b, Energy of a four-cell aggregate during a T1
+transition, which attains a maximum at the transition point. p0 varies from
+1.5 to 3.8 in equal increments. c, Energy barrier height as a function of p0 for
+a four-cell aggregate and a mean-field estimate (dashed) for the value of
+p0 =p
+pent
+0 at which 1" vanishes.
+model has a constant-density glass transition governed by singlecell mechanical properties such as cell–cell adhesion and cortical
+tension encoded in the target shape index p0.
+Analysing only the ground states of the vertex model, the
+seminal work of Staple et al.16 found an ordered-to-disordered
+transition at p0 =phex
+0 ⇠3.722. However, because almost all biological
+tissues are strongly disordered, it remained unclear whether this
+transition was relevant for the observed glass or jamming transitions
+in multicellular tissues. Therefore, we explicitly study disordered
+metastable states and transitions between them. In addition ref. 16
+uses a linear stability analysis of a single cell to suggest that a
+rigidity transition also occurs at phex
+0 . In contrast, our analysis
+explicitly includes multicellular interactions (that is, collective
+normal modes) and nonlinear eects (that is, energy barriers).
+With this more sophisticated analysis, we demonstrate that vertex
+models exhibit a rigidity transition at a value p0 =p
+pent
+0 ⇠3.81 that is
+measurably dierent from the prediction p0 =phex
+0 based on singlecell linear stability.
+Importantly, predictions based on this critical rigidity transition
+have recently been verified in experiments43. Specifically, in both
+simulations and experiments we can measure the shape index
+p=P/
+pA for each cell in a monolayer, where P is the projected
+cell perimeter and A is the cross-sectional area. In simulations of
+the vertex model, we find that the median value of the observed
+shape index p is an order parameter that also exhibits critical scaling:
+p=p⇤
+0 ⇠3.81 for rigid or jammed tissues and p becomes increasingly
+larger than p⇤
+0 as a tissue becomes increasingly unjammed (Fig. 2).
+This prediction is precisely realized in cultures from primary cells
+in human patients, with implications for asthma pathobiology43.
+We expect that this rigidity framework will help experimentalists develop other testable hypotheses about how the mechanical
+response of tissues depends on single-cell properties. For example, Sadati et al.44 have proposed a jamming phase diagram where
+tissues become more solid-like as adhesion increases, based on
+observations of jamming in adhesive particulate matter at densities
+far below confluency. Using standard interpretations of the vertex
+model (equations (1) and (2)), p0 increases with increasing adhesion,
+and therefore our model predicts that confluent tissues become
+more liquid-like as adhesion increases. This highlights the fact that
+adhesion acts dierently in particulate and confluent materials; in
+particulate matter higher adhesion leads to gelation and solidification, whereas in the vertex model larger adhesion leads to larger
+perimeters, more degrees of freedom, and liquid-like behaviour.
+These ideas suggest that the role of adhesion in tissue rheology may
+be much richer and more interesting than previously thought.
+NATURE PHYSICS | VOL 11 | DECEMBER 2015 | www.nature.com/naturephysics 1077
+© 2015 Macmillan Publishers Limited. All rights reserved
+a b
+c d
+e
+1 cm
+Figure 2 Biological tissues as foam. (a) A picture of soap foam.
+Adapted from Wikimedia Commons. (b) A monolayer of epithelial
+cells labelled using a membrane-targeted green fluorescent protein
+(green). From X. Trepat and E. Sahai. Nat. Phys. 14, 671 (2018).
+(c) For a group of four cells undergoing a T1 cell rearrangement, the
+energy (Eq. (1)) increases as the green edge contracts (l < 0), and it
+decreases as the edge expands in the perpendicular direction
+(l > 0). The cell-shape parameter p0 varies from 1.8 to 3.5 in equal
+increments. (d) The energy barrier for a T1 rearrangement
+decreases with p0, eventually vanishing for p0 = p
+∗
+0 ≈ 3.81. (e)
+Tissues can undergo a fluid-solid transition by tuning cell shape via
+changes in cell-cell adhesion and/or internally-generated cortical
+tension. Panels (c)-(e) are from ref.2
+.
+(Fig. 2e). This is a striking prediction, which showcases the
+bizarre mechanical properties of materials with deformable
+constituents. In conventional condensed matter, solids melt by
+either increasing temperature or reducing the packing fraction,
+i.e. decreasing pressure. Tissues, however, can melt at a fixed
+temperature and at the maximum packing fraction, φ = 1, i.e.
+without gaps between cells2
+. Tissues can become fluid by increasing the cell perimeter-to-area ratio, for example by either
+decreasing intracellular tension or, counterintuitively, increasing cell-cell adhesion (Fig. 2e). The more cells adhere to one
+another, the more they elongate, and the easier it is for them
+to rearrange.
+Shortly after its prediction2
+, this solid-fluid transition
+driven by changes in cell shape was experimentally verified
+in layers of human bronchial epithelial cells4
+. Moreover, this
+study showed that cells from healthy individuals tended to be
+caged by their neighbors and form a solid tissue, whereas cells
+from asthmatic individuals tended to remain unjammed, forming a fluid tissue. Therefore, these experiments suggested that
+the fluid-solid transition in tissues is involved in disease, opening the door to new treatments based on preventing this phase
+transition. Fluid-solid transitions also occur during development, enabling tissues to first turn fluid in order to remodel
+and acquire their shapes, and then solidify and mature. The
+emerging picture is that, in different biological contexts, cells
+can tune their shape and use the physical principles governing
+phase transitions in foams to decide whether to flow or not to
+flow.
+Aligning with neighbors
+The action starts once tissues become fluid and cells can
+move. Cells then engage in collective flows of different types,
+depending on how cells align with neighbors to coordinate
+their individual motions. Again, these cell-cell interactions
+depend strongly on cell shape.
+Cells come in many different shapes: some are roughly
+spherical, some have rod-like shapes, and some cells develop
+a head-tail asymmetry to migrate persistently in one direction. This direction can be represented by a vector known as
+cell polarity. In groups, cells can align their individual polarities, forming phases of matter with orientational order. These
+alignment interactions and the resulting oriented phases can
+be described using concepts from the physics of magnetism
+and liquid crystals. For example, cells in a group can spontaneously break symmetry and align in a common direction.
+This type of alignment is known as polar order. To capture its
+emergence, one can introduce ferromagnetic-like interactions
+between individual cell polarities. At a coarse-grained level,
+collective cell polarity can be thought to result from an effective free energy with the Mexican-hat shape familiar from the
+Landau theory of phase transitions. This example thus illustrates how tools and concepts from other fields of physics are
+being borrowed to rationalize cell alignment.
+In other situations, cells align along one axis but choose
+no preferred direction of motion. This type of alignment is
+known as nematic order, taking its name from nematic liquid crystals, used in LCD screens. Prominent features of liquid crystals are singular points known as topological defects,
+where alignment is locally lost. You can find topological defects literally on your own hands: they are the points where
+your fingerprint ridges meet (Figs. 3a and 3b). Recently, researchers have discovered topological defects in several cell
+assemblies, from bacterial colonies to epithelial tissues, confirming that they can be described as liquid crystals (Fig. 3c).
+Interestingly, topological defects can play important biological roles. For example, in epithelial monolayers, defects pro-
+RESEARCH LETTER
+4
+328 | N A TURE | VOL 545 | 18 MAY 2017
+according to the cell cycle phase, which is known as the interkinetic
+nuclear migration11. To see whether the direction switching is related
+to cell cycle, we used the cell-cycle marker Fucci12, and found that the
+switching of direction occurs within the same G1 or G2 cell cycle phase
+(Supplementary Video 6). This is in contrast to the interkinetic motion
+seen in vivo, where the motion of the nucleus is directed to the basal
+end (G1) or the apical end (G2) of the NPC, depending on its cell cycle
+phase11, although there was a difference in the timescale of switching
+between the two phases (Extended Data Fig. 4a–c)
+13.
+Active nematic systems are predicted to have spatio-temporal correlations between densities and strengths of nematic order that are
+ distinct from those of equilibrium systems3–5. By picking out areas
+that do not contain defects14, we confirmed giant number fluctuation
+and quasi-long-range order (Extended Data Fig. 5a and b) in the highdensity NPC culture. In the same regions, we calculated the spatial
+correlations of cell density and alignment fluctuations (Extended
+Data Figs 6 and 7a–f) and found that the fluctuations of density and
+alignment were correlated (see Supplementary Information). The
+correlations were positive in the first and third quadrant when seen
+as a function of two-dimensional displacements, indicating that the
+system is an extensile active nematic system3,5,15. This feature of the
+correlation was flipped and weaker in the case of a cultured myoblast
+cell line C2C12, which also shows a nematic pattern (Extended Data
+Fig. 8a and b). We further found that the spatial correlation of the cell
+density was anisotropic when the typical length scale of correlation
+in the direction parallel to the alignment was larger than that in the
+direction perpendicular to it (Extended Data Fig. 6).
+A clear signature of ‘activeness’ in a macroscopic system can be found
+at the topological defects. It has been observed both in experiment
+and simulation16–25 that + 1/2 defects typically undergo spontaneous
+motion in active nematic systems, which is in contrast to defects in
+equilibrium liquid crystals26. Topological defects in the biological
+ context have been observed in whorled grain in wood17 as well as
+in tube formation in embryonic development. Examples of defects
+yielding non-equilibrium collective dynamics include in vitro21,22,27
+and in vivo28 cytoskeleton dynamics, bacterium flows in liquid crystal
+mixtures23,25, colony growth dynamics24, and the cAMP patterning of
+aggregating social amoeba29.
+As has been reported in other works on cell cultures9,30,31, we clearly
+observed +1/2 and −1/2 defects in the dense NPC culture (Fig. 4a).
+We found slow motions of defects (3.7µ m h−1
+ on average) including
+the merging of defects with opposite winding numbers (Fig. 4b). In
+Fig. 4c, we show the local nematic order around the topological defects
+calculated from the displacement of cells inside small regions. Figure 4d
+shows the net velocity field calculated from the same data, indicating
+that there is a flow of cells pointing in the direction of the front of the
+comet shape in + 1/2 defects (Fig. 4c), whereas no clear directionality
+exists in the − 1/2 defects. The direction of the defect motion in the
+NPCs was opposite to that for passive liquid crystals, C2C12 (Fig. 4e),
+and the confluent fibroblasts reported in ref. 31.
+a b
+c
+t = 0 min T = 0 π
++1/2
+180 min
+–1/2 +1
+Figure 1 | Two-dimensional patterning and collective motion of NPCs.
+a, Imaging at the single-cell level of the two-dimensional culture. The
+top panels show low-density (1,100 cells mm−2
+) cells observed in phase
+contrast (left) and fluorescent channel (right, nucleus marker in pseudocolour). Lines in the right panels are the typical trajectories of single cells.
+The bottom panels show high-density (3,000 cells mm−2
+) cells. The white
+arrows (right bottom panel) indicate velocity reversal of the tracked cells.
+Scale bar, 100 µm. b, Large-field image of NPC culture. Colour indicates
+the angle of the local alignment calculated using the tensor method (see
+Supplementary Information) from the phase contrast image (bottom).
+Singular points where all colours meet in the top figure are the topological
+defects, as shown explicitly in the bottom image with the winding numbers
++1/2 (red) and −1/2 (blue) indicated. Scale bar, 1 mm. c, Types of
+topological defects characterized by the winding numbers.
+© 2017 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.
+a c
+b
+RESEARCH LETTER
+328 | N A TURE | VOL 545 | 18 MAY 2017
+according to the cell cycle phase, which is known as the interkinetic
+nuclear migration11. To see whether the direction switching is related
+to cell cycle, we used the cell-cycle marker Fucci12, and found that the
+switching of direction occurs within the same G1 or G2 cell cycle phase
+(Supplementary Video 6). This is in contrast to the interkinetic motion
+seen in vivo, where the motion of the nucleus is directed to the basal
+end (G1) or the apical end (G2) of the NPC, depending on its cell cycle
+phase11, although there was a difference in the timescale of switching
+between the two phases (Extended Data Fig. 4a–c)
+13.
+Active nematic systems are predicted to have spatio-temporal correlations between densities and strengths of nematic order that are
+ distinct from those of equilibrium systems3–5. By picking out areas
+that do not contain defects14, we confirmed giant number fluctuation
+and quasi-long-range order (Extended Data Fig. 5a and b) in the highdensity NPC culture. In the same regions, we calculated the spatial
+correlations of cell density and alignment fluctuations (Extended
+Data Figs 6 and 7a–f) and found that the fluctuations of density and
+alignment were correlated (see Supplementary Information). The
+correlations were positive in the first and third quadrant when seen
+as a function of two-dimensional displacements, indicating that the
+system is an extensile active nematic system3,5,15. This feature of the
+correlation was flipped and weaker in the case of a cultured myoblast
+cell line C2C12, which also shows a nematic pattern (Extended Data
+Fig. 8a and b). We further found that the spatial correlation of the cell
+density was anisotropic when the typical length scale of correlation
+in the direction parallel to the alignment was larger than that in the
+direction perpendicular to it (Extended Data Fig. 6).
+A clear signature of ‘activeness’ in a macroscopic system can be found
+at the topological defects. It has been observed both in experiment
+and simulation16–25 that + 1/2 defects typically undergo spontaneous
+motion in active nematic systems, which is in contrast to defects in
+equilibrium liquid crystals26. Topological defects in the biological
+ context have been observed in whorled grain in wood17 as well as
+in tube formation in embryonic development. Examples of defects
+yielding non-equilibrium collective dynamics include in vitro21,22,27
+and in vivo28 cytoskeleton dynamics, bacterium flows in liquid crystal
+mixtures23,25, colony growth dynamics24, and the cAMP patterning of
+aggregating social amoeba29.
+As has been reported in other works on cell cultures9,30,31, we clearly
+observed +1/2 and −1/2 defects in the dense NPC culture (Fig. 4a).
+We found slow motions of defects (3.7µ m h−1
+ on average) including
+the merging of defects with opposite winding numbers (Fig. 4b). In
+Fig. 4c, we show the local nematic order around the topological defects
+calculated from the displacement of cells inside small regions. Figure 4d
+shows the net velocity field calculated from the same data, indicating
+that there is a flow of cells pointing in the direction of the front of the
+comet shape in + 1/2 defects (Fig. 4c), whereas no clear directionality
+exists in the − 1/2 defects. The direction of the defect motion in the
+NPCs was opposite to that for passive liquid crystals, C2C12 (Fig. 4e),
+and the confluent fibroblasts reported in ref. 31.
+a b
+c
+t = 0 min T = 0 π
++1/2
+180 min
+–1/2 +1
+Figure 1 | Two-dimensional patterning and collective motion of NPCs.
+a, Imaging at the single-cell level of the two-dimensional culture. The
+top panels show low-density (1,100 cells mm−2
+) cells observed in phase
+contrast (left) and fluorescent channel (right, nucleus marker in pseudocolour). Lines in the right panels are the typical trajectories of single cells.
+The bottom panels show high-density (3,000 cells mm−2
+) cells. The white
+arrows (right bottom panel) indicate velocity reversal of the tracked cells.
+Scale bar, 100 µm. b, Large-field image of NPC culture. Colour indicates
+the angle of the local alignment calculated using the tensor method (see
+Supplementary Information) from the phase contrast image (bottom).
+Singular points where all colours meet in the top figure are the topological
+defects, as shown explicitly in the bottom image with the winding numbers
++1/2 (red) and −1/2 (blue) indicated. Scale bar, 1 mm. c, Types of
+topological defects characterized by the winding numbers.
+© 2017 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.
+LETTER RESEARCH
+TURE | VOL 545 | 18 MAY 2017 A 328 | N
+according to the cell cycle phase, which is known as the interkinetic
+nuclear migration11. To see whether the direction switching is related
+to cell cycle, we used the cell-cycle marker Fucci12, and found that the
+switching of direction occurs within the same G1 or G2 cell cycle phase
+(Supplementary Video 6). This is in contrast to the interkinetic motion
+, where the motion of the nucleus is directed to the basal in vivo seen
+end (G1) or the apical end (G2) of the NPC, depending on its cell cycle
+phase11, although there was a difference in the timescale of switching
+) Extended Data Fig. 4a–c between the two phases ( 13.
+- Active nematic systems are predicted to have spatio-temporal cor
+relations between densities and strengths of nematic order that are
+ distinct from those of equilibrium systems3–5. By picking out areas
+that do not contain defects14, we confirmed giant number fluctuation
+) in the high- b and Extended Data Fig. 5a and quasi-long-range order (
+ spatial density NPC culture. In the same regions, we calculated the
+Extended correlations of cell density and alignment fluctuations (
+) and found that the fluctuations of density and 7a–f and Data Figs 6
+alignment were correlated (see Supplementary Information). The
+correlations were positive in the first and third quadrant when seen
+as a function of two-dimensional displacements, indicating that the
+. This feature of the 15 , 5, 3 system is an extensile active nematic system
+correlation was flipped and weaker in the case of a cultured myoblast
+Extended Data cell line C2C12, which also shows a nematic pattern (
+). We further found that the spatial correlation of the cell b and Fig. 8a
+density was anisotropic when the typical length scale of correlation
+in the direction parallel to the alignment was larger than that in the
+). Extended Data Fig. 6 direction perpendicular to it (
+A clear signature of ‘activeness’ in a macroscopic system can be found
+at the topological defects. It has been observed both in experiment
+and simulation16–25 1/2 defects typically undergo spontaneous + that
+motion in active nematic systems, which is in contrast to defects in
+equilibrium liquid crystals26. Topological defects in the biological
+ context have been observed in whorled grain in wood17 as well as
+in tube formation in embryonic development. Examples of defects
+in vitro yielding non-equilibrium collective dynamics include 27 , 22 , 21
+in vivo and 28 cytoskeleton dynamics, bacterium flows in liquid crystal
+mixtures 25 , 23 , colony growth dynamics24, and the cAMP patterning of
+aggregating social amoeba29.
+As has been reported in other works on cell cultures 31 , 30 , 9 , we clearly
+). Fig. 4a 1/2 defects in the dense NPC culture ( − 1/2 and + observed
+h mµ We found slow motions of defects (3.7 1 − on average) including
+). In Fig. 4b the merging of defects with opposite winding numbers (
+, we show the local nematic order around the topological defects Fig. 4c
+Figure 4d calculated from the displacement of cells inside small regions.
+shows the net velocity field calculated from the same data, indicating
+that there is a flow of cells pointing in the direction of the front of the
+), whereas no clear directionality Fig. 4c 1/2 defects ( + comet shape in
+ 1/2 defects. The direction of the defect motion in the − exists in the
+), Fig. 4e NPCs was opposite to that for passive liquid crystals, C2C12 (
+. 31 and the confluent fibroblasts reported in ref.
+a b
+c
+π = 0 T = 0 min t
++1/2
+180 min
++1 –1/2
+Two-dimensional patterning and collective motion of NPCs. | Figure 1
+, Imaging at the single-cell level of the two-dimensional culture. The a
+mm cells top panels show low-density (1,100 2 − ) cells observed in phase
+contrast (left) and fluorescent channel (right, nucleus marker in pseudocolour). Lines in the right panels are the typical trajectories of single cells.
+mm cells The bottom panels show high-density (3,000 2 − ) cells. The white
+arrows (right bottom panel) indicate velocity reversal of the tracked cells.
+, Large-field image of NPC culture. Colour indicates b m. µ Scale bar, 100
+the angle of the local alignment calculated using the tensor method (see
+Supplementary Information) from the phase contrast image (bottom).
+Singular points where all colours meet in the top figure are the topological
+defects, as shown explicitly in the bottom image with the winding numbers
+, Types of c mm. 1/2 (blue) indicated. Scale bar, 1 − 1/2 (red) and +
+topological defects characterized by the winding numbers.
+© 2017 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.
+1 mm
+NATURE PHYSICS LETTERS
+(Figs. 2a and 3a,b,g) and the average shear flow vanished although the
+cells remained very motile and the convergent flow was not affected
+(Fig. 3c–f,h,i). The shear velocity fluctuated in space and time about
+a zero mean (Fig. 3e,i).
+In summary, for L>Lc, the cell population organizes in a
+nematic phase with a director at a finite angle with the main
+direction of the stripe. In parallel, cells spontaneously develop
+complex flows with shear and transverse components. Below the
+threshold Lc, cells orient in the direction of the stripe and no net
+shear flow develops.
+To understand these observations, we modelled our system as
+a confined active nematic fluid27,28. Indeed, despite the obvious
+practical differences, our confined cells share the same fundamental symmetries as a contractile acto-myosin network powered by
+ATP hydrolysis between parallel plates29. We therefore developed
+an adapted version of the physical model of ref. 29 that predicts that
+active nematics confined in a stripe of width L exhibit a generic continuous transition at a critical width Lc between an ordered immobile state and a flowing state. This transition is analogous to the
+Fréedericksz transition of nematic liquid crystals30 but it is driven
+by the intrinsic activity of the system rather than an external field.
+To account for the finite angle of the edge cells (Fig. 2b), we adapted
+the model by assuming a finite anchoring at the walls. The torque
+exerted on the cells by the edges is then balanced by the nematic
+elastic torque (see Supplementary Note).
+For widths larger than but close to the critical width (L ≳ Lc), the
+angle θ is predicted to vary across the stripe as θ ~ +ε
+π − ( ) x oc (s q x) L L
+2 L c
+c
+c
+where =
+π
+qc L
+2
+c
+ and ε is a coefficient that depends on the material properties of the system (see Supplementary Note). Similarly, the y component of the velocity is given by ~ ε
+γ ν +
+− v x( ) sin(q x) y
+Kq L L
+L
+2
+( 1) c
+c c
+c
+, where K is the
+stiffness associated with splay deformations of the director field, γ is
+the rotational viscosity and ν is the flow alignment parameter. These
+quantities are material parameters of the active cells. Therefore, it is
+expected that the central angle θ (0) 2 −π∕ , the angle θ ( ) ± −π∕2 L
+2 at the
+edges and the velocity at the edges vy ( ) ±L
+2 all scale as ( ) L L− c (see
+also Supplementary Note). We note that the large fluctuations of the
+orientations and velocities (Supplementary Fig. 7) are not described
+by this mean-field model. For this reason, we focus here only on
+average quantities.
+Fitting model to experiments for 10 µ m <L<150 µ m, we find a
+very good agreement between these theoretical scaling predictions
+and the experimental data yielding Lc
+=46 ±4 µ m for RPE1 cells
+(Fig. 4a,b). Similar results were obtained for C2C12 mouse myoblasts. In this case, we measured λ =12 ±2 µ m and Lc
+=30 ±4 µ m.
+The theory thus captures the main features of the biological system
+and in particular the existence of the transition that we now identify as a Fréedericksz transition driven by cell activity. Spontaneous
+flow transitions are typical of active matter; other examples include
+low-Reynolds-number turbulence or spontaneous topological singularities in translation and rotation27,31. Here, we demonstrate their
+–250 0 250
+70
+75
+80
+85
+Distance (µm)
+180° 0°
+C2C12
+0°
+90°
+180°
+NIH-3T3
+180° 0°
+RPE1
+a b c e f
+73 83
+Angle (deg)
+–250 2500
+µm
+x
+y
+vy
+–4.0 0 4.0
+vx
+vx (
+µm h–1
+)
+vy (
+µm h–1
+)
+0.0 2.5 –1.4 0 1.4
+µm h–1
+µm h–1
+µm h–1
+g h i j
+k
+–0.8
+0.0
+0.8
+x (µm)
+–3
+0
+3
+–250 0 250
+d
+θ(x)
+Angle (deg)
+Fig. 1 | Confined RPE1 cells align together with a tilt angle and develop a shear flow. a–c, Local angle of the cell bodies when confined in a 500-µ m-wide
+stripe: phase contrast (a); line integral convolution (b); local director (c). Only a small fraction of the directors is displayed for clarity. d, Heatmap of the
+local angle. e, Histograms of the angles θ of the cells’ bodies (averaged over the width) (NRPE1=38 FOVs, NC2C12=60 FOVs, NNIH-3T3=64 FOVs). f, Profile of
+the orientation angle across the stripe width after averaging along the y direction. g, Velocity field within the stripe. The colours code for the speed. Only
+a fraction of the vectors is displayed for clarity. Note the shear flow (ycomponent) near the edges and the relatively smaller x component of the velocity
+directed toward the centre. h,i, Heatmaps of the y (h) and x (i) components of the velocity. j,k, Profiles of the two components of the velocity across the stripe
+after averaging over its length (y direction). For all relevant panels, the solid lines are average values and the coloured areas are the standard deviations.
+NATURE PHYSICS | VOL 14 | JULY 2018 | 728–732 | www.nature.com/naturephysics 729
+NATURE PHYSICS LETTERS
+(Figs. 2a and 3a,b,g) and the average shear flow vanished although the
+cells remained very motile and the convergent flow was not affected
+(Fig. 3c–f,h,i). The shear velocity fluctuated in space and time about
+a zero mean (Fig. 3e,i).
+In summary, for L>Lc, the cell population organizes in a
+nematic phase with a director at a finite angle with the main
+direction of the stripe. In parallel, cells spontaneously develop
+complex flows with shear and transverse components. Below the
+threshold Lc, cells orient in the direction of the stripe and no net
+shear flow develops.
+To understand these observations, we modelled our system as
+a confined active nematic fluid27,28. Indeed, despite the obvious
+practical differences, our confined cells share the same fundamental symmetries as a contractile acto-myosin network powered by
+ATP hydrolysis between parallel plates29. We therefore developed
+an adapted version of the physical model of ref. 29 that predicts that
+active nematics confined in a stripe of width L exhibit a generic continuous transition at a critical width Lc between an ordered immobile state and a flowing state. This transition is analogous to the
+Fréedericksz transition of nematic liquid crystals30 but it is driven
+by the intrinsic activity of the system rather than an external field.
+To account for the finite angle of the edge cells (Fig. 2b), we adapted
+the model by assuming a finite anchoring at the walls. The torque
+exerted on the cells by the edges is then balanced by the nematic
+elastic torque (see Supplementary Note).
+For widths larger than but close to the critical width (L ≳ Lc), the
+angle θ is predicted to vary across the stripe as θ ~ +ε
+π − ( ) x oc (s q x) L L
+2 L c
+c
+c
+where =
+π
+qc L
+2
+c
+ and ε is a coefficient that depends on the material properties of the system (see Supplementary Note). Similarly, the y component of the velocity is given by ~ ε
+γ ν +
+− v x( ) sin(q x) y
+Kq L L
+L
+2
+( 1) c
+c c
+c
+, where K is the
+stiffness associated with splay deformations of the director field, γ is
+the rotational viscosity and ν is the flow alignment parameter. These
+quantities are material parameters of the active cells. Therefore, it is
+expected that the central angle θ (0) 2 −π∕ , the angle θ ( ) ± −π∕2 L
+2 at the
+edges and the velocity at the edges vy ( ) ±L
+2 all scale as ( ) L L− c (see
+also Supplementary Note). We note that the large fluctuations of the
+orientations and velocities (Supplementary Fig. 7) are not described
+by this mean-field model. For this reason, we focus here only on
+average quantities.
+Fitting model to experiments for 10 µ m <L<150 µ m, we find a
+very good agreement between these theoretical scaling predictions
+and the experimental data yielding Lc
+=46 ±4 µ m for RPE1 cells
+(Fig. 4a,b). Similar results were obtained for C2C12 mouse myoblasts. In this case, we measured λ =12 ±2 µ m and Lc
+=30 ±4 µ m.
+The theory thus captures the main features of the biological system
+and in particular the existence of the transition that we now identify as a Fréedericksz transition driven by cell activity. Spontaneous
+flow transitions are typical of active matter; other examples include
+low-Reynolds-number turbulence or spontaneous topological singularities in translation and rotation27,31. Here, we demonstrate their
+–250 0 250
+70
+75
+80
+85
+Distance (µm)
+180° 0°
+C2C12
+0°
+90°
+180°
+NIH-3T3
+180° 0°
+RPE1
+a b c e f
+73 83
+Angle (deg)
+–250 2500
+µm
+x
+y
+vy
+–4.0 0 4.0
+vx
+vx (
+µm h–1
+)
+vy (
+µm h–1
+)
+0.0 2.5 –1.4 0 1.4
+µm h–1
+µm h–1
+µm h–1
+g h i j
+k
+–0.8
+0.0
+0.8
+x (µm)
+–3
+0
+3
+–250 0 250
+d
+θ(x)
+Angle (deg)
+Fig. 1 | Confined RPE1 cells align together with a tilt angle and develop a shear flow. a–c, Local angle of the cell bodies when confined in a 500-µ m-wide
+stripe: phase contrast (a); line integral convolution (b); local director (c). Only a small fraction of the directors is displayed for clarity. d, Heatmap of the
+local angle. e, Histograms of the angles θ of the cells’ bodies (averaged over the width) (NRPE1=38 FOVs, NC2C12=60 FOVs, NNIH-3T3=64 FOVs). f, Profile of
+the orientation angle across the stripe width after averaging along the y direction. g, Velocity field within the stripe. The colours code for the speed. Only
+a fraction of the vectors is displayed for clarity. Note the shear flow (ycomponent) near the edges and the relatively smaller xcomponent of the velocity
+directed toward the centre. h,i, Heatmaps of the y (h) and x (i) components of the velocity. j,k, Profiles of the two components of the velocity across the stripe
+after averaging over its length (y direction). For all relevant panels, the solid lines are average values and the coloured areas are the standard deviations.
+NATURE PHYSICS | VOL 14 | JULY 2018 | 728–732 | www.nature.com/naturephysics 729
+d
+Figure 3 Topological defects and spontaneous flows in cell monolayers. (a) Schematics of nematic topological defects. The local
+alignment axis (black curves) is undefined at the defect core. Defects are characterized by their topological charge, indicated below the
+schematics, which is defined as the winding number of the alignment direction around the defect core. (b) Topological defects in fingerprints.
+Adapted from Wikimedia Commons, by Frettie. (c) The top panel shows the angle of cell alignment in a cell monolayer. Defects are the
+points where all colors meet. The bottom panel shows the defects on a phase-contrast image of the cell monolayer. Panels (a) and (c) are from
+K. Kawaguchi, R. Kageyama, and M. Sano. Nature 545, 327, 2017. (d) A nematic monolayer of epithelial cells confined in a stripe
+(phase-contrast image on the left) exhibits a spontaneous shear flow (right). From ref.5
+.
+mote cell death and extrusion6
+. In colonies of the motile soil
+bacterium M. xanthus, defects promote the formation of multicellular aggregates known as fruiting bodies, which allow
+the bacterial population to survive starvation7
+.
+Flowing on their own
+Describing orientational order is not enough to account for
+collective cell flows. To this end, physicists describe cell assemblies as active matter1,8
+. For example, when cells align
+with polar order, they can start migrating in the direction of
+alignment9
+. This type of collective motion is known as flocking. The active-matter theory of this phenomenon was developed 25 years ago inspired by the mesmerizing flights of
+bird flocks10. Today, the principles of flocking are applied to
+many other systems, from synthetic active colloids to bacterial
+swarms.
+To describe nematic cell colonies, researchers use the theory of active liquid crystals, which generalizes the hydrodynamics of liquid crystals to include active (cell-generated)
+stresses. Among many other phenomena, this theory explains
+the cell flows observed around topological defects. Again,
+beyond cell colonies, the theory successfully describes many
+other systems, from biopolymer gels to shaken granular materials. Employing general theories of active matter to describe
+cell migration is particularly useful because it reveals connections to apparently-unrelated systems. Progressively, this approach is uncovering a classification of active systems based
+on symmetries and generic behaviors, in the spirit of universality classes in statistical mechanics.
+For example, the theory of active liquid crystals was originally inspired by behaviors in bacterial suspensions and in
+the cell cytoskeleton. Soon after formulating the theory, researchers predicted that active stresses generate an instability
+whereby these fluids start flowing spontaneously, without having to apply external forces14. To drive flows, active stresses
+have to overcome alignment forces in the liquid crystal, which
+happens only at sufficiently large scales. Therefore, the theory
+predicted that a strip of active fluid would flow only if it was
+wide enough14
+.
+More than a decade later, these predictions were tested in
+cell monolayers5
+, showcasing the generic character of the theory. Whereas cells confined in narrow stripes did not flow,
+cells in stripes wider than a critical width developed a collective shear flow as predicted by the theory (Fig. 3d). In
+very large tissues, cell flows become chaotic, creating disordered patterns of swirls known as active turbulence15. Confinement can therefore prevent and organize spontaneous cell
+flows. This regulatory role of confinement may be relevant
+in embryonic development and tumor invasion, in which cell
+groups often migrate in tracks defined by the surrounding tissue (Fig. 1a). Overall, these studies showcase how cells can
+leverage the physics of active fluids to engage in collective
+flow patterns, and how confinement controls whether and how
+cell groups flow on their own.
+To spread or not to spread
+What happens if we release confinement and expose a cell
+monolayer to free space? Cells at the monolayer edge are
+able to sense that they have neighboring cells on one side
+but not on the other. In ways that remain to be fully under-
+5
+NATURE PHYSICS DOI: 10.1038/NPHYS2355 ARTICLES
+t = 0 h t = 1 h t = 4 h
+Actin E-cadherin ZO-1
+a
+b
+c
+d
+PDMS membrane
+PA gel Paxillin
+Time (min)
+Time (min)
+%
+t = 0 h
+t = 1 h
+t = 4 h
+2
+4
+6
+0
+Area (
+×105
+µ
+m
+2
+)
+0 200 300 400 500 100 600 700
+0
+40
+60
+20
+0 200 400 600
+Figure 1 | Experimental model. a, A PDMS membrane is deposited on a
+collagen-coated polyacrylamide (PA) gel. Cells are seeded and allowed to
+attach only over the gap defined by the PDMS membrane. When confluent
+cells reach a relatively high confluence, the PDMS membrane is peeled off
+and cells start invading the surrounding space. b, Transversal view of
+LifeAct MDCK cells at the specified time points after the PDMS membrane
+was removed; scale bar,20 µm. c, Basal actin (LifeAct–GFP), E-cadherin,
+ZO-1 and paxillin immunofluorescence micrographs before, 1 h after and 4 h
+after removing the membranes. Scale bars,15 µm. d, Cell sheet area (filled
+circles) and cell sheet area due to proliferation (white circles) at different
+time points. The area due to proliferation was calculated by counting the
+number of cells in the monolayer at distinct time points and then
+multiplying the number of new cells by the average cell area. Data are
+mean ± s.d. (n = 5). Inset: relative contribution of cell proliferation to cell
+sheet area.
+With time, these boundary layers became markedly heterogeneous
+but systematically grew to encompass increasing numbers of
+cells; cell–cell tension transmission exhibited a growing scale
+of length (Fig. 2k), and the maximum intercellular shear stress
+(µ¯ ) followed a similar pattern (Fig. 2m,n). Taken together, these
+findings demonstrate that force transmission from cell-to-cell,
+and cellular migration across the epithelial sheet, are initiated at
+the leading edge and progressively penetrate towards the centre
+(Supplementary Movie S3).
+Moreover, these stress fields were anisotropic. At each position
+in the monolayer plane, the maximum (max) and minimum
+(min) principal stresses5 were represented as an ellipse aligned
+with corresponding principal orientations (Fig. 2p). Throughout
+epithelial expansion, stress ellipses tended to be spindle-shaped
+and thus revealed pronounced stress anisotropy. The maximum
+principal stress orientation tended to be perpendicular to the
+leading edge and thus roughly parallel to local cell motion
+(Fig. 2q). As described previously, this mode of local cell guidance
+defines plithotaxis2,5.
+Superposed on systematic monolayer spreading were largescale spatio-temporal fluctuations of tractions, monolayer stresses
+and cellular velocities (Fig. 2f,i,l,o). To better characterize the
+systematic evolution of mechanical patterns, we averaged these
+variables over the observable monolayer length (corresponding
+to the y coordinate), thereby reducing the dimensionality of the
+system to only one spatial dimension and one temporal dimension.
+All data could then be represented as kymographs in the x–t
+plane (Methods). Kymographs of cellular velocity (vx ) revealed
+motility patterns that were not restricted to the initial phase of
+inward mobilization (Fig. 3a). To the contrary, after reaching the
+monolayer midline at ⇠150 min, the two fronts of cell motility
+coalesced and then continued towards the leading edges. When
+cells are cohesive and mass is conserved, cellular velocities must
+be linked to the rate of cell deformation (strain rate, "˙xx ; ref. 11)
+through the expression "˙xx = @vx/@x. Remarkably, kymographs of
+"˙xx revealed clear evidence of wave-like crests of strain rate that were
+launched at each leading edge, propagated away from and back to
+the leading edge at roughly twice the speed of the advancing front
+edge, and spanned the entire monolayer (Fig. 3b). To distinguish
+these mechanical waves from other known types of mechanical
+wave, and because they inscribe an X-shape on the kymograph,
+we call them X-waves.
+To study the physical origin of the X-wave, we next focused
+on traction generation and stress transmission in the monolayer.
+Whereas traction kymographs demonstrated extrema at the leading
+edge, monolayer stresses were highest at the monolayer midline,
+indicating that local force generation was globally integrated and
+transmitted through cell–cell junctions to give rise to a stress
+build-up (Fig. 3c,d). Importantly, monolayer stress at the midline
+oscillated in time (Fig. 3g,h and Supplementary Movie S4); these
+oscillations were in phase with fluctuations of cell area (Fig. 3f,h)
+and demonstrated phase quadrature with strain rate (Fig. 3e).
+Contrary to long-held assumptions (reviewed in ref. 12), these
+observations establish that on the ultraslow timescales of cellular
+migration the dominant cellular stresses in the monolayer are
+elastic, not viscous.
+In the absence of appreciable inertia, there can exist no exchange
+between kinetic and potential energy storage as is usually associated
+with propagation of passive mechanical waves, thus suggesting
+that the mechanism underlying the observed propagation might
+be active. To investigate this possibility, we inhibited myosin using
+blebbistatin. Blebbistatin prevented the formation of stress fibres
+(Supplementary Fig. S2) and had little effect on the velocity of the
+leading edge, thus confirming previous reports in wound scratch
+assays8. Blebbistatin caused traction forces and intercellular stresses
+to be abrogated, however (Supplementary Fig. S2 and Movie S5).
+A well-defined front of strain rate could be clearly identified
+nonetheless, but this front was stationary, did not propagate
+NATURE PHYSICS | VOL 8 | AUGUST 2012 | www.nature.com/naturephysics 629
+even originate far away from the edge and be
+brought to the front by flows within the epithelium
+(51). Indeed, cells far away from the edge of a
+monolayer have been shown to extend cryptic lamellipodia underneath their neighbors (21), suggesting that leader cells are not necessarily
+restricted to the edge of a monolayer (FIGURE 3B).
+These leader cells drag along a small cluster of
+follower cells, resulting in the formation of “fingerlike” instabilities of the leading front (51). Staining
+reveals thick actin bundles (51) as well as stretched
+E-cadherin morphology (48) connecting the leaders to the followers, suggesting a strong mechanical coupling and force transmission within these
+finger-like structures. Velocity field analysis and
+mechanical perturbation of leader cells using laser
+ablation strongly support the role of leader cells in
+providing local guidance cues to cells following
+them (53). It was further observed that inhibition
+or expression of a dominant negative form of Rho
+FIGURE 3. Mechanisms of collective cell migration from a mechanistic perspective
+A: positive (left) and negative (right) fluorescence image of a migrating monolayer of MDCK cells stably expressing
+actin-GFP showing finger-like instabilities capped by cells with mesenchymal morphology characteristic of leader
+cells. Right image is superimposed with “cartoonized” structures (red and green) to illustrate the distribution of actin bundles and lamellipodia that is typical of leaders and followers in finger-like protrusions. B: cryptic lamellipodia
+extended by cells far away from the leading edge. Inset: magnified view of the region bounded by the dotted box
+showing cryptic lamellipodia. Right image is superimposed with pseudo-colored structures (red and green) to illustrate the distribution of actin bundles and cryptic lamellipodia. C: cartoon illustrating the mechanical interaction of
+cells with the substrate through focal adhesions and with their neighbors through cell-cell junctions. The former results in traction forces, and the latter transmits the tension across the sheet of cells. D: cell-cell junctions are subjected to shear and normal stresses during migration as a result of mechanical coupling. Cells tend to migrate
+along the direction of maximal normal stress and minimal shear stress. E: particle image velocimetry (PIV) tracking
+of MDCK cells migrating within wide channels (!400 "m) showing vortex formation (top) and within narrow channels (!20 "m) showing a contraction relaxation mode of migration (bottom). Cartoons showing the distribution of
+traction forces under both conditions are depicted below the respective images (F) plot of the correlation distance
+(of velocities) of MDCK cell clusters as a function of the radius of the confining circular pattern.
+REVIEWS
+374 PHYSIOLOGY • Volume 28 • November 2013 • www.physiologyonline.org
+Traction forces Cell-substrate adhesion
+Intercellular stresses Cell-cell adhesion
+0
+10
+20
+30
+40
+50
+0 50 100 150 200
+Wetting
+Dewetting
+Contractility
+
+⇣ (kPa)
+Monolayer radius R (µm)
+to a viscoelastic model, the aggregate’s elastic
+modulus, viscosity, and surface tension are determined. This technique has the advantage of a
+relatively simple experimental setup and image
+analysis. Using this technique on aggregates of
+mouse sarcoma cell lines expressing E-cadherin,
+Guevorkian et al. reported that the aggregate’s
+surface tension increased with the applied pressure
+(21), which could indicate an active reinforcement of the aggregate in response to the applied
+stress. Such a reinforcement has not been reported
+in parallel-plate compression experiments. Although
+in parallel-plate compression aggregates are compressed to a constant strain, with the exerted stresses
+being relaxed over a typical time scale of about
+an hour, in micropipette aspiration aggregates
+undergo a continuous traction at constant stress.
+It has been reported that traction forces elicit
+active cell contractile responses (37, 38), which
+may not arise during compression. A systematic
+study comparing parallel-plate compression and
+micropipette aspiration on aggregates of the same
+cell lines would help to clarify the effect of these
+differences. It has also been pointed out that whereas in parallel-plate compression the whole aggregate is stressed, micropipette aspiration probes
+only a subset of the aggregate’s cells (39). The
+number of cells subjected to stress scales as Rp
+3
+.
+Thus, for the continuum hypothesis to be valid
+and the technique applicable to characterize aggregate rheology, the micropipette radius should
+be large enough to probe a few hundreds of cells,
+which is usually accomplished with Rp ≈ 30 mm.
+The existence of a yield modulus above which
+aggregates exhibit plastic behavior remains a matter of controversy. Some authors have postulated
+the existence of a yield modulus in tissues, which
+physically would arise from the critical force
+required to break intercellular bonds and induce
+cellular reorganization (22). To our knowledge,
+no systematic experimental investigation of the
+existence of a yield stress in tissues has been conducted. Existing experimental observations such
+as the spontaneous fusion of two aggregates
+(40) seem to suggest that the yield stress, if it
+exists, is smaller than the stresses induced by
+tissue surface tension, and thus deformations are
+relaxed by surface tension over a time scale of
+the order of hR/g, where R is the characteristic
+aggregate size (typically a few hundred micrometers). Moreover, bond formation and dissociation is more accurately described as a dynamic
+process, where the formation and dissociation
+rates vary continuously with the applied load. An
+appealing solution to the debate about the existence of tissue plasticity has been suggested by
+Marmottant et al. (41), who proposed that the
+Fig. 2. Wetting analogies of tissue behavior. (A) Cell sorting. Twodifferent cell
+populations (pink and blue) in a cell aggregate spontaneously sort out according to
+their surface and interfacial tensions. (B) Aggregatefusion. When brought into
+contact, two aggregates of the same cell line fuse to yield a larger, spherical aggregate. (C)Aggregate spreadingonawettable substrate. Reprinted with permission
+from (57). (D) Long-term spreadingdynamics.As the aggregate cohesivity is decreased, the dynamics of the precursor film transitions from a liquid (left) to a 2D gas
+(right). Reprinted with permission from (3). (E)Dewettingofacellularmonolayeron
+anonwettablesubstrate,aphenomenonopposite to spreading. Reprinted with kind
+permission of The European Physical Journal (EPJE) from (6). Scale bars, 100 mm. (F)
+Aggregate shivering. Active pulsatile contractions are observed during micropipette
+aspiration when the aspiration pressure is within a certain range.
+www.sciencemag.org SCIENCE VOL 338 16 NOVEMBER 2012 913
+SPECIALSECTION
+on January 28, 2019 http://science.sciencemag.org/ Downloaded from
+a
+b
+c
+d
+20 μm
+100 μm 100 μm
+Figure 4 Tissue wetting and spreading. (a) Transversal view of a cell monolayer as it starts spreading. From ref.11
+. (b) Schematic of the
+cell-substrate forces and cell-cell stresses involved in tissue spreading. Adapted from S.R.K. Vedula et al. Physiology 28, 370, 2013. (c) Cell
+aggregates may either remain as droplet-like spheroids (left) or wet the underlying substrate (right). From ref.12
+. (d) Phase diagram of active
+tissue wetting. For a given tissue contractility, which represents cell-cell pulling forces, only sufficiently large monolayers wet the substrate.
+Adapted from ref.13
+.
+stood, edge cells respond to this asymmetric environment by
+polarizing toward free space (Fig. 4a). Specifically, these cells
+extend protrusions known as lamellipodia, with which they
+exert directed and persistent traction forces on the underlying substrate to migrate toward open ground. Because cells
+in the monolayer are adhered to one another, the migrating
+edge cells pull on cells in the second row, which then also
+polarize, migrate, and pull on inner cells, setting the monolayer under tension16 (Fig. 4b). At the molecular level, this
+supracellular coordination is mediated by a protein known as
+merlin, which transduces intercellular forces into cell polarization. In this mechanically-coordinated way, the entire cell
+monolayer spreads on the substrate, becoming progressively
+thinner11 (Fig. 4a). Combined with other mechanisms, this
+type of collective cell migration helps to close gaps in epithelial tissues, as in wound healing.
+But tissues not always spread on substrates. Under certain conditions, a cell monolayer may instead retract from
+the substrate, eventually collapsing into a droplet-like cell
+aggregate13 (Fig. 4c). Tissue spreading and retraction are
+therefore reminiscent of the wetting and dewetting of liquid
+droplets. The degree of wetting depends on the balance between cohesive forces within the liquid and adhesive forces
+with the substrate. By analogy, early models proposed that
+tissue wetting was dictated by a competition between cell-cell
+(Wcc) and cell-substrate (Wcs) adhesion energies12,17, encoded
+in a spreading parameter S = Wcs − Wcc. When S < 0, cellcell adhesion dominates and the cell aggregate retracts from
+the substrate (dewetting, Fig. 4c left), whereas when S > 0,
+cell-substrate adhesion dominates and the aggregate spreads
+(wetting, Fig. 4c right). This simple conceptual framework
+was sufficient to interpret the behavior of cell aggregates of
+varying cell-cell and cell-substrate adhesion12,17. However,
+this analogy to passive liquids does not explicitly account for
+the active nature of cells.
+Recent work addressed this limitation by treating the cell
+monolayer as a droplet of active liquid13. Using this approach,
+one obtains the spreading parameter directly in terms of active
+cellular forces. Supported by experiments, the model predicts
+that the wetting transition results from the competition between two types of active forces: cell-substrate traction forces
+that promote spreading versus cell-cell pulling forces that promote retraction. This active wetting framework makes another key prediction: the spreading parameter depends on the
+droplet radius. Cell monolayers larger than a critical radius
+wet the substrate, whereas smaller monolayers dewet from it
+(Fig. 4d). This prediction is striking because it has no counterpart in the classic wetting picture, in which the spreading
+parameter depends solely on surface tensions. For regular liquid droplets, size does not matter. In contrast, tissue wetting is
+size-dependent. This prediction was verified in experiments,
+providing evidence for the active nature of tissue wetting13
+.
+Besides its relevance in physics, the existence of a critical
+size for tissue wetting might explain drastic changes in tissue
+morphology during embryonic development and cancer progression. For example, a disturbing possibility is that a growing tumor might become able to spread onto the surrounding
+tissue once it reaches a critical size. Overall, this work exemplifies how the quest to understand collective cell migration
+motivates the development of new physics, leading to the discovery of phenomena like active wetting. Finally, this physics
+approach offers clues on how cell aggregates may tune active
+forces to control whether to spread or not to spread.
+Mechanical waves without inertia
+Tissue spreading revealed yet another striking collective
+phenomenon: Mechanical waves start spontaneously at the
+leading edge and propagate across the cell monolayer11
+(Fig. 5). These waves are slow, with speeds ∼ 10 − 100
+µm/h, and wavelengths that span several cell diameters. Simi-
+6
+et al., 2019). Earlier studies have shown that ERK activation
+propagates as multiple waves from leader cells to the follower
+cells during collective cell migration using in vitro cultured cells
+(Handly et al., 2015; Matsubayashi et al., 2004; Nikolic et al.,
+!
+2006) and in vivo mouse ear skin (Hiratsuka et al., 2015).
+Recently, we have demonstrated that the ERK activation waves
+orient the directed migration of a cell cluster against the wave
+direction, indicating a critical role of the ERK activation waves
+in coordinated cell migration (Aoki et al., 2017). However, it remains largely unknown how cells harness the mechanotransduction and the ERK activation waves to coordinate collective
+cell migration.
+In this study, by combining Fo¨ rster resonance energy transfer (FRET)-based biosensors (Harvey et al., 2008; Komatsu
+et al., 2011), an optogenetic tool (Aoki et al., 2013), traction
+force microscopy (Trepat et al., 2009), and mathematical
+modeling, we show that each follower cell possesses a mechanochemical feedback system, in which stretch-induced ERK
+activation triggers cell contraction. Intercellular coupling of
+the ERK-mediated mechanochemical feedback enables sustained propagation of ERK activation and contractile force
+generation, leading to multicellular alignment of front-rear cell
+polarity over long distances. Thus, our study clarifies a mechanism of intercellular communication underlying long-range
+sustained transmission of directional cues for collective cell
+migration.
+RESULTS
+Cell Deformation Waves Precede ERK Activation Waves
+To investigate the relationship between ERK activation and cell
+deformation during collective cell migration, Madin-Darby canine
+kidney (MDCK) cells confluently seeded within compartments of
+a silicone confinement were released for collective cell migration.
+ERK activity and cell deformation were evaluated by FRET imaging with EKAREV-NLS, by which ERK activation is quantified as
+an increase in the FRET/CFP ratio (Komatsu et al., 2011), and particle image velocimetry (PIV)-based image processing, respectively. As the cells migrated toward free spaces, sustained ERK
+activation waves were propagated from the leader cells to the follower cells (Figures 1A and 1B; Video S1), in agreement with previous reports (Aoki et al., 2017; Matsubayashi et al., 2004). The
+cell deformation, i.e., extension and shrinkage, was quantified
+by the cell strain rate in the direction of collective cell migration
+(x-strain rate). Similar to the ERK activity, the x-strain rate exhibited repeated positive and negative values, namely extension
+and shrinkage, which propagated from the leader cells to the follower cells (Figures 1A and 1C; Video S1), as described previously (Serra-Picamal et al., 2012; Tlili et al., 2018). Hereinafter,
+we refer to the propagation of the x-strain rate as cell deformation
+waves (Rodrı´guez-Franco et al., 2017).
+To analyze the correlation between the ERK activation and the
+cell deformation, time series data of the ERK activity and those of
+(
+5
+î
+. DFWLYDWLRQUDWH
+PLQ
+[VWUDLQ UDWH îPLQ &URVVFRUUHODWLRQFRHIILFLHQW
+&URVVFRUUHODWLRQEHWZHHQ
+[VWUDLQUDWHDQG(5.DFWLYDWLRQUDWH
+ 
+7LPHK
+
+
+
+
+î   PLQ
+
+
+
+
+7LPHK
+A
+B C
+D
+E
+3KDVH
+FRQWUDVW
+(5.DFWLYLW\
+)5(7&)3
+[VWUDLQUDWH
+K
+ 
+ 
+îPLQ
+K K
+
+
+[VWUDLQUDWH
+(5. DFWLYDWLRQUDWH
+7LPH DIWHUVWDUWRIPLJUDWLRQK
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+7LPHODJPLQ
+   
+   
+'LVWDQFHPP
+   
+PP
+(5.DFWLYLW\
+)5(7&)3
+[VWUDLQUDWH
+'LVWDQFHPP
+x
+y
+
+
+
+
+
+
+    
+Figure 1. Cell Deformation Waves Precede ERK Activation Waves during Collective Cell Migration
+(A) Phase contrast images (upper), FRET/CFP ratio indicating ERK activity (middle), and strain rate in the direction of collective cell migration (x-strain rate; lower)
+are represented at 1 (left), 8 (center), and 14 h (right) after start of time-lapse imaging. In the x-strain rate images, extending and shrinking regions are shown in red
+and blue, respectively. Scale bar, 200 mm. The imaging interval is 1 min.
+(B and C) x-t kymographs of ERK activity (B) and x-strain rate (C), from (A). White arrows indicate the rightward propagation of ERK activation waves (B) and cell
+deformation waves (C).
+(D) Temporal change of ERK activation rate and x-strain rate in a representative cell.
+(E) Temporal cross-correlations between x-strain rate and ERK activation rate. The blue line indicates the average temporal cross-correlation coefficients with
+standard deviations (SDs). n = 212 cells from three independent experiments.
+See also Video S1.
+ll
+Article
+Developmental Cell 53, 646–660, June 22, 2020 647
+NATURE PHYSICS ARTICLES
+x
+x
+150 200 250 300 350
+0.6
+0.7
+0.8
+0.9
+1.0
+1.1
+–30
+0
+30
+150 200 250 300 350
+ERK activity (FRET/CFP) Traction force in x (Pa) Traction force in
+x (Pa)
+Lag time (min)
+Time (min) Time (min)
+–0.6
+–0.4
+–0.2
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+0 100 200 0 100 200
+–0.4
+–0.2
+0
+0.2
+0.4
+0.6
+0.8
+1.0
+0.65 1.15
+450 min 450 min
+0
+0
+5
+10
+15
+100 µm 100 µm
+–300 –200 –100 100
+–350 350
+c
+a
+d
+e
+f
+Polarity
+Stress
+ERK
+τp = 60 min
+τp = 40 min
+τp = 20 min
+Golgi apparatus Nucleus
+In phase: no net polarity
+Out of phase: net polarity
+ERK Stress Polairty
+Symmetry breaking
+g
+Cell migration
+Distance (µm)
+–300 –200 –100 0 100
+Distance (µm)
+Time (h)
+0
+5
+10
+15
+Time (h)
+Lag time (min)
+ERK autocorrelation
+Tractio
+n autocorrelati
+o
+n
+ERK activity (FRET/C
+FP)
+100 µm
+Average
+polarity
+10 20 30 40 50
+0
+100
+200
+300
+400
+500
+600
+Wavelength (cells)
+Period (min)
+–0.4
+–0.2
+0
+0.2
+0.4
+0.6
+0.8
+t
+t
+t
+ϕσ
+ERK wave
+Traction forces
+b
+Fig. 3 | Response of active polar traction forces to an applied ERK wave and comparison with traction force data. a, Migrating MDCK monolayers
+polarize towards a free edge as visualized by the orientation of the Golgi apparatus (red) relative to the nucleus (green) (see ref. 27). b, Schematic
+of our mechanochemical model extended to include cell polarization and active migration. c, If polarity follows gradients of stresses, monolayers
+can exploit phase differences (ϕσ) between ERK and stress to produce net polarization from symmetric waves. d, Quantitative phase diagram of the
+average cell polarity in response to applied ERK waves, showing an optimal period and wavelength for inducing maximal average polarity (positive
+values in red indicate polarity counter to ERK waves). Data points are previously reported values for wavelength and period in MDCK layers17,25,27
+and mouse skin26 (see Supplementary Section IC for details). Importantly, the waves permissible by our biophysical model (black curve for varying
+τE) produce only positive average polarity, thus providing robustness to the migration response. e, Oscillations in polarity and traction forces are
+weakened for longer timescales of polarization τp whereas their average (dashed line) is unaffected. f, ERK activity and corresponding traction
+forces measured in an expanding monolayer. Dashed lines indicate the leading edge of the monolayer. Kymographs show that the intercellular wave
+propagation present in ERK activity is absent in traction forces. g, Single-cell traces (six representative cells, colour-coded) of ERK activity show a
+strong oscillatory component (autocorrelation function), whereas corresponding local traction forces show a much weaker oscillatory component (as
+predicted in e). Shaded areas, standard deviation.
+NATURE PHYSICS | www.nature.com/naturephysics
+ARTICLES NATURE PHYSICS
+Results
+Firstly, in agreement with previous studies of expanding MDCK
+monolayers25,27,34, we confirmed that directional waves of cellular density and ERK activity propagate away from leading edges
+towards the centre of colonies (Extended Data Fig. 1a,b). Moreover,
+we performed the same experiments at full two-dimensional (2D)
+confluency (Fig. 1a–d and Supplementary Video 1) and found similar patterns of ERK and cell density (with ERK positively correlated
+with, and slightly lagging behind, 2D cell area), although in this
+case they displayed random orientation of propagation. This suggests that monolayer expansion (mediated by leading edges) is not
+required for wave formation, motivating us to first study theoretically how isotropic waves of ERK and density arise in the confluent
+setting.
+For this, we first wrote down a minimal model of epithelial
+monolayer mechanics that we highlight here (see Supplementary
+Section I for details). The 3D shape of MDCK cells, like in other epithelial tissues, is proposed to arise from a balance of forces between
+the active stresses generated by actomyosin cortices at the apical,
+lateral and basal surfaces35–37 (resp. denoted as γa, γl
+ and γb). For a
+single cell on a flat surface, equilibrium of these forces requires that
+the in-plane length of a cell l is equal to a ratio of active tensions,
+such that l / γl
+γaþγb
+! "1=3
+I
+. However, for confluent, heterogeneous
+epithelial tissues, cell–cell junctions impose mechanical couplings
+between cells38, so that the mechanical state of each cell influences
+the shape, density and velocity of its neighbours39. To describe this
+we consider, in a simple 1D setting, a linear chain of coupled cells
+with vertex positions ri
+ and surface tensions γi
+ (Fig. 1e). If a given
+cell contracts, it imposes a stress on its neighbours, which is resisted
+by cellular tensions, as well as by frictional forces with the substrate
+fi = −ζvi
+ (where ζ is a cell–substrate friction coefficient dependent on cell–substrate adhesion and vi = ∂t
+ri
+ the velocity of the cell
+vertex ri
+).
+At the continuum limit and at linear order, force balance in such
+a monolayer reads
+τr∂trðx; tÞ¼ ∂xxrðx; tÞ$ ∂xl0ðx; tÞ ð1Þ
+with all units normalized by the average cell length, and r the
+vertex position at distance x and time t. The first two terms are
+classical for overdamped chains of oscillators, and represent resp.
+frictional forces and restoring forces from active cell tensions (with
+τr
+= ζ/k, the ratio of cell–substrate friction to cell stiffness, giving
+a timescale for the spatiotemporal diffusion of displacement r,
+on length scales of cell size). The third term arises from the fact
+that each cell at position x can in principle have its own preferred
+length l0, so that gradients of preferred length result in cellular
+d
+–30 –20 –10 0 10 20 30
+–0.1
+0
+0.1
+0.2
+ERK → Area Area → ERK
+Lag time (min)
+ERK–area
+cross-correlation
+a
+b
+c
+Space
+Time (h)
+e
+f
+g Space Time
+Simulated kymograph
+Unstable
+oscillatory
+Stable
+Im(ω)
+Re(ω)
+ω
+ω
+q
+q
+Cell length
+ri r l i+1 i
+Surface tension
+γa, b, l
+ERK activity
+Cell area (µm2
+) ERK activity
+(FRET/CFP) 0.7
+0
+5
+10
+15
+1.7
+ERK activity
+(FRET/CFP) 0.8 1.4
+120 700
+200 µm 200 µm
+200 µm
+γa
+γl
+γb
+Ei
+I
+i
+αβ
+Fig. 1 | Observation and theory of spatiotemporal patterns in confluent cell monolayers. a–c, Confluent MDCK monolayers display isotropic patterns of
+ERK activity (a and b, kymograph) and density (c, colour code indicates cell area from Voronoi tesselation) in contrast to directional waves reported in
+migrating monolayers. See also Supplementary Video 1. d, Cross-correlation function of cell area and ERK activity (defined in the Methods) indicates a
+positive correlation between the two25, with ERK trailing area by around 3−5 min (ref. 27) (average of N = 3 experiments, shaded areas indicate standard
+deviation). e, Schematic of our mechanochemical model. ERK activation (yellow) causes actomyosin remodelling (red), differentially affecting apical–basal
+and lateral tensions γa,b,l. The dependence of ERK activation on cell length l completes a mechanochemical feedback loop between ERK activation, cortical
+tensions and cell aspect ratio. f, Linear stability of this model (equation (4)) reveals a finite wavelength oscillation (Re(ω) > 0, dashed line) above a certain
+strength αβcrit of mechanochemical coupling. g, This instability is confirmed in numerical simulations of the model (kymograph).
+NATURE PHYSICS | www.nature.com/naturephysics
+a
+c
+b
+Figure 5 Waves during tissue spreading. (a) Space-time plots
+(known as kymographs) of the activity of the signalling molecule
+ERK (left) and of the strain rate (right) during tissue spreading.
+Waves, indicated by white arrows, appear as oblique lines, whose
+slope gives the wave speed. From N. Hino et al. Dev. Cell 53, 646
+(2020). (b) Schematic of the feedback between ERK activity, cell
+tension, and cell length, which produces mechanochemical waves.
+(c) Schematic showing that cells polarize and migrate against the
+mechanochemical wave. In spreading tissues, the wave travels
+backwards from the leading edge, directing cell migration toward
+free space. Panels (b)-(c) are from ref.18
+.
+lar to longitudinal sound waves, tissue waves stretch and compress cells as they travel. Most strikingly, the waves are selfsustained; they travel long distances (∼ 1 mm) unattenuated.
+This observation is surprising because cell motion is so slow
+that inertia is negligible. Therefore, these waves cannot be
+sustained by the common back-and-forth between kinetic and
+potential energy familiar from the harmonic oscillator. Moreover, there are many sources of dissipation in tissues, including cell-cell and cell-substrate friction, which could potentially damp the waves. Thus, the very existence of mechanical waves in tissues implies an active driving mechanism that
+compensates damping and generates an effective inertia.
+The quest to understand these waves led to a plethora of
+physical models, ultimately revealing a palette of possible
+mechanisms1
+. Recently, the situation has been clarified by experiments revealing that mechanical waves are accompanied
+by waves of ERK, an extracellular signaling molecule that affects cellular activity (Fig. 5a). Following these observations,
+researchers developed a theory based on the feedback between
+the biochemical regulator and cell mechanics (Fig. 5b), which
+produces coupled chemical and mechanical waves. Assuming that cells polarize in response to stress gradients in the
+monolayer, the theory also explains propagation away from
+the leading edge in spreading tissues18 (Fig. 5c).
+These results show that cells can exploit mechanochemical
+feedbacks to transmit local information over long distances.
+This tissue-scale communication is relevant for wound healing, enabling distant cells to coordinate their migration toward
+the wound. Similar principles operate in morphogenesis, enabling coordinated cell deformations to precisely shape tissues without requiring local genetic control of cellular forces.
+From a physics perspective, this research highlights that the
+cells’ ability to generate, sense, and respond to signals, both
+chemical and mechanical, can give rise to emergent phenomena as counter-intuitive as mechanical waves without inertia.
+Outlook
+The physics of active living matter is increasingly successful at explaining the dynamics of collective cell migration.
+This core biological process is being understood through concepts such as orientational order, flow, turbulence, jamming,
+wetting and wave propagation. The mechanistic origin and
+physical properties of these phenomena in cells, however, differ fundamentally from those in non-living matter. Whereas
+new active matter theories progressively manage to explain
+the broad phenomenology of collective cell migration in terms
+of a small number of physical variables, how cells tune these
+variables through thousands of genes

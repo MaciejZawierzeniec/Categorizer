@@ -1,0 +1,3 @@
+venv/
+**/.idea
+TextCategorization/dataset_training.py

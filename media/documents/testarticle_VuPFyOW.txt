@@ -1,0 +1,328 @@
+A Century of Economic Policy Uncertainty Through
+the French-Canadian Lens?
+David Ardiaa,∗
+, Keven Bluteaua,b, Alaa Kassema
+aDepartment of Decision Sciences, HEC Montr´eal, Montr´eal, Canada
+bDepartment of Economics, Ghent University, Belgium
+Published in Economics Letters
+https: // doi. org/ 10. 1016/ j. econlet. 2021. 109938
+Abstract
+A novel token-distance-based triple approach is proposed for identifying EPU mentions
+in textual documents. The method is applied to a corpus of French-language news to
+construct a century-long historical EPU index for the Canadian province of Quebec. The
+relevance of the index is shown in a macroeconomic nowcasting experiment.
+Keywords: Economic uncertainty, Policy uncertainty, Canada, Quebec,
+token-distance-based triple, issues, nowcasting, Sentometrics
+JEL: C43, C53, D8, E60
+1. Introduction
+The Economic Policy Uncertainty (EPU) index developed by Baker et al. (2016) is an
+important indicator in economic and financial applications (see, e.g., Caldara et al., 2019;
+Aliaga-D´ıaz et al., 2019; Brogaard and Detzel, 2012; Chen et al., 2016; Sum, 2012). Following the seminal American EPU index, several country/region-specific indices have been
+developed (see, e.g., Algaba et al., 2020; Ghirelli et al., 2019; Donadelli et al., 2020), including a Canadian index that uses articles from five English-language Canadian newspapers
+and starts in 1985. This note uses a unique French Canadian news corpus to construct
+?We are grateful to the Biblioth`eque et Archives Nationales du Qu´ebec via the CO.SHS Corpus BAnQ
+initiative (https://co-shs.ca/en), the Canada Foundation for Innovation (https://www.innovation.
+ca), and CBC/Radio-Canada (https://cbc.radio-canada.ca) for providing us with the data and to
+IVADO and the Swiss National Science Foundation (grants #179281 and #191730) for their financial
+support. A special thanks to St´ephane Caron and Dany Plourde for making this project possible. We
+also thank the Editor (Eric Young), an anonymous referee, Andres Algaba, Noemi Ardia, Scott R. Baker,
+Cl´ement Aymard, Kris Boudt and Carlos Ordas for their comments and Andres Algaba, Samuel Borms,
+Kris Boudt and Jeroen van Pelt for providing us with their French EPU lexicon. We acknowledge Noemi
+Ardia and Michel Veilleux for their unconditional support.
+∗Corresponding author. HEC Montr´eal, 3000 Chemin de la Cˆote-Sainte-Catherine, Montreal, QC H3T
+2A7. Phone: +1 514 340 6103.
+Email addresses: david.ardia@hec.ca (David Ardia), keven.bluteau@hec.ca (Keven Bluteau),
+alaa.kassem@hec.ca (Alaa Kassem)
+Preprint submitted to SSRN June 10, 2021
+arXiv:2106.05240v1 [econ.GN] 9 Jun 2021
+more than a century of Canadian EPU from the province of Quebec’s perspective. Quebec is a key player in the Canadian economy; it has more than 20% of the Canadian
+population and is the second contributor to Canadian GDP after Ontario. About 80% of
+Quebec residents use French as their main language.
+Our data set and the historical aspect of our index raise some challenges. First, the
+archives of several news sources are grouped by issue rather than by individual articles,
+which renders the standard EPU count impossible. Second, the availability of archives
+for particular media sources differs over time, making the static-window standardization
+used in the traditional sources’ aggregation biased.
+We propose a novel token-distance-based triple approach to identify EPU mentions in
+textual documents and use a dynamic normalization for the sources’ aggregation to address
+these problems. We believe our methodology will help researchers compute EPU-like
+measures from a wider range of textual sources (both in terms of variety and availability)
+in future studies. We show that our EPU index spikes at major regional and worldwide
+events. Finally, we show that our index outperforms the existing Canadian EPU when
+nowcasting major Canadian and Quebec macroeconomic variables.
+2. Data and methodology
+2.1. Data
+We consider four sources of French-language news available in Quebec. Archives for
+three newspapers are retrieved from the Biblioth`eque et Archives Nationales du Qu´ebec
+(BAnQ): (i) La Presse (January 1928 - December 2013), (ii) Le Devoir (January 1910 -
+December 2011) and (iii) Le Soleil (January 1972 - December 2006). The original daily
+issues for these three sources are converted into a computer-readable format using optical
+character recognition (OCR) technology. The fourth source consists of French-language
+news articles from Radio-Canada (the francophone arm of the Canadian Broadcasting
+Corporation) from January 2003 to June 2020. We process the raw data set the standard
+way. We transform our textual documents (issues and articles) into vectors of tokens
+using the Word Boundary Rules defined in the Unicode© Standard.12
+2.2. Index construction methodology
+Our index construction deviates from Baker et al. (2016) in three aspects: (i) dictionary,
+(iii) EPU count and (iii) source aggregation.
+1Tokens are the individual units of texts; see http://www.unicode.org/reports/tr29/#Word_
+Boundaries. We remove any tokens that are French stop words (e.g., “le”), punctuation, and that
+contain numeric or non-alphanumeric characters.
+2To illustrate our text processing, the sentence “Le salaire minimum passera `a 13,50$ l’heure samedi.”,
+is represented by the five-token vector [salaire, minimum, passera, heure, samedi] at the end of the process.
+More details is available in the Internet appendix.
+2
+Dictionary. As we are examining French documents, we rely on a list of French EPU
+keywords instead of the original list of English keywords. We use the dictionary provided
+by Algaba et al. (2020), which is based on a translation-enhanced word2vec approach,
+and add a few tax-related words specific to Canada or Quebec.3
+EPU count. For three of our sources, news is aggregated by issue. It is impossible to
+identify individual articles in an automated way, so we cannot perform the standard
+article-based EPU count. Instead, we try to identify EPU mentions by measuring the
+distance between tokens in EPU triples contained in each document. First, we determine
+the token positions of all EPU keywords occurring in the text. From these identified
+keywords, we construct all possible EPU triples for which we measure the maximum
+relative distance between the token-triple positions (i.e., the maximum of the absolute
+difference between the token position of the E-P, E-U and P-U keywords).4 We only
+keep triples with a maximum distance less than or equal to a given threshold τ . The
+threshold aims to avoid mixing EPU triples between unrelated articles within an issue
+(i.e., it controls for false positives).5 From this subset, to avoid multiple counting, we
+count the number of unique triples: Trid,t,s denotes the count in document d published
+in month t by source s.
+6 Then, following Baker et al. (2016), we aggregate and scale our
+counts by source each month to get a monthly source-specific frequency-count measure:
+Ft,s =
+PDt,s
+d=1 Trid,t,s
+PDt,s
+d=1 Tokd,t,s
+, (1)
+where Tokd,t,s denotes the total number of tokens for document d published in month t
+by source s, and Dt,s denotes the total number of documents published in month t by
+source s.
+Source aggregation. In Baker et al. (2016), the source-specific frequency-count variables
+Ft,s are first standardized by their standard deviation computed over a fixed and common
+time period. They are then aggregated to build the EPU index.7 The standardization aims
+to account for differences in the variability of sources’ reporting. However, the availability
+3We also test several enhancements of the dictionary using Latent Dirichlet Allocation on the news
+selected at EPU spikes over various periods. Results with alternative lexicons are qualitatively similar.
+4
+If a keyword comprises more than one token, leading to multiple token positions for the keyword and
+thus multiple possible distances for a given triple, the minimum distance is taken.
+5We use τ = 125 tokens, the median number of tokens in Radio-Canada articles. For Radio-Canada,
+we set τ = ∞ as this source is available at the article level. We also test alternative setups, and find that
+results are similar for values ranging from τ = 50 to τ = 1, 000. Lower values are too restrictive, and
+larger values result in triples being observed in unrelated news articles, leading to a noisier index.
+6A unique triple is defined as a set of three unique token positions. For instance, consider two triples
+with positions {1, 4, 8} and {1, 7, 10}. They count as a unique triple since position 1 appears in both.
+In other words, a token position can only be used once.
+7The fixed-time window ranges from 1985 to 2009 for the American EPU, while the Canadian EPU
+relies on data before 2011.
+3
+of our sources differs across time periods. Hence, the variability but also the level of Ft,s
+are period-specific, making the traditional aggregation biased.8 To tackle this, we propose
+a dynamic approach. In month t, we first scale Ft,s by its m-past months (rolling-window)
+standard deviation to ensure similar variation across sources. Second, we divide the scaled
+variable by its m-past months average to ensure similar levels across sources.9 Then, we
+aggregate the source-specific scaled and normalized frequency-count measures, EPUt,s, to
+construct the EPU index in month t:
+EPUt =
+X
+St
+s=1
+EPUt,s
+St
+, (2)
+where St denotes available sources in month t.
+Our EPU construction ensures the index in month t is only based on data available
+up to month t (i.e., it is not forward-looking biased), which can be critical for practical
+applications such as forecasting. Note that the length of the rolling-window m makes
+the interpretation of the EPU relative to its past m-month values.10 We believe it is a
+reasonable approach compared to selecting a single fixed reference period, especially for
+such a long time frame. The dynamic normalization accounts for a possible evolution in
+the media’s writing style and type of news coverage.11
+3. Validation of the index
+In Figure 1, we display the evolution of our EPU index (January 1913 to June 2020)
+together with the historical American EPU (January 1900 to October 2014) and the
+Canadian EPU (January 1985 to June 2020).12 We see that our index spikes at major
+economic events. When looking over our 100-year time horizon, three peaks are particularly large: (i) the Great Depression, (ii) the 2008 financial crisis, and (iii) the COVID-19
+pandemic. Moreover, the index tends to be higher post-war and during some other events
+such as the patriation of the Canadian constitution in 1982 (a national event) or the Oka
+crisis in 1990 (a Quebec-specific event). In comparison, the American index does not spike
+during the Great Depression or the post-war recession, raising questions about its accu8For instance, consider two sources whose EPU count frequency levels are different (one high and one
+low). If the low-count source disappears from the sample, the aggregate EPU will increase, despite the
+absence of an EPU event. We refer to the Internet appendix for illustrations.
+9We set m = 36 months (i.e., three-year rolling windows). An alternative setup with m = 60 leads to
+similar graphical results with a correlation of 0.94, and nonsignificant different nowcasting performance;
+see the Internet appendix.
+10We set m = 36 months in our empirical applications. Results with m = 60 are qualitatively similar
+and are available in the Internet appendix.
+11In the Internet appendix, we show that the dynamic approach better identifies historical events/crises
+and provides better nowcasting performance than a fixed-window approach as in Baker et al. (2016).
+12The American and Canadian EPU indices are available at https://www.policyuncertainty.com.
+4
+racy.
+13 The Canadian EPU seems to track the Quebec EPU until 2010, when we start to
+see a large discrepancy whereby the Canadian EPU increases with no economic rationale.
+This discrepancy could be attributed to differences in calculation methodologies and/or
+data sources used to build the indices. A change in the media landscape could also explain
+this upward trend in the Canadian EPU, justifying the need for a dynamic normalization
+approach.
+[Insert Figure 1 about here.]
+4. Nowcasting macroeconomic variables
+We now investigate our EPU index’s effectiveness in nowcasting five monthly macroeconomic variables: (i) log-changes in Canadian gross domestic product (GDP), (ii) logchanges in Canadian and Quebec consumer price indices (CPIs), and (iii) changes in
+Canadian and Quebec unemployment rates (UNEMPs).14 We use the following specification:
+M0
+: yt|t+1 = β0 + β1yt−1|t + β2EPUt|t + θ
+0
+xt−1|t + t
+, (3)
+where yt|• is the macroeconomic variable of interest, xt−1|• is a vector of lagged explanatory variables, and t
+is an error term. We consider a large set of Canadian and Quebec
+macroeconomic variables in xt−1|•; see Fortin-Gagnon et al. (2018).15 With our conditioning notation, we emphasize that all variables but the EPU are available with a time
+lag. We aim to evaluate out-of-sample nowcasting performance estimating the model on
+60-month rolling windows starting in January 1985 and ending in June 2020.16 This,
+however, results in a smaller sample size than the number of coefficients needed to be
+estimated, making the ordinary least squares framework unfeasible.
+To deal with the high dimension, we proceed in two ways (see Ardia et al., 2019).
+First, we estimate the model with an elastic-net (Zou and Hastie, 2005). Elastic-net is a
+penalized linear regression model that performs variable selection and shrinks regression
+coefficients towards zero, making the estimation of a model where the number of coefficients is larger than the number of observations feasible. The extent of the penalization
+is driven by hyper-parameters, which we select using the BIC-like criterion of Zou et al.
+(2007). Second, we reduce the dimensionality of the explanatory variables using principal
+components. This transformation into a lower-dimensional space then allows estimating the model using ordinary least squares. We select the number of optimal principal
+components following Bai and Ng (2002).
+13According to https://www.policyuncertainty.com, the American historical index is still a work in
+progress.
+14Quebec GDP is not available at the monthly frequency.
+15The full dataset is available at https://www.stevanovic.uqam.ca/DS_LCMD.html. In our nowcasting exercise, the number of available variables ranges from 130 to 140.
+16We choose this time window to compare our EPU with the Canadian EPU.
+5
+Performance results are reported in Table 1 with our baseline model M0
+together with
+a model M1 without EPU (i.e., β2 = 0) and a model M2
+for which the EPU is the Canadian EPU. First, for both the elastic-net and the principal components approaches, we
+find that our EPU-enhanced model has better results than the model using only macroeconomic variables (M0 vs. M1
+). This holds for the root-mean-square forecast error
+(RMSFE) and the mean absolute forecast error (MAFE) performance metrics. The improvement is statistically significant at the 5% level for Canadian GDP and for Canadian
+and Quebec unemployment. Hence, our Quebec EPU helps to nowcast macroeconomic
+variables at the provincial and national levels. Next, we find that our EPU outperforms
+the nowcasting ability of the traditional Canadian EPU (M0 vs. M2
+). For both the
+estimation methods or the performance metrics, the outperformance is significant at the
+5% level for Canadian GDP and unemployment rates for Quebec and Canada.17
+[Insert Table 1 about here.]
+A. Internet appendix
+The Internet appendix contains additional information about the database, methodology
+and nowcasting performance of the models. The EPU index is available at https://
+sentometrics-research.com.
+References
+Algaba, A., Borms, S., Boudt, K., Pelt, J.V., 2020. The economic policy uncertainty index for Flanders,
+Wallonia and Belgium. BFW digitaal / RBF num´erique 6.
+Aliaga-D´ıaz, R., Patterson, A., Raithatha, S., Hirt, J., Maciulis, V., 2019. Know unknowns : Uncertainy,
+volatility, and the odds of recession. Technical Report. Vanguard.
+Ardia, D., Bluteau, K., Boudt, K., 2019. Questioning the news about economic growth: Sparse forecasting
+using thousands of news-based sentiment values. International Journal of Forecasting 35, 1370–1386.
+doi:10.1016/j.ijforecast.2018.10.010.
+Bai, J., Ng, S., 2002. Determining the number of factors in approximate factor models. Econometrica
+70, 191–221. doi:10.1111/1468-0262.00273.
+Baker, S.R., Bloom, N., Davis, S.J., 2016. Measuring economic policy uncertainty. The Quarterly Journal
+of Economics 131, 1593–1636. doi:10.1093/qje/qjw024.
+Brogaard, J., Detzel, A.L., 2012. The asset pricing implications of government economic policy uncertainty. doi:10.2139/ssrn.2105786. Working paper.
+Caldara, D., Iacoviello, M., Molligo, P., Prestipino, A., Raffo, A., 2019. Does trade policy uncertainty
+affect global economic activity? Technical Report. The FED.
+Chen, J., Jiang, F., Tong, G., 2016. Economic policy uncertainty in China and stock market expected
+returns. doi:10.2139/ssrn.2808862. Working paper.
+17Additional analyses reported in the Internet appendix show that similar nowcasting results are obtained with alternative rolling-window lengths, while a static-window approach deteriorates the performance.
+6
+Donadelli, M., Gufler, I., Pellizzari, P., 2020. The macro and asset pricing implications of rising Italian
+uncertainty: Evidence from a novel news-based macroeconomic policy uncertainty index. Economics
+Letters 197, 109606. doi:10.1016/j.econlet.2020.109606.
+Fortin-Gagnon, O., Leroux, M., Stevanovic, D., Surprenant, S., 2018. A large Canadian database for
+macroeconomic analysis. Technical Report. CIRANO.
+Ghirelli, C., P´erez, J.J., Urtasun, A., 2019. A new economic policy uncertainty index for Spain. Economics
+Letters 182, 64–67. doi:10.1016/j.econlet.2019.05.021.
+Sum, V., 2012. The impulse response function of economic policy uncertainty and stock market returns:
+A look at the Eurozone. doi:10.2139/ssrn.2088700. Working paper.
+Zou, H., Hastie, T., 2005. Regularization and variable selection via the elastic net. Journal of the Royal
+Statistical Society: Series B 67, 301–320. doi:10.1111/j.1467-9868.2005.00503.x.
+Zou, H., Hastie, T., Tibshirani, R., 2007. On the “degrees of freedom” of the lasso. The Annals of
+Statistics 35, 2173–2192. doi:10.1214/009053607000000127.
+7
+Table 1: Nowcasting results
+The table reports the root-mean-square forecast error (RMSFE) and the mean absolute forecast error (MAFE) for the various models applied to five monthly macroeconomic variables:
+Canadian gross domestic product (GDP, log-changes), consumer price index (CPI, log-changes),
+and unemployment rate (UNEMP, changes); and Quebec CPI and UNEMP. We consider M0
+in (3) and two alternatives: M1
+is without EPU (i.e., β = 0) and M2
+is with the Canadian
+EPU instead of our EPU. Squared parentheses report the p-value of a Diebold-Marino test of
+outperformance of M0 against M• using the approach described in Ardia et al. (2019). The
+out-of-sample performance window ranges from January 1990 to June 2020 for a total of 366
+observations (the first rolling window used to estimate the models ranges from January 1985 to
+December 1989).
+Panel A: Regularization (elastic-net)
+RMSFE (x100) MAFE (x100)
+Variable M0 M1 M2 M0 M1 M2
+GDP (CAN) 1.041 1.415[0.000] 1.429[0.002] 0.341 0.383[0.002] 0.384[0.096]
+CPI (CAN) 0.369 0.367[0.828] 0.379[0.038] 0.272 0.272[0.613] 0.282[0.043]
+UNEMP (CAN) 0.441 0.604[0.000] 0.608[0.000] 0.177 0.193[0.001] 0.194[0.000]
+CPI (QC) 0.425 0.425[0.585] 0.440[0.016] 0.299 0.302[0.415] 0.316[0.075]
+UNEMP (QC) 0.989 1.254[0.000] 1.264[0.000] 0.334 0.353[0.001] 0.358[0.000]
+Panel B: Principal components
+RMSFE (x100) MAFE (x100)
+Variable M0 M1 M2 M0 M1 M2
+GDP (CAN) 1.139 1.506[0.000] 1.479[0.000] 0.349 0.382[0.000] 0.380[0.000]
+CPI (CAN) 0.371 0.377[0.101] 0.382[0.026] 0.273 0.277[0.205] 0.280[0.030]
+UNEMP (CAN) 0.435 0.591[0.001] 0.584[0.000] 0.171 0.186[0.000] 0.185[0.000]
+CPI (QC) 0.431 0.433[0.364] 0.439[0.143] 0.306 0.308[0.354] 0.316[0.062]
+UNEMP (QC) 1.017 1.250[0.000] 1.241[0.000] 0.336 0.342[0.003] 0.347[0.000]
+8
+Figure 1: EPU indices and events
+This figure displays our EPU index (solid black line, from January 1913 to June 2020 for a total
+of 1,290 observations) together with the Canadian EPU index (solid gray line, from January 1985
+to May 2020 for a total of 425 observations) and the historical American EPU index (dotted
+line, from January 1900 to October 2014, for a total of 1,378 observations).
+WWI/Spanish flu
+The Great Depression
+Post WWII
+ recession
+Patriation
+Oka crisis
+Great Financial Crisis
+Coronavirus
+Quebec and
+Canadian events
+0
+200
+400
+600
+1900
+1905
+1910
+1915
+1920
+1925
+1930
+1935
+1940
+1945
+1950
+1955
+1960
+1965
+1970
+1975
+1980
+1985
+1990
+1995
+2000
+2005
+2010
+2015
+2020
+Date
+EPU value
+Quebec Canada USA
+9

@@ -1,0 +1,33 @@
+A team led by physical oceanographers at Scripps Institution of Oceanography at the University of California San Diego shows in a new study how plumes of warm water are flowing into the Arctic Ocean from the Pacific Ocean and accelerating sea ice melt from below.
+
+The research primarily funded by the Office of Naval Research describes so-called underwater “heat bombs” as one of many mechanisms by which global warming-driven encroachment is changing the nature of the Arctic Ocean faster than nearly any other place on Earth. It adds to a growing body of evidence that suggests that Arctic sea ice, a source of global climate stability, could disappear for larger portions of the year.
+
+“The rate of accelerating sea ice melt in the Arctic has been hard to predict accurately, in part because of all of the complex local feedbacks between ice, ocean and atmosphere; this work showcases the large role in warming that ocean water plays as part of those feedbacks,”  said Jennifer MacKinnon, a physical oceanographer at Scripps, chief scientist of the expedition, and lead author of the paper.
+
+The study was published recently in the journal Nature Communications.
+
+
+
+The Arctic is an unusual ocean in that it is stratified – or layered – by salinity instead of temperature. Most oceans of the world have warmer, lighter water near the surface and colder, denser water below. In the Arctic, however, there is a surface layer that is cold but very fresh, influenced by river outflow and accelerating ice melt. Warm, relatively salty water enters from the Pacific Ocean through the Bering Strait and then the Barrow Canyon off Alaska’s northern coast, which acts as a nozzle as the water flows through the narrow passage.
+
+Because this water is saltier than the Arctic surface water, it is dense enough to “subduct,” or dive beneath, the fresh Arctic surface layer. Its movement creates pockets of very warm water that lurk below surface waters. Scientists have been seeing these pockets of warm sub-surface water strengthen over the last decade.
+
+Fast CTD
+Researchers deploy a Fast CTD developed at Scripps Oceanography during the 2018 SODA cruise in the Arctic Ocean. Credit: San Nguyen
+
+These pockets known as “heat bombs” are just stable enough to be able to last for months or years, swirling far north beneath the main ice pack near the north pole, and destabilizing that ice as the heat in them gradually but steadily diffuses upwards to melt the ice. Until now, though, the process by which the warm water subducts has neither been observed nor understood. Without that understanding, climate scientists have been unable to include this important effect in forecast models, some of which under-predict accelerating sea ice melt rates. Given that the influx of warm Pacific origin water has been growing over the past decade or so, this work adds to a growing body of evidence that Arctic sea ice, a source of global climate stability, could disappear for large portions of the year.
+
+In a 2018 expedition funded by the US Office of Naval Research, scientists for the first time caught one of these dramatic subduction events in the act. The group used a combination of novel oceanographic instruments developed by the Multiscale Ocean Dynamics group at Scripps, satellite observations analyzed by colleagues at the University of Miami, profiling float data from the National Oceanic and Atmospheric Administration, biological samples collected by British and German colleagues working in a project known as Changing Arctic Ocean, and detailed data analysis by colleagues at several other institutions.
+
+SWIFT Drifter
+A SWIFT drifter developed by University of Washington researcher Jim Thomson is deployed during the 2018 SODA cruise to the Arctic Ocean. Credit: San Nguyen
+
+“The group’s success highlights the new perspectives we can see on the natural world when we look at it in new ways,” said Scripps oceanographer Matthew Alford.
+
+“This detailed view of the complicated processes governing Arctic heat transport would not have been possible without multiple simultaneous instrument suites, including remote sensing and custom shipboard and autonomous profilers developed at Scripps,” he said.
+
+Instruments from the Scripps Multiscale Ocean Dynamics group include a custom-built “Fast CTD” sensor that makes very rapid profiles from the ship, and an autonomous “Wirewalker” that uses power from ocean waves to drive profiling measurements. These instruments allow scientists to obtain high-resolution images of complex ocean processes, and to thus better understand how they work in detail.
+
+This work also highlights the importance of collaboration across multiple institutions, between several US funding agencies, and with international partners; the depth of insight achieved here arises from the diversity of tools and perspectives that those collaborations bring.
+
+Collaborative work with scientists in the United Kingdom and Germany shows that this warm sub-surface water also carries unique biogeochemical properties into the Arctic. This mix of organisms and chemicals is expected to have important implications for the changing Arctic ecosystem.

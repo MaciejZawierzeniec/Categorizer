@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>{{ object.title }}</h1>
+<p>{{ object.content }}</p>
+
+<button type="button" class="btn btn-danger"><a class="btn" href="/document_confirm_delete/{{ object.pk }}">Delete</a></button>
+<button type="button" class="btn btn-info"><a class="btn" href="/document_update/{{ object.pk }}">Update</a></button>
+{% endblock %}

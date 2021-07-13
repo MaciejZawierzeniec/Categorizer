@@ -1,0 +1,16 @@
+"If you can't stand the heat, get out of the kitchen," as the old saying goes. But for organisms that can't leave the proverbial kitchen when things get too hot, there's another way: researchers from Japan have discovered that plants can gain heat tolerance to better adapt to future heat stress, thanks to a particular mechanism for heat stress 'memory'.
+
+In a study published in Nature Communications, researchers from Nara Institute of Science and Technology have revealed that a family of proteins that control small heat shock genes enables plants to 'remember' how to deal with heat stress.
+
+Climate change, especially global warming, is a growing threat to agriculture worldwide. Because plants can't move to avoid adverse conditions, such as potentially lethal high temperatures, they need to be able to deal with factors such as heat stress effectively to survive. Therefore, improving the heat tolerance of crop plants is an important goal in agriculture.
+
+"Heat stress is often repeating and changing," says lead author of the study Nobutoshi Yamaguchi. "Once plants have undergone mild heat stress, they become tolerant and can adapt to further heat stress. This is referred to as heat stress 'memory' and has been reported to be correlated to epigenetic modifications." Epigenetic modifications are inheritable changes in the way genes are expressed, and do not involve changes in the underlying DNA sequences.
+
+"We wanted to discover how plants retain a memory of environmental changes," explains Toshiro Ito, senior author. "We examined the role of JUMONJI (JMJ) proteins in acquired temperature tolerance in response to recurring heat within a few days."
+
+JUMONJI proteins are histone demethylases. Demethylases are enzymes that remove methyl groups from molecules such as proteins, particularly histones, which provide structural support to chromosomes. The team revealed that plants are able to maintain heat memory because of lowered H3K27me3 (histone H3 lysine 27 trimethylation) on small heat shock genes.
+
+"We found that these proteins are necessary for heat acclimation in Arabidopsis thaliana. These results, along with future studies, will further clarify the mechanisms of plant memory and adaptation," says Yamaguchi.
+
+This research will be relevant to genetic research in a number of fields, including biology, biochemistry, ecology, and environmental and agricultural sciences, and is applicable to the study of animals as well as plants. Understanding the epigenetic memory mechanism revealed in this study will help in working with heat tolerance to maintain the food supply in natural conditions.
+

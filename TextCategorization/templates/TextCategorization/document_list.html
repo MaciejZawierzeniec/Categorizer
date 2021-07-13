@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for document in object_list %}
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <a href="{% url 'document-details' pk=document.pk %}">{{ document.title }}</a><br>
+            <p>{{ document.categories }}</p>
+        </li>
+        <br>
+    </ul>
+{% endfor %}
+
+{% endblock  %}

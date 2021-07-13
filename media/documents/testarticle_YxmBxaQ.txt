@@ -1,0 +1,29 @@
+A team of Colorado State University scientists, led by veterinary postdoctoral fellow Dr. Anna Fagre, has detected Zika virus RNA in free-ranging African bats. RNA, or ribonucleic acid, is a molecule that plays a central role in the function of genes.
+
+According to Fagre, the new research is a first-ever in science. It also marks the first time scientists have published a study on the detection of Zika virus RNA in any free-ranging bat.
+
+The findings have ecological implications and raise questions about how bats are exposed to Zika virus in nature. The study was recently published in Scientific Reports, a journal published by Nature Research.
+
+Fagre, a researcher at CSU's Center for Vector-Borne Infectious Diseases, said while other studies have shown that bats are susceptible to Zika virus in controlled experimental settings, detection of nucleic acid in bats in the wild indicates that they are naturally infected or exposed through the bite of infected mosquitoes.
+
+"This provides more information about the ecology of flaviviruses and suggests that there is still a lot left to learn surrounding the host range of flaviviruses, like Zika virus," she said. Flaviviruses include viruses such as West Nile and dengue and cause several diseases in humans.
+
+CSU Assistant Professor Rebekah Kading, senior author of the study, said she, Fagre and the research team aimed to learn more about potential reservoirs of Zika virus through the project.
+
+The team used 198 samples from bats gathered in the Zika Forest and surrounding areas in Uganda and confirmed Zika virus in four bats representing three species. Samples used in the study date back to 2009 from different parts of Uganda, years prior to the large outbreaks of Zika virus in 2015 to 2017 in North and South Americas.
+
+"We knew that flaviviruses were circulating in bats, and we had serological evidence for that," said Kading. "We wondered: Were bats exposed to the virus or could they have some involvement in transmission of Zika virus?"
+
+The virus detected by the team in the bats was most closely related to the Asian lineage Zika virus, the strain that caused the epidemic in the Americas following outbreaks in Micronesia and French Polynesia. The first detection of the Asian lineage Zika virus in Africa was in late 2016 in Angola and Cape Verde.
+
+"Our positive samples, which are most closely related to the Asian lineage Zika virus, came from bats sampled from 2009 to 2013," said Fagre. "This could mean that the Asian lineage strain of the virus has been present on the African continent longer than we originally thought, or it could mean that there was a fair amount of viral evolution and genomic changes that occurred in African lineage Zika virus that we were not previously aware of."
+
+Fagre said the relatively low prevalence of Zika virus in the bat samples indicates that bats may be incidental hosts of Zika virus infection, rather than amplifying hosts or reservoir hosts.
+
+"Given that these results are from a single cross-sectional study, it would be risky and premature to draw any conclusions about the ecology and epidemiology of this pathogen, based on our study," she said. "Studies like this only tell one part of the story."
+
+The research team also created a unique assay for the study, focusing on a specific molecular component that flaviviruses possess called subgenomic flavivirus RNA, sfRNA. Most scientists that search for evidence of Zika virus infection in humans or animals use PCR, polymerase chain reaction, to identify bits of genomic RNA, the nucleic acid that results in the production of protein, said Fagre.
+
+Kading said her team will continue their research to try and learn more about how long these RNA fragments persist in tissues, which will allow them to approximate when these bats were infected with Zika virus.
+
+"There is always a concern about zoonotic viruses," she said. "The potential for another outbreak is there and it could go quiet for a while. We know that in the Zika forest, where the virus was first found, the virus is in non-human primates. There are still some questions with that as well. I don't think Zika virus has gone away forever."

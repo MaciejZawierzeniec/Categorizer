@@ -1,0 +1,37 @@
+It is generally agreed that sperms "swim" by beating or rotating their soft tails. However, a research team led by scientists from City University of Hong Kong (CityU) has discovered that ray sperms move by rotating both the tail and the head. The team further investigated the motion pattern and demonstrated it with a robot. Their study has expanded the knowledge on the microorganisms' motion and provided inspiration for robot engineering design.
+
+The research is co-led by Dr Shen Yajing, Associate Professor from CityU's Department of Biomedical Engineering (BME), and Dr Shi Jiahai, Assistant Professor of the Department of Biomedical Sciences (BMS). Their findings have been published in the science journal Proceedings of the National Academy of Sciences.
+
+Surprising discovery
+
+Their research disclosed a new and peculiar motion mode of ray sperms, which they call the "Heterogeneous Dual Helixes (HDH) model." "This was actually an accidental discovery," said Dr Shi who has been focusing on developing different bio-therapies.
+
+It all started with the team's another research of developing artificial insemination techniques for farming cartilaginous fishes, including sharks and rays, whose skeleton is wholly or largely composed of cartilage. "Cartilaginous fishes can be used as a 'factory' to produce antibodies against diseases, including COVID-19. So we wanted to develop artificial insemination techniques to farm them for high-value aquaculture," he said.
+
+During that process, the team was greatly surprised when they first observed the unique structure and swimming motion of ray sperms under the microscope. They discovered that the ray sperm's head is in a long helical structure rather than being round, and it rotates along with the tail when swimming.
+
+The team further investigated its propulsion mechanism, especially the exact role of the head in motion. They found that ray sperms consist of heterogeneous helical sections: a rigid spiral head and a soft tail, which are connected by a "midpiece" that provides energy for rotational motion. The ray sperm's head is not only a "container" of the genetic materials but also facilitates the propulsion together with the soft tail.
+
+High Energy Efficiency of the HDH propulsion
+
+To understand the motion mode more, the team analysed a large quantity of swimming data and observed the sperms' inner structure at the nanoscale. Since both the head and tail of the ray sperm rotated in the same direction with various rotational speeds and amplitudes when swimming, the team named this as the heterogeneous dual helixes (HDH) propulsion.
+
+According to their statistical analysis, the head contributed about 31% of the total propulsive force, which is the first recorded head propulsion in all known sperms. Because of the head's contribution, the motion efficiency of the ray sperm is higher than other species like the sterlet and bull, which are only driven by the tail.
+
+"Such an untraditional way of propulsion not only provides ray sperms with high adaptability to a wide range of viscous environments, but also leads to superior motion ability, and efficiency," explained Dr Shen, whose research focus is robotics as well as micro/nano manipulation and control.
+
+High Environmental Adaptability
+
+Environmental adaptability is crucial in natural selection. The head and tail of the ray sperms can adjust their motion and contribution to propulsion according to the environmental viscosity and swim at different speeds for forwarding motion. Hence, ray sperms can move in various environments with a wide range of viscosities, demonstrating high environmental adaptability.
+
+The team also found that ray sperms have a unique bi-directional swimming ability, meaning that they can swim not only in a forward direction but also in a backward direction. Such an ability provides advantages to sperms in nature, especially when they encounter obstacles. And other sperms with spherical or rod-shaped head cannot achieve bidirectional motion.
+
+Thanks to the HDH model, the spiral head of ray sperms has an active turning ability. As both the head and tail contribute to the propulsion, the angle between them will produce a lateral force on the body, enabling the ray sperm to turn, showing high flexibility in its motion.
+
+Bio-inspired robot demonstrates the HDH model
+
+The peculiar HDH model showed extensive features in motility and efficiency and inspired the team in designing microrobots. The bio-inspired robot, also with a rigid spiral head and a soft tail, demonstrated similar superiorities over conventional ones in terms of adaptability and efficiency under the same power input. It could move skillfully in an environment with liquid, even when the viscosity changed.
+
+Such abilities can provide insights for designing swimming robot for challenging engineering tasks and biomedical applications inside the human body with complex fluidic environments, like inside blood vessels.
+
+"We believed that understanding this unique propulsion would revolutionise the knowledge in microorganisms' motion, which would facilitate the understanding of natural fertilisation and provide inspiration for the design of bio-inspired robots under viscous conditions," concluded Dr Shen.
