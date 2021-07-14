@@ -1,3 +1,4 @@
 venv/
 **/.idea
 TextCategorization/dataset_training.py
+media/documents/*
