@@ -1,6 +1,7 @@
 from django.db import models
 
 from TextCategorization.services.categorization import Categorization
+from TextCategorization.tasks import get_categories_task
 
 
 class Document(models.Model):
@@ -16,5 +17,5 @@ class Document(models.Model):
         return self.document.read()
 
     def save(self, *args, **kwargs):
-        self.categories = Categorization.get_categories(self.content)
+        self.categories = get_categories_task.delay(str(self.content))
         super(Document, self).save(*args, **kwargs)
