@@ -22,14 +22,14 @@ class LDAModel:
         texts = data
         corpus = [id2word.doc2bow(text) for text in texts]
 
-        return gensim.models.ldamulticore.LdaMulticore(
+        return gensim.models.LdaModel(
             corpus=corpus,
             id2word=id2word,
             alpha=alpha,
             chunksize=chunksize,
             iterations=iterations,
             num_topics=num_topics,
-            workers=workers,
+            #workers=workers,
             passes=passes,
             random_state=random_state,
             eval_every=None,

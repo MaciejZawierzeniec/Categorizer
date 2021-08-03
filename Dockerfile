@@ -1,9 +1,12 @@
-FROM python:3.9
-
-ADD requirements.txt /Categorizer/requirements.txt
-
-WORKDIR /Categorizer/
-
+FROM python:3
+ENV PYTHONUNBUFFERED=1
+WORKDIR /code
+COPY requirements.txt /code/
 RUN pip install -r requirements.txt
-
-#RUN adduser --disabled-password --gecos '' myuser
+COPY . /code/
+RUN python3 -m nltk.downloader -d /usr/share/nltk_data stopwords
+RUN python3 -m nltk.downloader -d /usr/share/nltk_data wordnet
+#ENV NLTK_DATA /Categorizer/nltk_data/
+#ADD . $NLTK_DATA
+#RUN python setup.py
+#RUN python3 -m nltk.downloader -d /Categorizer/nltk_data stopwords

@@ -1,0 +1,59 @@
+version: "3.3"
+
+services:
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+      - redis
+      - rabbit
+
+  db:
+    image: postgres
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+
+  rabbit:
+    hostname: rabbit
+    image: rabbitmq:3.8.19-rc.1-management-alpine
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  redis:
+    image: redis:6.2-rc3-alpine3.13
+    ports:
+      - "6379:6379"
+
+  celery:
+    build: .
+    hostname: web
+    command: celery -A Categorizer worker -c 4 -l DEBUG -P threads -Q celery_1
+    volumes:
+      - .:/code
+    depends_on:
+      - rabbit
+      - db
+      - redis
+
+  celery-beat:
+    build: .
+    command: celery -A Categorizer beat -l DEBUG -Q celery_1
+    volumes:
+      - .:/code
+    depends_on:
+      - rabbit
+      - db
+      - redis
