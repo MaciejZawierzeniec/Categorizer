@@ -18,16 +18,18 @@ services:
     volumes:
       - ./data/db:/var/lib/postgresql/data
     environment:
-      - POSTGRES_DB=postgres
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
 
   rabbit:
     hostname: rabbit
     image: rabbitmq:3.8.19-rc.1-management-alpine
+    env_file:
+      .env
     environment:
-      - RABBITMQ_DEFAULT_USER=guest
-      - RABBITMQ_DEFAULT_PASS=guest
+      - RABBITMQ_DEFAULT_USER=${RABBITMQ_USER}
+      - RABBITMQ_DEFAULT_PASS=${RABBITMQ_PASS}
     ports:
       - "5672:5672"
       - "15672:15672"
@@ -40,7 +42,7 @@ services:
   celery:
     build: .
     hostname: web
-    command: celery -A Categorizer worker -c 4 -l DEBUG -P threads -Q celery_1
+    command: celery -A Categorizer worker -c 4 -l DEBUG -P threads
     volumes:
       - .:/code
     depends_on:

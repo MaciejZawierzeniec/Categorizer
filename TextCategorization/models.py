@@ -1,10 +1,5 @@
-import time
+from django.db import models
 
-from celery.result import AsyncResult
-from django.db import models, transaction
-
-from Categorizer.celery import app
-from TextCategorization.services.categorization import Categorization
 from TextCategorization.tasks import get_categories_task
 
 

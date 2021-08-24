@@ -2,3 +2,4 @@ venv/
 **/.idea
 TextCategorization/dataset_training.py
 !media/documents/.gitkeep
+**/.env
