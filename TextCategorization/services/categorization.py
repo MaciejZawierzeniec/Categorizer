@@ -46,22 +46,3 @@ class Categorization:
     def _get_percentage_values(data):
         percentage_values = {key: str(round(value / sum(data.values()) * 100)) + '%' for key, value in data.items()}
         return ', '.join(['{} {}'.format(k, v) for k, v in percentage_values.items()])
-
-
-
-
-    # @classmethod
-    # @shared_task
-    # def get_categories(cls, _id,  content):
-    #     from TextCategorization.models import Document
-    #     doc = Document.objects.get(pk=_id)
-    #     doc.categories = pipe(content,
-    #                 TokenizationService.tokenize_document,
-    #                 TextProcessingService.remove_stopwords,
-    #                 TextProcessingService.lemmatize,
-    #                 NgramsService.make_bigrams,
-    #                 list,
-    #                 LDAModel.evaluate_topics,
-    #                 cls.map_categories,
-    #                 )
-    #     doc.save()

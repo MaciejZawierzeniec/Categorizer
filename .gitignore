@@ -3,3 +3,5 @@ venv/
 TextCategorization/dataset_training.py
 !media/documents/.gitkeep
 **/.env
+__pycache__/
+*.pyc
